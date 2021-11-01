@@ -7,14 +7,15 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteTitle: `Gabe Donner`,
+    siteTitleAlt: `Gabe Donner`,
+    siteHeadline: `Gabe Donner`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteDescription: `This is Gabe Donner's website.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `@lekoarts_de`,
+    robots: 'noindex,nofollow',
   },
   plugins: [
     {
@@ -23,25 +24,37 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
+            title: `Home`,
+            slug: `/`,
           },
           {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Portfolio`,
+            slug: `/blog`,
+          },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Email`,
+            url: `mailto:contact@gabedonner.com`
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `CV`,
+            url: `https://drive.google.com/file/d/1_e7RnFWboJDe52S_ipONo8rd4ohdZ6vy/view?usp=sharing`,
           },
         ],
       },
+    },
+
+    `gatsby-plugin-page-transitions`,
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 750
+      }
     },
     {
       resolve: `gatsby-omni-font-loader`,
