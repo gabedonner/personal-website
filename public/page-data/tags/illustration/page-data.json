@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
+    "path": "/tags/illustration",
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/gatsby-book-cover","title":"Gatsby Book Cover Redesign","date":"01.09.2040","excerpt":"A cover mockup for The Great Gatsby Click here to see the full brief  →   ←  Back to portfolio page","timeToRead":1,"description":null,"tags":[{"name":"Graphic Design","slug":"graphic-design"},{"name":"Illustration","slug":"illustration"}]},{"slug":"/city-magazine-cover","title":"City Magazine Cover","date":"01.09.2021","excerpt":"check this out i'm writing this stuff in real time! Back to portfolio page","timeToRead":1,"description":null,"tags":[{"name":"Graphic Design","slug":"graphic-design"},{"name":"Illustration","slug":"illustration"}]}]}},"pageContext":{"slug":"illustration","name":"Illustration","formatString":"DD.MM.YYYY"}},
+    "staticQueryHashes": ["2744905544","3090400250","318001574"]}
