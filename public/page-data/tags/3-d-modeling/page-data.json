@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
-    "path": "/tags/3-d-modeling",
-    "result": {"data":{"allPost":{"nodes":[{"slug":"/green-rooftop-terrace","title":"Green Rooftop Terrace","date":"06.09.2021","excerpt":"Renderings for a rooftop terrace built using sustainable materials. Click here to see the full brief  → ←  Back to portfolio page","timeToRead":1,"description":null,"tags":[{"name":"3D Modeling","slug":"3-d-modeling"},{"name":"3D Rendering","slug":"3-d-rendering"}]}]}},"pageContext":{"slug":"3-d-modeling","name":"3D Modeling","formatString":"DD.MM.YYYY"}},
-    "staticQueryHashes": ["2744905544","3090400250","318001574"]}

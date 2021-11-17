@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
-    "path": "/tags/branding",
-    "result": {"data":{"allPost":{"nodes":[{"slug":"/nfuse","title":"nfuse LLC","date":"20.11.3000","excerpt":"nfuse LLC is a bodycare company that specializes in magnesium-based products, implementing a patented transdermal delivery system. Beginning…","timeToRead":1,"description":"nfuse LLC","tags":[{"name":"Branding","slug":"branding"},{"name":"Graphic Design","slug":"graphic-design"}]}]}},"pageContext":{"slug":"branding","name":"Branding","formatString":"DD.MM.YYYY"}},
-    "staticQueryHashes": ["2744905544","3090400250","318001574"]}
