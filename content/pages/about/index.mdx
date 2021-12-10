@@ -3,8 +3,70 @@ title: About
 slug: "/about"
 ---
 
+<div style={{padding: '1rem', backgroundColor: 'tomato'}}>
+  Try and change the background color to `tomato`.
+</div>
+
+<Message>This is just a message for someone to read</Message>
+
 I was born and raised in Baltimore, MD. New York is where I live currently, but Baltimore will always be home.
 
 When I'm not designing or developing, I enjoy reading (especially philosophy), writing, drawing, and watching movies.
 
 My American Media studies concentration sythesized classes in American Studies, Media Studies, Philosophy, and Design. During undergrad, I was particularly interested in semiotics (the study of meaning-making) and propaganda studies. I also took classes in Computer Science and Web Development.
+
+Some `backticks` for inline.
+
+```js
+backtick.fences('for blocks')
+```
+
+[MDX](https://mdxjs.com "title")
+
+A backslash\
+before a line break…
+
+Some *asterisks* for emphasis.
+
+# One number sign…
+## One number sign…
+### One number sign…
+#### One number sign…
+##### One number sign…
+###### One number sign…
+
+Three asterisks for a thematic break:
+
+***
+
+![Alt text](/logo.png "title")
+
+* asterisks for unordered items
+
+1. decimals and a dot for ordered items
+
+1. decimals and a dot for ordered
+
+```js
+backtick.fences('for blocks')
+```
+
+Two **asterisks** for strong.
+
+***
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+
+I can write **Markdown** alongside my _JSX_!
