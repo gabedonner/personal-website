@@ -9,13 +9,17 @@ import { Box, Heading, Flex, Image} from 'rebass';
   Hey there!
 </Text>
 
+<!-- https://rebassjs.org/props/ -->
 <Box
   sx={{
     color: 'heading', // theme.colors.primary
     fontSize: 5,      // theme.fontSizes[2]
-    margin: 5,        // theme.space[3]
+    my: 5,        // theme.space[3]
+    p: 1,
+    transition: 'all .5s ease',
     ':hover': {
       backgroundColor: 'tomato',
+      boxShadow: '0 0 1px 3px rgba(0, 0, 0, .125)',
     }
   }}>
   <h1>Hello</h1>
