@@ -29,7 +29,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       {/* <time>{post.date}</time> */}
       {post.tags && showTags && (
         <React.Fragment>
-          {` — `}
+          {/* {` — `} */}
           <ItemTags tags={post.tags} />
         </React.Fragment>
       )}
