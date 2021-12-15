@@ -9,6 +9,18 @@ import { Box, Heading, Flex, Image} from 'rebass';
   Hey there!
 </Text>
 
+<Box
+  sx={{
+    display: 'grid',
+    gridGap: 2,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+  }}>
+  <Heading p={3} bg='muted'>Hello</Heading>
+  <Box py={3} color='heading' bg='primary'>CSS Grid</Box>
+  <Box py={3} color='heading' bg='primary'>This is box #2</Box>
+</Box>
+
+
 <!-- https://rebassjs.org/props/ -->
 <Box
   sx={{
