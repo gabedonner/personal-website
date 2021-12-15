@@ -1,6 +1,6 @@
 module.exports = (themeOptions) => {
   const basePath = themeOptions.basePath || `/`
-  const blogPath = themeOptions.blogPath || `/portfolio`
+  const blogPath = themeOptions.blogPath || `/blog`
   const postsPath = themeOptions.postsPath || `content/posts`
   const postsPrefix = themeOptions.postsPrefix || `/`
   const pagesPath = themeOptions.pagesPath || `content/pages`
