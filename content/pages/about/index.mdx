@@ -3,49 +3,83 @@ title: About
 slug: "/about"
 ---
 
+import {Box, Heading, Flex, Image} from 'rebass'
+
+MDX using imported components!
+
+<Box>
+  <Heading>Here’s a heading</Heading>
+</Box>
+
+> ”This is an important quote.”
+
+<Flex>
+  <Box
+    p={3}
+    width={1/2}
+    color='black'
+    bg='pink'>
+    Flex
+  </Box>
+  <Box
+    p={3}
+    width={1/2}
+    color='black'
+    bg='grey'>
+    Box
+  </Box>
+</Flex>
+
+<Box  
+  my = {3} 
+  p = {3} 
+  bg = 'pink' 
+  maxWidth={[ '100%', '50%', '25%' ]} >
+  RESPONSIVE
+</Box>
+
+<Box
+  sx={{
+    ul: {
+      listStyle: 'none',
+      display: 'grid',
+      padding: 0,
+      gridGap: 3,
+      gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
+    },
+    li: {
+      fontWeight: 'bold',
+    }
+  }}>
+- This is a list
+- Displayed in a grid layout
+- With custom styles
+- Pretty cool, huh?
+</Box>
+
+
 <div style={{padding: '1rem', margin: '5rem 0rem 5rem 0rem', border: '1px dashed tomato', borderColor: 'tomato'}}>
   Try and change the border color to `tomato`.
 </div>
 
+
+<Grid width={[128, null, 192]}>
+  <Box bg="white">Box</Box>
+  <Box bg="tomato">Box</Box>
+  <Box bg="blue">Box</Box>
+  <Box bg="yellow">Box</Box>
+</Grid>
+
 <img src='./city-magazine-cover.jpg'>
 
-<div className="row">
-            <div className="col-12">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "#eee",
-                }}
-              >
-                12 columns
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-3">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "pink",
-                }}
-              >
-                3
-              </div>
-            </div>
-            <div className="col-9">
-              <div
-                style={{
-                  padding: "1rem 0",
-                  textAlign: "center",
-                  background: "green",
-                }}
-              >
-                9
-              </div>
-            </div>
-          </div>
+<Image
+  src='./city-magazine-cover.jpg'  
+  sx={{
+    width: [ '100%', '50%', '25%' ],
+    borderRadius: 8,
+    my: [3];
+  }}
+/>
 
 I was born and raised in Baltimore, MD. New York is where I live currently, but Baltimore will always be home.
 
