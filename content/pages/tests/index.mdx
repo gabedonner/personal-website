@@ -3,7 +3,10 @@ title: Tests
 slug: "/tests"
 ---
 import React from 'react';
-import { Box, Heading, Flex, Image} from 'rebass';
+import { Heading } from 'theme-ui';
+import { Box, Flex, Image} from 'rebass';
+import { tailwind } from "@theme-ui/presets";
+
 
 <Text sx={{  fontSize: [4, 5, 6], fontWeight: `bold`, color: `heading` }}>
   Hey there!
@@ -11,13 +14,17 @@ import { Box, Heading, Flex, Image} from 'rebass';
 
 <Box
   sx={{
+    my: 4,
     display: 'grid',
-    gridGap: 2,
+    gridGap: 4,
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    justifyContent: 'center',
   }}>
-  <Heading p={3} bg='pink'>Hello</Heading>
-  <Box p={3} color='heading' bg='grey'>CSS Grid</Box>
-  <Box p={3} color='heading' bg='grey'>This is box #2</Box>
+  <Heading p={3} bg='secondary'>Hello</Heading>
+  <Heading p={3} bg='primary'>Hello</Heading>
+  <Box p={3} color='divide' bg='white'>CSS Grid</Box>
+  <Box p={3} color='divide' bg='white'>This is box #2</Box>
+
 </Box>
 
 
