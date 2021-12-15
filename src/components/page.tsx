@@ -21,7 +21,7 @@ const Page = ({ data: { page } }: PageProps) => (
     <Seo title={page.title} description={page.excerpt} />
     {/* <Heading as="h1" variant="styles.h1">
       {page.title}
-    </Heading> */}
+    </Heading>  */}
     <section sx={{ my: 2, variant: `layout.content` }}>
       <MDXRenderer>{page.body}</MDXRenderer>
     </section>
