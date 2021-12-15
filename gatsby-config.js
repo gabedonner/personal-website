@@ -49,13 +49,6 @@ module.exports = {
       },
     },
 
-    `gatsby-plugin-page-transitions`,
-    {
-      resolve: 'gatsby-plugin-page-transitions',
-      options: {
-        transitionTime: 750
-      }
-    },
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
