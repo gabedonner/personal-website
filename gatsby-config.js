@@ -33,7 +33,7 @@ module.exports = {
           },
           {
             title: `Portfolio`,
-            slug: `/blog`,
+            slug: `/portfolio`,
           },
         ],
         externalLinks: [
