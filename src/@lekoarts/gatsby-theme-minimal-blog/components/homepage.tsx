@@ -13,6 +13,9 @@ import { visuallyHidden } from "../styles/utils"
 import Hero from "../texts/hero"
 // @ts-ignore
 import Bottom from "../texts/bottom"
+// @ts-ignore
+import Test from "../texts/test-text"
+
 
 type PostsProps = {
   posts: {
@@ -47,6 +50,9 @@ const Homepage = ({ posts }: PostsProps) => {
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>See all</Link>
       </Title>
       <Listing posts={posts} showTags={true} />
+      <section sx={{ mb: [6, 6, 6, 6], a: { fontSize: [4], mt: 3 }, variant: `section_test` }}>
+        <Test />
+      </section>
     </Layout>
   )
 }

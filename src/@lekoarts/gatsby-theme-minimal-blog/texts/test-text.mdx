@@ -1,0 +1,35 @@
+import { jsx, Box, Grid, Link, Card } from "theme-ui"
+
+<Title text="This is a mdx component to test on:" />
+
+<!-- - <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io"
+  >Iconiclinx LLC</a>  /  Webflow &#x2192;
+
+- <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com"
+  >Antique Exchange Interiors</a>  /  Shopify &#x2192;
+
+- <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com"
+  >Joan Saba Photography</a>  /  Squarespace &#x2192; -->
+
+<Grid gap={2} columns={[2, '2fr 2fr']}>
+  <Box bg="none">
+    <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io"
+  >Iconiclinx LLC</a>
+  </Box>
+  <Box bg="none">Webflow &#x2192;</Box>
+  <Box bg="none">
+    <Text sx={{  fontSize: [4], fontWeight: `bold`, color: `heading` }}>Gabe Donner</Text>
+  </Box>
+  <Box bg="none">
+    <Text sx={{  fontSize: [4], fontWeight: `regular`, color: `heading` }}>Second Part</Text>
+    <Text sx={{  fontSize: [4], fontWeight: `regular`, color: `heading` }}>Second Part</Text>
+  </Box>
+</Grid>
+
+<Card
+  sx={{
+    maxWidth: 256,
+  }}>
+  <Image src={images.nyc} />
+  <Text>Card</Text>
+</Card>
