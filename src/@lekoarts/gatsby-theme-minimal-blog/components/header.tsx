@@ -17,10 +17,10 @@ const Header = () => {
 
   return (
     <header sx={{ mb: [5, 5, 5, 5] }}>
-      <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
+      {/* <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
         <HeaderTitle />
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
-      </Flex>
+      </Flex> */}
       <div
         sx={{
           boxSizing: `border-box`,
@@ -35,7 +35,8 @@ const Header = () => {
         }}
       >
         <Navigation nav={nav} />
-        <HeaderExternalLinks />
+        {/* <HeaderExternalLinks /> */}
+        <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
       </div>
     </header>
   )
