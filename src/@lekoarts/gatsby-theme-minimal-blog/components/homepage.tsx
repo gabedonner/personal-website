@@ -43,7 +43,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <List sx={{ variant: `section_bottom` }}>
         <Bottom />
       </List>
-      <Title text="Things I've designed">
+      <Title text="Things I've designed:">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>See all</Link>
       </Title>
       <Listing posts={posts} showTags={true} />
