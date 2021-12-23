@@ -37,7 +37,10 @@ const Header = () => {
       >
         <Navigation nav={nav} />
         {/* <HeaderExternalLinks /> */}
-        <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+        {/* <ColorModeToggle isDark={isDark} toggle={toggleColorMode} /> */}
+        <Flex sx={{ alignItems: `center`, justifyContent: `right` }}>
+          <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+        </Flex> 
       </div>
     </header>
   )
