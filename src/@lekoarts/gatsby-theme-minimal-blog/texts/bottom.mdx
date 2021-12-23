@@ -2,14 +2,28 @@ import { jsx, Box, Grid } from "theme-ui"
 
 <Title text="Some websites I've made:" />
 
-<Grid gap={2} columns={[2, '2fr 2fr']}>
-  <Box><a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io"
-  >Iconiclinx LLC</a>  /  Webflow &#x2192;
+<Grid gap={4} columns={[1, null, 2]}>
+  <Box padding-right={1} pb={1}>
+    <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC</a>
+    <br />
+    <Text>Media Consulting</Text>
+    <br />
+    Webflow
   </Box>
-  <Box><a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com"
-  >Antique Exchange Interiors</a>  /  Shopify &#x2192;</Box>
-  <Box><a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com"
-  >Joan Saba Photography</a>  /  Squarespace &#x2192;</Box>
+  <Box padding-right={1} pb={1}>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">Antique Exchange Interiors </a>
+    <br />
+    <Text>Antique Consignment Business</Text>
+    <br />
+    <Text>Shopify</Text>
+  </Box>
+  <Box padding-right={1} pb={1}>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">Joan Saba Photography</a>
+    <br />
+    <Text>Photography Portfolio</Text>
+    <br />
+    Squarespace
+  </Box>
 </Grid>
 
 <!-- - <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io"
