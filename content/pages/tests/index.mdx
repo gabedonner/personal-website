@@ -6,7 +6,17 @@ import React from 'react';
 import { Box, Heading, Card, Image, Message, AspectImage, AspectRatio, Flex } from 'theme-ui';
 import { tailwind } from "@theme-ui/presets";
 import Photo from "./city-magazine-cover.jpg";
+import { StaticImage } from 'gatsby-plugin-image';
 
+### Gatsby Static Image
+
+<StaticImage
+  src="./city-magazine-cover.jpeg"
+  alt="A dinosaur"
+  layout="fixed"
+/>
+
+---
 
 <Text sx={{  fontSize: [4, 5, 6], fontWeight: `bold`, color: `heading` }}>
   Hey there!
