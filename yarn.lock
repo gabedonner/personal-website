@@ -6578,6 +6578,17 @@
     "unist-util-select" "^3.0.4"
     "unist-util-visit-parents" "^3.1.1"
 
+"gatsby-remark-responsive-iframe@^5.4.0":
+  "integrity" "sha512-iW0JC9R9gNdCd00mTiUTxxgQmYiwGjY9K0xxP8pk4cOL+661ghG+bBWY+npu7lgz50RPFdKejE+7COIVPWJ8HQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-responsive-iframe/-/gatsby-remark-responsive-iframe-5.4.0.tgz"
+  "version" "5.4.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "cheerio" "^1.0.0-rc.10"
+    "common-tags" "^1.8.2"
+    "lodash" "^4.17.21"
+    "unist-util-visit" "^2.0.3"
+
 "gatsby-source-filesystem@^4.0.0", "gatsby-source-filesystem@^4.0.0-next", "gatsby-source-filesystem@^4.4.0":
   "integrity" "sha512-tN+aJdOnBf92V9oHXaGzPB6gL0EhpYH0mh/dfszroy25CtSq07fZu8SynS/B3ClJVi22MkD0imcDVMlPJGSQ3w=="
   "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.4.0.tgz"
@@ -13275,7 +13286,7 @@
   dependencies:
     "unist-util-visit-parents" "^2.0.0"
 
-"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2", "unist-util-visit@2.0.3":
+"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2", "unist-util-visit@^2.0.3", "unist-util-visit@2.0.3":
   "integrity" "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="
   "resolved" "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-2.0.3.tgz"
   "version" "2.0.3"
