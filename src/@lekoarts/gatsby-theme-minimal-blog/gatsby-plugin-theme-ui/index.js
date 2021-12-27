@@ -150,6 +150,7 @@ const theme = merge(tailwind, {
     },
     webDesc: {
       color: 'secondary',
+      fontSize: [1, 1, 2],
     }
   },
   copyButton: {
