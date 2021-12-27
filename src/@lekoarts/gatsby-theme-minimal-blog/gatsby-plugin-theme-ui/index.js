@@ -148,6 +148,9 @@ const theme = merge(tailwind, {
       lineHeight: `heading`,
       color: `heading`,
     },
+    webDesc: {
+      color: 'secondary',
+    }
   },
   copyButton: {
     backgroundColor: transparentize(`primary`, 0.8),
