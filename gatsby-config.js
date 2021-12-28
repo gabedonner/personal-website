@@ -35,10 +35,6 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
-          {
-            title: `Tests`,
-            slug: `/tests`,
-          },
         ],
         externalLinks: [
           {
