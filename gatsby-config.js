@@ -10,11 +10,11 @@ module.exports = {
     siteTitle: `Gabe Donner`,
     siteTitleAlt: `Gabe Donner`,
     siteHeadline: `Gabe Donner`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://github-minimal-portfolio.netlify.app`,
     siteDescription: `This is Gabe Donner's website.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Gabe Donner`,
     robots: 'noindex,nofollow',
   },
   plugins: [
@@ -22,6 +22,7 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        blogPath: '/projects',
         navigation: [
           {
             title: `Home`,
@@ -29,7 +30,7 @@ module.exports = {
           },
           {
             title: `Projects`,
-            slug: `/blog`,
+            slug: `/projects`,
           },
           {
             title: `About`,
