@@ -7,6 +7,17 @@ tags:
   - Illustration
 ---
 
-![Magazine Cover](./city-magazine-cover.jpg)
+import Photo from "./city-magazine-cover.jpg";
+import {AspectImage, Box} from 'theme-ui';
 
-[Back to portfolio page](/blog)
+<Box sx={{mx: [1, 4, 6, 7]}}>
+  <AspectImage ratio={2 / 3} src={Photo}/>
+</Box>  
+
+[Back to projects page](/projects)
+
+<!--<img src='./city-magazine-cover.jpg'>-->
+
+
+<!--![Magazine Cover](./city-magazine-cover.jpg)-->
+
