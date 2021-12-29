@@ -23,6 +23,7 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         blogPath: '/projects',
+        postsPrefix: '/projects',
         navigation: [
           {
             title: `Home`,
