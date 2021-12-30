@@ -1,10 +1,13 @@
-import { jsx, Box, Grid, Link } from "theme-ui"
+import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
-<Title text="Websites I've made:" />
+<!--<Title text="Websites" />
 
 <Box
   sx={{
     mb: 4,
+    a: {
+      fontWeight: 'medium'
+    }
   }}>
   <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC</a>
   <br />
@@ -14,6 +17,9 @@ import { jsx, Box, Grid, Link } from "theme-ui"
 <Box
   sx={{
     mb: 4,
+    a: {
+      fontWeight: 'medium'
+    }
   }}>
   <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">Antique Exchange Interiors </a>
   <br />
@@ -23,12 +29,73 @@ import { jsx, Box, Grid, Link } from "theme-ui"
 
 <Box
   sx={{
-    
+    a: {
+      fontWeight: 'medium'
+    }
   }}>
   <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">Joan Saba Photography</a>
   <br />
   <Text variant='webDesc'>Travel Photography | Squarespace</Text>
-</Box>
+</Box>-->
+
+
+----
+
+
+<Flex
+  sx={{
+    flexWrap: 'wrap',
+  }}>
+  <Box
+    sx={{
+      mt: 3,
+      pb: 4,
+      flexGrow: 1,
+      flexBasis: 256,
+    }}>
+    <Text
+      sx={{
+        fontSize: [3, 3, 3],
+        color: 'secondary',
+      }}>
+      Websites
+    </Text>
+  </Box>
+  
+  <Box
+    sx={{
+      mt: 3,
+      flexGrow: 99999,
+      flexBasis: 0,
+      minWidth: 512,
+      a: {
+        fontWeight: 'medium',
+        fontSize: [3, 3, 3],
+      }
+      }}>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC &nbsp;→</a>
+        <br />
+        <Text variant='webDesc'>Media Consulting | Webflow</Text>
+      </Box>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">Joan Saba Photography</a>
+        <br />
+        <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
+      </Box>
+      <Box sx={{
+        mb: 0,
+        }}>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">Antique Exchange Interiors </a>
+        <br />
+        <Text variant='webDesc'>Antique Consignment | Shopify</Text>  
+      </Box>
+  </Box>
+</Flex>
 
 
 

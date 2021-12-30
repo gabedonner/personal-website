@@ -91,6 +91,7 @@ const theme = merge(tailwind, {
     h5: {
       variant: `text.heading`,
       fontSize: [1, 2, 2, 3],
+      fontWeight: 'medium',
       mt: 3,
     },
     h6: {
@@ -153,7 +154,7 @@ const theme = merge(tailwind, {
     },
     webDesc: {
       color: 'secondary',
-      fontSize: [1, 1, 2],
+      fontSize: [2, 2, 2],
     }
   },
   copyButton: {
@@ -206,7 +207,7 @@ const theme = merge(tailwind, {
       },
     },
     listItem: {
-      fontSize: [1, 2, 3],
+      fontSize: [3, 3, 3],
       color: `text`,
       //fontWeight: 'regular',
       //fontWeight: 'medium',
