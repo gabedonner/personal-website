@@ -14,7 +14,7 @@ import Hero from "../texts/hero"
 // @ts-ignore
 import Bottom from "../texts/bottom"
 // @ts-ignore
-import Test from "../texts/test-text"
+import Projects from "../texts/home-projects"
 
 
 type PostsProps = {
@@ -45,6 +45,9 @@ const Homepage = ({ posts }: PostsProps) => {
       </section>
       <List sx={{ variant: `section_bottom` }}>
         <Bottom />
+      </List>
+      <List sx={{ variant: `section_bottom` }}>
+        <Projects />
       </List>
       <section sx={{ mb: [6, 6, 6, 6] }}>
       </section>
