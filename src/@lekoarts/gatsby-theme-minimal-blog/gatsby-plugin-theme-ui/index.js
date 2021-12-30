@@ -41,7 +41,7 @@ const theme = merge(tailwind, {
       MozOsxFontSmoothing: `grayscale`,
     },
     p: {
-      fontSize: [2, 2, 2, 2],
+      fontSize: [1, 2, 2, 2],
       letterSpacing: `-0.003em`,
       lineHeight: `body`,
       "--baseline-multiplier": 0.179,
@@ -69,7 +69,7 @@ const theme = merge(tailwind, {
     h1: {
       variant: `text.heading`,
       // fontSize: [5, 6, 6, 7],
-      fontSize: [6, 6, 6, 6],
+      fontSize: [5, 5, 5, 5],
       // mt: 3,
       mt: 2,
     },
@@ -137,8 +137,11 @@ const theme = merge(tailwind, {
   },
   layout: {
     container: {
-      padding: [3, 4],
-      maxWidth: `1024px`,
+      // padding: [3, 4],
+      py: [3, 4],
+      px: [4, 5],
+      // maxWidth: `1024px`,
+      maxWidth: `1024px`
     },
   },
   text: {
