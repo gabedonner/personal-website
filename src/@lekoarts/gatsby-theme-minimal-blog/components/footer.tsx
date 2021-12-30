@@ -11,7 +11,7 @@ const Footer = () => {
         boxSizing: `border-box`,
         display: `flex`,
         justifyContent: `right`,
-        mt: [7],
+        mt: [6],
         color: `secondary`,
         a: {
           variant: `links.secondary`,
