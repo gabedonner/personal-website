@@ -27,6 +27,8 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
     </TLink>
     <p sx={{ color: `secondary`, mt: 1, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
       {/* <time>{post.date}</time> */}
+      {/* this is where you can manipulate the post props on the blog page
+       for example: {post.description} */}
       {post.tags && showTags && (
         <React.Fragment>
           {/* {` — `} */}
