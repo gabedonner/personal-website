@@ -139,7 +139,7 @@ const theme = merge(tailwind, {
     container: {
       // padding: [3, 4],
       py: [3, 4],
-      px: [4, 5],
+      px: [3, 4, 5],
       // maxWidth: `1024px`,
       maxWidth: `1024px`
     },
@@ -208,6 +208,8 @@ const theme = merge(tailwind, {
     listItem: {
       fontSize: [1, 2, 3],
       color: `text`,
+      //fontWeight: 'regular',
+      //fontWeight: 'medium',
     },
   },
 })
