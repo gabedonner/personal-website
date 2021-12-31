@@ -48,7 +48,7 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
   }}>
   <Box
     sx={{
-      mt: 3,
+      mt: [2, 3],
       pb: 4,
       flexGrow: 1,
       flexBasis: 256,
@@ -71,12 +71,17 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
       a: {
         fontWeight: 'medium',
         fontSize: [3, 3, 3],
+        color: 'text',
+        ":hover": {
+          color: `primary`,
+          // textDecoration: `none`,
+        },
       }
       }}>
       <Box sx={{
         mb: 4,
         }}>
-        <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC &nbsp;→</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC &nbsp;→ </a>
         <br />
         <Text variant='webDesc'>Media Consulting | Webflow</Text>
       </Box>

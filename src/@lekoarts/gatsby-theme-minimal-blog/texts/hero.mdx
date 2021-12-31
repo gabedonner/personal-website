@@ -1,19 +1,7 @@
-import { jsx, Box, Grid, Image } from "theme-ui"
+import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
-<!--<Grid gap={2} columns={[1, null, 2]}>
-  <Box bg="muted">Box</Box>
-  <Box bg="none">
-    <Text sx={{  fontSize: [5, 6, 6], fontWeight: `bold`, color: `heading` }}>
-      Gabe Donner
-    </Text>
-  </Box>
-  <Box bg="primary">Box</Box>
-  <Box bg="muted">Box</Box>
-</Grid>
 
-<Image src={'https://c.tenor.com/U92u3vZRf3sAAAAM/bear_waving-hi.gif'} />
 
-![Potions Class](https://c.tenor.com/U92u3vZRf3sAAAAM/bear_waving-hi.gif) -->
 <Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
 </Text>
@@ -23,9 +11,50 @@ import { jsx, Box, Grid, Image } from "theme-ui"
     Hey there! I'm a designer and web developer based out of New York City. 
     This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.
   </Text>
-</Box>  
+</Box>
 
 
-<!--Hey there! I'm a designer and web developer based out of New York City. 
-This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.
-I graduated from <a target="_blank" rel="noopener noreferrer" href="https://gallatin.nyu.edu">NYU Gallatin</a> with a concentration in American Media Studies and a minor in Graphic Design.-->
+<!-- hero with flex box
+
+<Flex
+  sx={{
+    flexWrap: 'wrap',
+  }}>
+  <Box
+    sx={{
+      mt: 3,
+      pb: 4,
+      flexGrow: 1,
+      flexBasis: 256,
+    }}>
+    <Text
+        sx={{
+          fontSize: [3, 3, 3],
+          color: 'secondary',
+        }}>
+        Projects
+    </Text>
+  </Box>
+  
+  <Box
+    sx={{
+      mt: 3,
+      flexGrow: 99999,
+      flexBasis: 0,
+      minWidth: 320,
+      a: {
+        fontWeight: 'medium',
+        fontSize: [3, 3, 3],
+      }
+      }}>
+      <Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+          Gabe Donner
+      </Text>
+      <Box sx={{ pr:[0,0,0], mt:[2]}}>
+        <Text sx={{fontSize: [3, 3, 3]}}>
+           Hey there! I'm a designer and web developer based out of New York City. 
+            This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.
+        </Text>
+      </Box>  
+  </Box>
+</Flex>-->

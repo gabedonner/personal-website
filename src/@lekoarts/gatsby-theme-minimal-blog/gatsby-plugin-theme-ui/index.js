@@ -140,7 +140,7 @@ const theme = merge(tailwind, {
     container: {
       // padding: [3, 4],
       py: [3, 4],
-      px: [3, 4, 5],
+      px: [3, 4],
       // maxWidth: `1024px`,
       maxWidth: `1024px`
     },
@@ -155,6 +155,7 @@ const theme = merge(tailwind, {
     webDesc: {
       color: 'secondary',
       fontSize: [2, 2, 2],
+      lineHeight: 2,
     }
   },
   copyButton: {

@@ -53,10 +53,10 @@ const Homepage = ({ posts }: PostsProps) => {
       </List>
       <section sx={{ mb: [6, 6, 6, 6] }}>
       </section>
-      <Title text="Projects">
+      {/* <Title text="Projects">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>See all</Link>
       </Title>
-      <Listing posts={posts} showTags={true} />
+      <Listing posts={posts} showTags={true} /> */}
     </Layout>
   )
 }
