@@ -1,6 +1,20 @@
 import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
+import Typewriter from 'typewriter-effect';
 
+<!--https://npm.io/package/typewriter-effect-->
+<!--<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+  <Typewriter
+    options={{
+      strings: ['Gabe Donner'],
+      autoStart: true,
+      loop: true,
+      skipAddStyles: true,
+      pauseFor: 2000,
+      cursor: '&nbsp;',
+    }}
+  />
+</Text>-->
 
 <Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
@@ -8,10 +22,36 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
 <Box sx={{ pr:[0,0,0], mt:[2]}}>
   <Text sx={{fontSize: [3, 3, 3]}}>
+    <Typewriter
+      options={{
+        strings: ['Designer', 'Developer', 'Random person'],
+        autoStart: true,
+        loop: true,
+        skipAddStyles: true,
+        pauseFor: 2000,
+        cursor: '&nbsp;',
+      }}
+    />
+  </Text>
+</Box>
+
+<!--<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+  Gabe Donner
+</Text>-->
+
+<!--<Box sx={{ pr:[0,0,0], mt:[2]}}>
+  <Text sx={{fontSize: [3, 3, 3]}}>
     Hey there! I'm a designer and web developer based out of New York City. 
     This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.
   </Text>
-</Box>
+</Box>-->
+
+<!--<Box sx={{ pr:[0,0,0], mt:[2]}}>
+  <Text sx={{fontSize: [3, 3, 3]}}>
+    Hey there! I'm a designer and web developer based out of New York City. 
+  </Text>
+</Box>-->
+
 
 
 <!-- hero with flex box
