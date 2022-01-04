@@ -2,18 +2,22 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
 import Typewriter from 'typewriter-effect';
 
-<!--https://npm.io/package/typewriter-effect-->
+<!--https://npm.io/package/typewriter-effect -->
 <!--<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   <Typewriter
-    options={{
-      strings: ['Gabe Donner'],
-      autoStart: true,
-      loop: true,
-      skipAddStyles: true,
-      pauseFor: 2000,
-      cursor: '&nbsp;',
-    }}
-  />
+      options={{
+          autoStart: true,
+          skipAddStyles: true,
+          pauseFor: 1000,
+          cursor: '&nbsp;',
+          delay: 25,
+        }}
+      onInit={(typewriter) => {
+        typewriter.typeString('Hi, I\'m Gabe. ')
+          .pauseFor(1500)  
+          .start()
+      }}
+    />
 </Text>-->
 
 <Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
@@ -24,12 +28,21 @@ import Typewriter from 'typewriter-effect';
   <Text sx={{fontSize: [3, 3, 3]}}>
     <Typewriter
       options={{
-        strings: ['Designer', 'Developer', 'Random person'],
-        autoStart: true,
-        loop: true,
-        skipAddStyles: true,
-        pauseFor: 2000,
-        cursor: '&nbsp;',
+          autoStart: true,
+          skipAddStyles: true,
+          pauseFor: 1000,
+          cursor: '&nbsp;',
+          delay: 25,
+          loop: true,
+        }}
+      onInit={(typewriter) => {
+        typewriter.typeString('I\'m a ')
+          .pauseFor(50)  
+          .start();
+        typewriter.typeString('designer and web developer based out of New York City.')
+          .pauseFor(2500)
+          .start()
+          .pauseFor(1000) ;
       }}
     />
   </Text>
