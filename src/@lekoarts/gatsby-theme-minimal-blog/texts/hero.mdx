@@ -24,7 +24,7 @@ import Typewriter from 'typewriter-effect';
   Gabe Donner
 </Text>
 
-<Box sx={{ pr:[0,0,0], mt:[2]}}>
+<Box sx={{ pl:[1,1,1], mt:[2], height: [3, 3, 3]}}>
   <Text sx={{fontSize: [3, 3, 3]}}>
     <Typewriter
       options={{
@@ -34,15 +34,21 @@ import Typewriter from 'typewriter-effect';
           cursor: '&nbsp;',
           delay: 25,
           loop: true,
+          deleteSpeed: 10,
         }}
       onInit={(typewriter) => {
-        typewriter.typeString('I\'m a ')
-          .pauseFor(50)  
+        typewriter.typeString(' Hey. ')
+          .pauseFor(800)  
           .start();
-        typewriter.typeString('designer and web developer based out of New York City.')
+        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
           .pauseFor(2500)
           .start()
-          .pauseFor(1000) ;
+          .pauseFor(800)
+          .deleteChars(60);
+        typewriter.typeString('I like a bunch of stuff')
+          .pauseFor(800)
+          .start()
+          .pauseFor(2500) ;
       }}
     />
   </Text>
