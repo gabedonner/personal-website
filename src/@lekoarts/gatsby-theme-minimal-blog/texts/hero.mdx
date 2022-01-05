@@ -20,7 +20,7 @@ import Typewriter from 'typewriter-effect';
     />
 </Text>-->
 
-<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+<Text sx={{ pl:[1,1,0], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
 </Text>
 
@@ -31,8 +31,8 @@ import Typewriter from 'typewriter-effect';
           autoStart: true,
           skipAddStyles: true,
           pauseFor: 1000,
-          cursor: '&nbsp;',
-          delay: 25,
+          cursor: '|',
+          delay: 30,
           loop: true,
           deleteSpeed: 10,
         }}
@@ -44,11 +44,36 @@ import Typewriter from 'typewriter-effect';
           .pauseFor(2500)
           .start()
           .pauseFor(800)
-          .deleteChars(60);
-        typewriter.typeString('I like a bunch of stuff.')
-          .pauseFor(800)
+          .deleteChars(60)
+          .pauseFor(800);
+        typewriter.typeString('I like visual art, philosophy, and ')
           .start()
-          .pauseFor(2500) ;
+          .pauseFor(800)
+          .changeDelay(100);
+        typewriter.typeString(' um')	
+          .start()
+          .pauseFor(800)
+          .deleteChars(2)
+          .changeDelay(25);
+        typewriter.typeString('ice cream.')
+          .pauseFor(1500)
+          .start()
+          .pauseFor(2500)
+          .deleteAll();
+        typewriter.typeString('This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.')
+          .pauseFor(1500)
+          .start()
+          .pauseFor(2500)
+          .deleteAll();
+        typewriter.typeString('If you want to learn about me, check out the <a href="/about">about page</a>.')
+          .pauseFor(1500)
+          .start()
+          .pauseFor(2500)
+          .deleteAll();
+        typewriter.typeString('Or, visit the <a href="/about">projects page</a> for my design portfolio.')
+          .pauseFor(1500)
+          .start()
+          .pauseFor(2500);
       }}
     />
   </Text>
