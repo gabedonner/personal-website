@@ -34,7 +34,7 @@ import Typewriter from 'typewriter-effect';
           cursor: '|',
           delay: 30,
           loop: true,
-          deleteSpeed: 10,
+          deleteSpeed: 1,
         }}
       onInit={(typewriter) => {
         typewriter.typeString(' Hey. ')
@@ -44,7 +44,8 @@ import Typewriter from 'typewriter-effect';
           .pauseFor(2500)
           .start()
           .pauseFor(800)
-          .deleteChars(60)
+          //.deleteChars(60)
+          .deleteAll()
           .pauseFor(800);
         typewriter.typeString('I like visual art, philosophy, and ')
           .start()
@@ -78,6 +79,11 @@ import Typewriter from 'typewriter-effect';
     />
   </Text>
 </Box>
+
+
+
+
+
 
 <!--<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
