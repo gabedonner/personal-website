@@ -20,16 +20,15 @@ import Typewriter from 'typewriter-effect';
     />
 </Text>-->
 
-<Text sx={{ pl:[1,1,0], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+<Text sx={{ pl:[1,1,0], fontSize: [5, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
 </Text>
 
-<Box sx={{ pl:[1,1,1], mt:[2], height: [3, 3, 3]}}>
-  <Text sx={{fontSize: [3, 3, 3]}}>
+<Box sx={{ pl:[1,1,0], pr:[2, 2, 0], mt:[1, 2, 2], height: [3, 3, 3]}}>
+  <Text sx={{ fontSize: [2, 3, 3], a: {color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
           autoStart: true,
-          skipAddStyles: true,
           pauseFor: 1000,
           cursor: '|',
           delay: 30,
@@ -37,7 +36,7 @@ import Typewriter from 'typewriter-effect';
           deleteSpeed: 1,
         }}
       onInit={(typewriter) => {
-        typewriter.typeString(' Hey. ')
+        typewriter.typeString(' Hi! ')
           .pauseFor(800)  
           .start();
         typewriter.typeString('I\'m a designer and web developer based out of New York City.')

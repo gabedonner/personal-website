@@ -40,7 +40,7 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
-      <section sx={{ mb: [6, 6, 6, 6], pt: 5, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero` }}>
+      <section sx={{ mb: [6, 6, 6, 6], pt: 4, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero` }}>
         <Hero />
       </section>
       <List sx={{ variant: `section_bottom` }}>
