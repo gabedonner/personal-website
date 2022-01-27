@@ -2,29 +2,15 @@ import { jsx, Box, Grid, Card, Link, Flex } from "theme-ui"
 
 import Typewriter from 'typewriter-effect';
 
-<!--https://npm.io/package/typewriter-effect -->
-<!--<Text sx={{ fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
-  <Typewriter
-      options={{
-          autoStart: true,
-          skipAddStyles: true,
-          pauseFor: 1000,
-          cursor: '&nbsp;',
-          delay: 25,
-        }}
-      onInit={(typewriter) => {
-        typewriter.typeString('Hi, I\'m Gabe. ')
-          .pauseFor(1500)  
-          .start()
-      }}
-    />
-</Text>-->
+import { motion, AnimatePresence } from 'framer-motion';
 
-<Text sx={{ pl:[1,1,0], fontSize: [5, 6, 6], fontWeight: `bold`, color: `heading` }}>
+<!--https://npm.io/package/typewriter-effect -->
+
+<Text sx={{ pl:[1,1,1], fontSize: [5, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner
 </Text>
 
-<Box sx={{ pl:[1,1,0], pr:[2, 2, 0], mt:[1, 2, 2], height: [3, 3, 3]}}>
+<Box sx={{ pl:[1,1,1], pr:[2, 2, 0], mt:[1, 2, 2], height: [3, 3, 3]}}>
   <Text sx={{ fontSize: [2, 3, 3], a: {color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
@@ -33,7 +19,7 @@ import Typewriter from 'typewriter-effect';
           cursor: '|',
           delay: 30,
           loop: true,
-          deleteSpeed: 1,
+          deleteSpeed: 5,
         }}
       onInit={(typewriter) => {
         typewriter.typeString(' Hi! ')
@@ -43,8 +29,7 @@ import Typewriter from 'typewriter-effect';
           .pauseFor(2500)
           .start()
           .pauseFor(800)
-          //.deleteChars(60)
-          .deleteAll()
+          .deleteAll(5)
           .pauseFor(800);
         typewriter.typeString('I like visual art, philosophy, and ')
           .start()
@@ -59,18 +44,19 @@ import Typewriter from 'typewriter-effect';
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
-          .deleteAll();
+          .deleteAll(5)
+          .pauseFor(800);
         typewriter.typeString('This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
-          .deleteAll();
+          .deleteAll(5);
         typewriter.typeString('If you want to learn about me, check out the <a href="/about">about page</a>.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
-          .deleteAll();
-        typewriter.typeString('Or, visit the <a href="/about">projects page</a> for my design portfolio.')
+          .deleteAll(5);
+        typewriter.typeString('Or, visit the <a href="/projects">projects page</a> for my design portfolio.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500);
@@ -78,3 +64,28 @@ import Typewriter from 'typewriter-effect';
     />
   </Text>
 </Box>
+
+<!--Separate box for experimentation with Framer animation sequence-->
+<!--<Box sx={{ pl:[1,1,0], pr:[2, 2, 0], mt:[1, 2, 2], height: [3, 3, 3]}}>
+  <Text sx={{ fontSize: [2, 3, 3], a: {color: 'text', textDecoration: 'underline'} }}>
+    <Typewriter
+      options={{
+          autoStart: true,
+          pauseFor: 1000,
+          cursor: '|',
+          delay: 30,
+          loop: false,
+          deleteSpeed: 5,
+        }}
+      onInit={(typewriter) => {
+        typewriter.typeString(' Hi! ')
+          .pauseFor(800)  
+          .start();
+        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
+          .pauseFor(2500)
+          .start()
+          .pauseFor(800)
+      }}
+    />
+  </Text>
+</Box>-->
