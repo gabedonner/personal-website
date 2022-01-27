@@ -1,11 +1,120 @@
-import { jsx, Box, Grid, Flex, Link as TLink } from "theme-ui"
-import { Link } from "gatsby"
+import { jsx, Box, Grid, Flex, Link } from "theme-ui"
 
 <!-- figure out how to import item tags -->
 
--------
+----
+
 
 <Flex
+  sx={{
+    flexWrap: 'wrap',
+    //my: [5],
+  }}>
+  <Box
+    sx={{
+      mt: [4],
+      pb: 4,
+      flexGrow: 1,
+      // flexBasis: [256, 190, 256, 256],
+      flexBasis: ['27.5%'],
+    }}>
+    <Text
+      sx={{
+        fontSize: [2, 2, 2],
+        color: 'secondary',
+      }}>
+      Projects
+    </Text>
+  </Box>
+  
+  <Box
+    sx={{
+      mt: 4,
+      flexGrow: 99999,
+      flexBasis: 0,
+      minWidth: 400,
+      a: {
+        fontSize: [3, 3, 3],
+        color: 'text',
+        ":hover": {
+          // color: `primary`,
+          // textDecoration: `none`,
+        },
+      }
+      }}>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <Link variant="medium" href="/projects/nfuse">nfuse</Link>
+        <br />
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [2, 2, 2] }}}>
+          <a
+            href='/tags/branding'>
+            Branding
+          </a>
+          <a>, </a>
+          <a
+            href='/tags/branding'>
+            Graphic Design
+          </a>
+        </Text>  
+      </Box>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <Link variant="medium" href="/projects/nfuse">Great Gatsby Cover</Link>
+        <br />
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [2, 2, 2] }}}>
+          <a
+            href='/tags/branding'>
+            Branding
+          </a>
+          <a>, </a>
+          <a
+            href='/tags/branding'>
+            Graphic Design
+          </a>
+        </Text>  
+      </Box>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <Link variant="medium" href="/projects/nfuse">Green Rooftop Terrace</Link>
+        <br />
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [2, 2, 2] }}}>
+          <a
+            href='/tags/branding'>
+            Branding
+          </a>
+          <a>, </a>
+          <a
+            href='/tags/branding'>
+            Graphic Design
+          </a>
+        </Text>  
+      </Box>
+      <Box sx={{
+        mb: 4,
+        }}>
+        <Link variant="medium" href="/projects/nfuse">City Magazine</Link>
+        <br />
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [2, 2, 2] }}}>
+          <a
+            href='/tags/branding'>
+            Branding
+          </a>
+          <a>, </a>
+          <a
+            href='/tags/branding'>
+            Graphic Design
+          </a>
+        </Text>  
+      </Box>
+      
+  </Box>
+</Flex>
+
+<!--<Flex
   sx={{
     flexWrap: 'wrap',
   }}>
@@ -14,7 +123,7 @@ import { Link } from "gatsby"
       mt: 3,
       pb: 4,
       flexGrow: 1,
-      flexBasis: 256,
+      flexBasis: '27.5%',
     }}>
     <Text
         sx={{
@@ -63,21 +172,14 @@ import { Link } from "gatsby"
       <Box sx={{
         mb: 0,
         }}>
-        <a href="/projects/nfuse">Antique Exchange Interiors </a>
+        <a sx={{fontWeight: 'medium'}} href="/projects/nfuse">Antique Exchange Interiors </a>
         <br />
-        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, fontWeight: 'light' }, fontSize: [1, 1, 2] }}>
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [2, 2, 2] }}}>
           <a
-            href='/tags'>
+            href='/tags/branding'>
             Branding
           </a>
         </Text>  
       </Box>
   </Box>
-</Flex>
-
-<Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
-  <a
-    href='/tags'>
-    Branding
-  </a>
-</Text>
+</Flex>-->

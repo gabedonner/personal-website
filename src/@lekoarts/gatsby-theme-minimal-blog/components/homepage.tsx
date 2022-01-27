@@ -56,7 +56,6 @@ const Homepage = ({ posts }: PostsProps) => {
       {/* <Title text="Projects">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>See all</Link>
       </Title>*/}
-      <Listing posts={posts} showTags={true} />
     </Layout>
   )
 }

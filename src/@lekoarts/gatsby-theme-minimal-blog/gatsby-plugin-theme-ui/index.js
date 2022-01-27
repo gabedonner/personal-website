@@ -13,7 +13,7 @@ const theme = merge(tailwind, {
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
-    muted: tailwind.colors.gray[8],
+    muted: tailwind.colors.gray[4],
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
@@ -30,6 +30,7 @@ const theme = merge(tailwind, {
   fonts: {
     body: `-apple-system, BlinkMacSystemFont, "IBM Plex Sans", "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,
   },
+
   styles: {
     root: {
       color: `text`,
@@ -155,7 +156,7 @@ const theme = merge(tailwind, {
     },
     webDesc: {
       color: 'secondary',
-      fontSize: [1, 1, 1],
+      fontSize: [2, 2, 2],
       lineHeight: 2,
     }
   },
@@ -197,6 +198,26 @@ const theme = merge(tailwind, {
     },
   },
   links: {
+    medium: {
+      color: `secondary`,
+      textDecoration: `none`,
+      fontWeight: 'medium',
+      ":hover": {
+        textDecoration: `underline`,
+      },
+      ":focus": {
+      },
+    },
+    tag: {
+      color: `secondary`,
+      textDecoration: `none`,
+      fontWeight: 'light',
+      ":hover": {
+        textDecoration: `underline`,
+      },
+      ":focus": {
+      },
+    },
     secondary: {
       color: `secondary`,
       textDecoration: `none`,
@@ -210,7 +231,7 @@ const theme = merge(tailwind, {
     },
     listItem: {
       fontSize: [3, 3, 3],
-      color: `text`,
+      //color: `text`,
       //fontWeight: 'regular',
       //fontWeight: 'medium',
     },

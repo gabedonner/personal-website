@@ -21,13 +21,15 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 <Flex
   sx={{
     flexWrap: 'wrap',
+    //my: [5],
   }}>
   <Box
     sx={{
-      mt: [2, 3],
+      mt: [4],
       pb: 4,
       flexGrow: 1,
-      flexBasis: [256, 190, 256, 256],
+      // flexBasis: [256, 190, 256, 256],
+      flexBasis: ['27.5%'],
     }}>
     <Text
       sx={{
@@ -40,13 +42,13 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
   
   <Box
     sx={{
-      mt: 3,
+      mt: 4,
       flexGrow: 99999,
       flexBasis: 0,
       minWidth: 400,
       a: {
         fontWeight: 'medium',
-        fontSize: [2, 2, 2],
+        fontSize: [3, 3, 3],
         color: 'text',
         ":hover": {
           // color: `primary`,
@@ -77,81 +79,3 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
       </Box>
   </Box>
 </Flex>
-
-
-
-<!--<Title text="Some websites I've made:" />
-
-<Grid gap={4} columns={[1, null, 1]}>
-  <Box padding-right={1} pb={1}>
-    <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC</a>
-    <br />
-    <Text>Media Consulting | Webflow</Text>
-  </Box>
-  <Box padding-right={1} pb={1}>
-    <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">Antique Exchange Interiors </a>
-    <br />
-    <Text>Antique Consignment | Shopify</Text>
-  </Box>
-  <Box padding-right={1} pb={1}>
-    <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">Joan Saba Photography</a>
-    <br />    
-    <Text>Travel Photography Portfolio | Squarespace</Text>
-  </Box>
-</Grid> -->
-
-<!-- - <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io"
-  >Iconiclinx LLC</a>  /  Webflow &#x2192;
-
-- <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com"
-  >Antique Exchange Interiors</a>  /  Shopify &#x2192;
-
-- <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com"
-  >Joan Saba Photography</a>  /  Squarespace &#x2192; 
-
-<Text
-  sx={{
-    fontSize: [3, 3, 3],
-    fontWeight: 'regular',
-    color: 'secondary',
-  }}>
-  Hello
-</Text>-->
-
-<!--<Title text="Websites" />
-
-<Box
-  sx={{
-    mb: 4,
-    a: {
-      fontWeight: 'medium'
-    }
-  }}>
-  <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">Iconiclinx LLC</a>
-  <br />
-  <Text variant='webDesc'>Media Consulting | Webflow</Text>
-</Box>
-
-<Box
-  sx={{
-    mb: 4,
-    a: {
-      fontWeight: 'medium'
-    }
-  }}>
-  <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">Antique Exchange Interiors </a>
-  <br />
-  <Text variant='webDesc'>Antique Consignment | Shopify</Text>
-  <br />
-</Box>
-
-<Box
-  sx={{
-    a: {
-      fontWeight: 'medium'
-    }
-  }}>
-  <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">Joan Saba Photography</a>
-  <br />
-  <Text variant='webDesc'>Travel Photography | Squarespace</Text>
-</Box>-->
