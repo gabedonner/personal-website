@@ -13,6 +13,7 @@ const theme = merge(tailwind, {
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
     divide: tailwind.colors.gray[4],
+    muted: tailwind.colors.gray[8],
     modes: {
       dark: {
         text: tailwind.colors.gray[4],
@@ -154,7 +155,7 @@ const theme = merge(tailwind, {
     },
     webDesc: {
       color: 'secondary',
-      fontSize: [2, 2, 2],
+      fontSize: [1, 1, 1],
       lineHeight: 2,
     }
   },

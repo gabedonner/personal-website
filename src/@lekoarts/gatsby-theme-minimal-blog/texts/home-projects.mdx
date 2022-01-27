@@ -30,11 +30,7 @@ import { Link } from "gatsby"
       mt: 3,
       flexGrow: 99999,
       flexBasis: 0,
-      minWidth: 320,
-      a: {
-        fontWeight: 'medium',
-        fontSize: [3, 3, 3],
-      }
+      minWidth: 320
       }}>
       <Box sx={{
         mb: 4,
@@ -69,7 +65,19 @@ import { Link } from "gatsby"
         }}>
         <a href="/projects/nfuse">Antique Exchange Interiors </a>
         <br />
-        <Text variant='webDesc'>Antique Consignment | Shopify</Text>  
+        <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, fontWeight: 'light' }, fontSize: [1, 1, 2] }}>
+          <a
+            href='/tags'>
+            Branding
+          </a>
+        </Text>  
       </Box>
   </Box>
 </Flex>
+
+<Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary` }, fontSize: [1, 1, 2] }}>
+  <a
+    href='/tags'>
+    Branding
+  </a>
+</Text>
