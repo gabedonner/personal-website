@@ -6,12 +6,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 <!--https://npm.io/package/typewriter-effect -->
 
-<Text sx={{ pl:[1,1,1], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
-  Gabe Donner
+<Text sx={{ bg: 'background', pt: [-1], pl:[1,1,1], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+  Gabe Donner&nbsp;
 </Text>
 
-<Box sx={{ ml:['2px'], pl:[1,1,1], pr:[2, 2, 0], mt:[1, 1, 1], height: [8, 8, 8]}}>
-  <Text sx={{ fontSize: [3, 3, 3], a: {color: 'text', textDecoration: 'underline'} }}>
+<Box sx={{ bg: 'background', pb: [5], pl:[2], pr:[4, 3, 2], mt:[1, 1, 1], height: [3, 3, 3]}}>
+  <Text sx={{ fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
           autoStart: true,

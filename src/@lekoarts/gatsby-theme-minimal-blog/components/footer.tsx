@@ -10,7 +10,7 @@ const Footer = () => {
       sx={{
         boxSizing: `border-box`,
         display: `flex`,
-        justifyContent: `space-between`,
+        justifyContent: `right`,
         mt: [6],
         color: `secondary`,
         a: {

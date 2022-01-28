@@ -40,22 +40,20 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
-      <section sx={{ mb: [6, 6, 6, 6], pt: 4, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero` }}>
+      <section sx={{ 
+        backgroundColor: 'divide', 
+        backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dots_Transparent.svg/120px-Dots_Transparent.svg.png")', 
+        pb: [6], pt: [6], mt: -5, mb: -3, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero`,
+        backgroundPosition: 'right top',
+        backgroundRepeat: 'repeat', }}>
         <Hero />
       </section>
       <List sx={{ variant: `section_bottom` }}>
         <Bottom />
       </List>
-      <section sx={{ mb: [6, 6, 6, 6] }}>
-      </section>
       <List sx={{ variant: `section_bottom` }}>
         <Projects />
       </List>
-      <section sx={{ mb: [6, 6, 6, 6] }}>
-      </section>
-      {/* <Title text="Projects">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>See all</Link>
-      </Title>*/}
     </Layout>
   )
 }

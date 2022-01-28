@@ -16,7 +16,7 @@ const Header = () => {
   }
 
   return (
-    <header sx={{ mb: [5, 5, 5, 5] }}>
+    <header sx={{ mb: [5] }}>
       {/* <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
         <HeaderTitle />
         <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
@@ -29,7 +29,7 @@ const Header = () => {
           alignItems: `center`,
           justifyContent: `space-between`,
           // mt: 3,
-          mt: 2,
+          mt: 0,
           color: `secondary`,
           a: { color: `secondary`, ":hover": { color: `heading` } },
           flexFlow: `wrap`,
