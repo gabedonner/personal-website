@@ -53,12 +53,14 @@ const Homepage = ({ posts }: PostsProps) => {
         backgroundRepeat: 'repeat', }}>
         <Hero />
       </section>
-      <List sx={{ variant: `section_bottom` }}>
+      {/* <List sx={{ variant: `section_bottom` }}>
         <Bottom />
       </List>
       <List sx={{ variant: `section_bottom` }}>
         <Projects />
-      </List>
+      </List> */}
+      <Bottom />
+      <Projects />
     </Layout>
   )
 }
