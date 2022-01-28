@@ -15,6 +15,9 @@ import Hero from "../texts/hero"
 import Bottom from "../texts/bottom"
 // @ts-ignore
 import Projects from "../texts/home-projects"
+// @ts-ignore
+import { gridPattern } from '../images/grid-pattern.png'
+
 
 
 type PostsProps = {
@@ -41,8 +44,10 @@ const Homepage = ({ posts }: PostsProps) => {
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <section sx={{ 
-        backgroundColor: 'divide', 
-        backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dots_Transparent.svg/120px-Dots_Transparent.svg.png")', 
+        backgroundColor: '', 
+        //backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dots_Transparent.svg/120px-Dots_Transparent.svg.png")', 
+        backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg/744px-Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg.png")', 
+        //backgroundImage: 'url(${gridPattern})', 
         pb: [6], pt: [6], mt: -5, mb: -3, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero`,
         backgroundPosition: 'right top',
         backgroundRepeat: 'repeat', }}>
