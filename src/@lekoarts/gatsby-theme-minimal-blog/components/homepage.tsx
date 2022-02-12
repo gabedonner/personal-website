@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "./layout"
 import Title from "./title"
 import Listing from "./listing"
@@ -17,8 +17,12 @@ import Bottom from "../texts/bottom"
 import Projects from "../texts/home-projects"
 // @ts-ignore
 import { gridPattern } from '../images/grid-pattern.png'
-
-
+// @ts-ignore
+import { getImage } from "gatsby-plugin-image"
+// @ts-ignore
+import { convertToBgImage } from "gbimage-bridge"
+// @ts-ignore
+import BackgroundImage from "gatsby-background-image"
 
 type PostsProps = {
   posts: {
@@ -40,6 +44,26 @@ const Homepage = ({ posts }: PostsProps) => {
   const { basePath, blogPath } = useMinimalBlogConfig()
   const { siteTitle } = useSiteMetadata()
 
+  // I have imported what is necessary for the background image
+  // and created the query, but I need to figure out how to 
+  // break this into a new file or integrate it correctly
+  // const GbiBridged = () => {
+  //   const { backgroundImage123 } = useStaticQuery(
+  //     graphql`
+  //       query {
+  //         backgroundImage123: file(relativePath: {eq: "grid-pattern.png"}) {
+  //           id
+  //           childImageSharp {
+  //             gatsbyImageData
+  //           }
+  //         }
+  //       }
+  //     `
+  //   )
+  
+  // const image = getImage(backgroundImage123)
+  // const bgImage = convertToBgImage(image)
+  
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
@@ -53,12 +77,22 @@ const Homepage = ({ posts }: PostsProps) => {
         backgroundRepeat: 'repeat', }}>
         <Hero />
       </section>
+      {/* this is what the background section would look like */}
+      {/* <BackgroundImage
+        Tag="section"
+        {...bgImage}
+        preserveStackingConext
+      >
+        <Hero />
+      </BackgroundImage>   */}
+
       {/* <List sx={{ variant: `section_bottom` }}>
         <Bottom />
       </List>
       <List sx={{ variant: `section_bottom` }}>
         <Projects />
       </List> */}
+      
       <Bottom />
       <Projects />
     </Layout>
