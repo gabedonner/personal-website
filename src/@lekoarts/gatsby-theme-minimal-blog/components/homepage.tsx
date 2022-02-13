@@ -78,9 +78,9 @@ const Homepage = ({ posts }: PostsProps) => {
         overflow: 'hidden' }}>
         <Hero />
         <StaticImage 
-          src="../images/defence-against-the-dark-arts.jpg" 
+          src='../images/grid-pattern-wide.png'
           alt="Welcome" 
-          sx={{position: 'absolute', top: 0, zIndex: [-4]}}
+          sx={{position: 'absolute', top: 0, left: 0, height: [800], zIndex: [-4]}}
         />
       </section>
       {/* this is what the background section would look like */}
