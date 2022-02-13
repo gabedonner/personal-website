@@ -23,6 +23,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 // @ts-ignore
 import BackgroundImage from "gatsby-background-image"
+// @ts-ignore
+import heroSVG from '../images/hero-background.svg'
+
 
 type PostsProps = {
   posts: {
@@ -83,6 +86,7 @@ const Homepage = ({ posts }: PostsProps) => {
           sx={{position: 'absolute', top: 0, left: 0, height: [800], zIndex: [-4]}}
         />
       </section>
+      {/* <img src='../images/hero-background.svg' alt="dots" sx={{height: [200]}}></img> */}
       {/* this is what the background section would look like */}
       {/* <BackgroundImage
         Tag="section"
