@@ -85,6 +85,15 @@ module.exports = {
         specialChars: '/:',
       },
     },
+    //added in svg plugin but have not set up the path yet
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
