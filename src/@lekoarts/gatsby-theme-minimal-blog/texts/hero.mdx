@@ -1,10 +1,18 @@
-import { jsx, Box, Grid, Card, Link, Flex } from "theme-ui"
+import { jsx, Box, Grid, Card, Link, Flex, AspectImage } from "theme-ui"
+
+import { graphql } from 'gatsby';
 
 import Typewriter from 'typewriter-effect';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
+import backgroundImageHero from "../images/grid-pattern.png"
+
+import { StaticImage } from "gatsby-plugin-image"
+
+
 <!--https://npm.io/package/typewriter-effect -->
+
 
 <Text sx={{ bg: 'background', pt: [-1], pl:[1,1,1], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
   Gabe Donner&nbsp;
@@ -64,28 +72,3 @@ import { motion, AnimatePresence } from 'framer-motion';
     />
   </Text>
 </Box>
-
-<!--Separate box for experimentation with Framer animation sequence-->
-<!--<Box sx={{ pl:[1,1,0], pr:[2, 2, 0], mt:[1, 2, 2], height: [3, 3, 3]}}>
-  <Text sx={{ fontSize: [2, 3, 3], a: {color: 'text', textDecoration: 'underline'} }}>
-    <Typewriter
-      options={{
-          autoStart: true,
-          pauseFor: 1000,
-          cursor: '|',
-          delay: 30,
-          loop: false,
-          deleteSpeed: 5,
-        }}
-      onInit={(typewriter) => {
-        typewriter.typeString(' Hi! ')
-          .pauseFor(800)  
-          .start();
-        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
-          .pauseFor(2500)
-          .start()
-          .pauseFor(800)
-      }}
-    />
-  </Text>
-</Box>-->

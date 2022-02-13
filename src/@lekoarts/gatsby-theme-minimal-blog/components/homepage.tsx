@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, AspectImage } from "theme-ui"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "./layout"
 import Title from "./title"
@@ -16,9 +16,9 @@ import Bottom from "../texts/bottom"
 // @ts-ignore
 import Projects from "../texts/home-projects"
 // @ts-ignore
-import { gridPattern } from '../images/grid-pattern.png'
+import gridPattern from "../images/grid-pattern.png"
 // @ts-ignore
-import { getImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
 import { convertToBgImage } from "gbimage-bridge"
 // @ts-ignore
@@ -70,12 +70,18 @@ const Homepage = ({ posts }: PostsProps) => {
       <section sx={{ 
         backgroundColor: '', 
         //backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dots_Transparent.svg/120px-Dots_Transparent.svg.png")', 
-        backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg/744px-Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg.png")', 
-        //backgroundImage: 'url(${gridPattern})', 
-        pb: [6], pt: [6], mt: -5, mb: -3, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero`,
+        //backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg/744px-Lineatur_Sechsundzwanzig_a_mit_Rand_links_ganzes_Blatt_drucken.svg.png")', 
+        //backgroundImage: 'url("../images/grid-pattern.png")', 
+        position: 'relative', pb: [6], pt: [6], mt: -5, mb: -3, p: { fontSize: [2, 3, 3], mt: 3 }, variant: `section_hero`,
         backgroundPosition: 'right top',
-        backgroundRepeat: 'repeat', }}>
+        backgroundRepeat: 'repeat',
+        overflow: 'hidden' }}>
         <Hero />
+        <StaticImage 
+          src="../images/defence-against-the-dark-arts.jpg" 
+          alt="Welcome" 
+          sx={{position: 'absolute', top: 0, zIndex: [-4]}}
+        />
       </section>
       {/* this is what the background section would look like */}
       {/* <BackgroundImage
@@ -92,7 +98,6 @@ const Homepage = ({ posts }: PostsProps) => {
       <List sx={{ variant: `section_bottom` }}>
         <Projects />
       </List> */}
-      
       <Bottom />
       <Projects />
     </Layout>
