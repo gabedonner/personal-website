@@ -81,9 +81,10 @@ const Homepage = ({ posts }: PostsProps) => {
         overflow: 'hidden' }}>
         <Hero />
         <StaticImage 
-          src='../images/grid-pattern-wide.png'
+          src='../images/old-film.png'
+          // src='../images/grid-pattern-wide.png'
           alt="Welcome" 
-          sx={{position: 'absolute', top: 0, left: 0, height: [800], zIndex: [-4]}}
+          sx={{position: 'absolute', top: 0, left: 0, width: [1000], zIndex: [-4]}}
         />
       </section>
       {/* <img src='../images/hero-background.svg' alt="dots" sx={{height: [200]}}></img> */}

@@ -156,7 +156,7 @@ const theme = merge(tailwind, {
     },
     webDesc: {
       color: 'secondary',
-      fontSize: [2, 2, 2],
+      fontSize: [1, 2, 2],
       lineHeight: 2,
     }
   },
@@ -200,6 +200,7 @@ const theme = merge(tailwind, {
   links: {
     medium: {
       color: `secondary`,
+      fontSize: [2, 3, 3],
       textDecoration: `none`,
       fontWeight: 'medium',
       ":hover": {
