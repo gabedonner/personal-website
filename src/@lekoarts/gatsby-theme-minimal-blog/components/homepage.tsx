@@ -57,7 +57,7 @@ const Homepage = ({ posts }: PostsProps) => {
           // src='../images/grid-pattern-wide.png'
           alt="Welcome" 
           sx={{
-              // backgroundColor: 'secondary', 
+              backgroundColor: 'muted', 
               position: 'absolute', 
               top: 0, left: 0, 
               width: [1000], 
