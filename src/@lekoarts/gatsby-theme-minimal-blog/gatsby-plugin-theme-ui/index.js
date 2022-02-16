@@ -45,6 +45,9 @@ const theme = merge(tailwind, {
       WebkitFontSmoothing: `antialiased`,
       MozOsxFontSmoothing: `grayscale`,
     },
+    mark: {
+      bg: 'background',
+    },
     p: {
       fontSize: [1, 2, 2, 2],
       letterSpacing: `-0.003em`,
@@ -161,8 +164,15 @@ const theme = merge(tailwind, {
       color: 'secondary',
       fontSize: [1, 2, 2],
       lineHeight: 2,
-    }
+    },
+    typerwrite: {
+      bg: 'background',
+      fontSize: [3, 3, 3],
+    },
   },
+
+//bg: 'background', fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'
+
   copyButton: {
     backgroundColor: transparentize(`primary`, 0.8),
     border: `none`,

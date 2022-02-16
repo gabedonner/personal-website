@@ -8,58 +8,63 @@ import { StaticImage } from "gatsby-plugin-image"
 
 <!--https://npm.io/package/typewriter-effect -->
 
+<!--https://www.typeitjs.com/-->
+<!--this is the other import that might be better. it allows playing and pausing-->
+
 
 <Text sx={{ bg: 'background', pt: [-1], pl:[1,1,1], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
-  Gabe Donner&nbsp;
+  <mark>Gabe</mark> Donner&nbsp;
 </Text>
 
-<Box sx={{ bg: 'background', pt: ['12px'], pb: ['90px'], pl:[2], pr:[0, 0, 2], mt:[1, 1, 1], mr:[0, 0, '20%'], height: [6, 6, 5] }}>
-  <Text sx={{ fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'} }}>
+<Box sx={{ pt: [3], pb: [6], pl:[2], pr:[0, 0, 2], mt:[1, 1, 1], mr:[0, 0, '20%'], height: [6] }}>
+  <Text variant='typewrite' sx={{ mark: {bg: 'background', p: 1} }}>
     <Typewriter
       options={{
           autoStart: true,
           pauseFor: 1000,
-          cursor: '|',
+          cursor: '<mark>|</mark>',
           delay: 30,
           loop: true,
           deleteSpeed: 5,
         }}
       onInit={(typewriter) => {
-        typewriter.typeString(' Hi! ')
+        typewriter.typeString('<mark> Hi!</mark>')
           .pauseFor(800)  
           .start();
-        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
+        typewriter.typeString('<mark>I\'m a designer and web developer based out of New York City.</mark>')
           .pauseFor(2500)
           .start()
           .pauseFor(800)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('I like visual art, philosophy, and ')
+        typewriter.typeString('<mark>I like visual art, philosophy, and </mark>')
           .start()
           .pauseFor(800)
           .changeDelay(100);
-        typewriter.typeString(' um')	
+        typewriter.typeString('<mark> um</mark>')	
           .start()
           .pauseFor(800)
           .deleteChars(2)
           .changeDelay(25);
-        typewriter.typeString('ice cream.')
+        typewriter.typeString('<mark>ice cream.</mark>')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.')
+        typewriter.typeString('<mark>This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.</mark>')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
-          .deleteAll(5);
-        typewriter.typeString('If you want to learn about me, check out the <a href="/about">about page</a>.')
+          .deleteAll(5)
+          .pauseFor(800);
+        typewriter.typeString('<mark>If you want to learn about me, check out the <a href="/about">about page</a>.</mark>')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
-          .deleteAll(5);
-        typewriter.typeString('Or, visit the <a href="/projects">projects page</a> for my design portfolio.')
+          .deleteAll(5)
+          .pauseFor(800);
+        typewriter.typeString('<mark>Or, visit the <a href="/projects">projects page</a> for my design portfolio.</mark>')
           .pauseFor(1500)
           .start()
           .pauseFor(2500);
