@@ -165,10 +165,6 @@ const theme = merge(tailwind, {
       fontSize: [1, 2, 2],
       lineHeight: 2,
     },
-    typerwrite: {
-      bg: 'background',
-      fontSize: [3, 3, 3],
-    },
   },
 
 //bg: 'background', fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'

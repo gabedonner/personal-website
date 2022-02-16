@@ -11,13 +11,14 @@ import { StaticImage } from "gatsby-plugin-image"
 <!--https://www.typeitjs.com/-->
 <!--this is the other import that might be better. it allows playing and pausing-->
 
+<Box sx={{my: 4}}>
+  <Text sx={{ bg: 'background', pl:[2], py: 1, fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
+    Gabe Donner&nbsp;
+  </Text>
+</Box>
 
-<Text sx={{ bg: 'background', pt: [-1], pl:[1,1,1], fontSize: [6, 6, 6], fontWeight: `bold`, color: `heading` }}>
-  <mark>Gabe</mark> Donner&nbsp;
-</Text>
-
-<Box sx={{ pt: [3], pb: [6], pl:[2], pr:[0, 0, 2], mt:[1, 1, 1], mr:[0, 0, '20%'], height: [6] }}>
-  <Text variant='typewrite' sx={{ mark: {bg: 'background', p: 1} }}>
+<Box sx={{ height: 'auto', mb: 5, position:'absolute', bg: '', pt: 1, pb: [2], pl: 2, ml:[5], pr:[0, 0, 2], mt:[1, 1, 1], mr:[0, 0, '20%']}}>
+  <Text sx={{ bg: 'background', fontSize: 3, mark: {bg: 'background', py: 2, px: 1, color: 'text'}, a: { color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
           autoStart: true,
@@ -28,20 +29,20 @@ import { StaticImage } from "gatsby-plugin-image"
           deleteSpeed: 5,
         }}
       onInit={(typewriter) => {
-        typewriter.typeString('<mark> Hi!</mark>')
+        typewriter.typeString('Hi! ')
           .pauseFor(800)  
           .start();
-        typewriter.typeString('<mark>I\'m a designer and web developer based out of New York City.</mark>')
+        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
           .pauseFor(2500)
           .start()
           .pauseFor(800)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('<mark>I like visual art, philosophy, and </mark>')
+        typewriter.typeString('<mark>I like visual art, philosophy, and</mark>')
           .start()
           .pauseFor(800)
           .changeDelay(100);
-        typewriter.typeString('<mark> um</mark>')	
+        typewriter.typeString('<mark>um</mark>')	
           .start()
           .pauseFor(800)
           .deleteChars(2)
