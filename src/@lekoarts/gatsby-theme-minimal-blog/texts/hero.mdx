@@ -2,8 +2,10 @@ import { jsx, Box, Grid, Card, Link, Flex, AspectImage } from "theme-ui"
 import { graphql } from 'gatsby';
 import Typewriter from 'typewriter-effect';
 import { motion, AnimatePresence } from 'framer-motion';
-import backgroundImageHero from "../images/grid-pattern.png"
-import { StaticImage } from "gatsby-plugin-image"
+import backgroundImageHero from "../images/grid-pattern.png";
+import { StaticImage } from "gatsby-plugin-image";
+import TypeIt from "typeit-react";
+import HeroTyper from "../components/hero-typer.tsx"
 
 
 <!--https://npm.io/package/typewriter-effect -->
@@ -17,55 +19,68 @@ import { StaticImage } from "gatsby-plugin-image"
   </Text>
 </Box>
 
-<Box sx={{ height: 'auto', mb: 5, position:'absolute', bg: '', pt: 1, pb: [2], pl: 2, ml:[5], pr:[0, 0, 2], mt:[1, 1, 1], mr:[0, 0, '20%']}}>
-  <Text sx={{ bg: 'background', fontSize: 3, mark: {bg: 'background', py: 2, px: 1, color: 'text'}, a: { color: 'text', textDecoration: 'underline'} }}>
+<!--<HeroTyper />-->
+
+<!--<Box sx={{span:{bg:'background', fontSize: 3}}}>
+  <TypeIt
+    options={{
+      strings: ["This will be typed out yada yada"],
+      speed: 45,
+      loop: true,
+      lifeLife: false,
+      }}
+  />
+</Box>-->
+
+<Box sx={{ bg: 'background', height: ['8em', '6em', null, '3.25em'], pt: 1, pl: 2, pr:[2], mt:[1, 1, 1], mr:[3, 4, '20%']}}>
+  <Text sx={{ bg: 'background', fontSize: 3, a: { color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
           autoStart: true,
           pauseFor: 1000,
-          cursor: '<mark>|</mark>',
+          cursor: '|',
           delay: 30,
           loop: true,
           deleteSpeed: 5,
         }}
       onInit={(typewriter) => {
-        typewriter.typeString('<mark>Hi! </mark>')
+        typewriter.typeString('Hi! ')
           .pauseFor(800)  
           .start();
-        typewriter.typeString('<mark>I\'m a designer and web developer based out of New York City.</mark>')
+        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
           .pauseFor(2500)
           .start()
           .pauseFor(800)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('<mark>I like visual art, philosophy, and</mark>')
+        typewriter.typeString('I like visual art, philosophy, and')
           .start()
           .pauseFor(800)
           .changeDelay(100);
-        typewriter.typeString('<mark>um</mark>')	
+        typewriter.typeString('um')	
           .start()
           .pauseFor(800)
           .deleteChars(2)
           .changeDelay(25);
-        typewriter.typeString('<mark>ice cream.</mark>')
+        typewriter.typeString(' ice cream.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('<mark>This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.</mark>')
+        typewriter.typeString('This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('<mark>If you want to learn about me, check out the <a href="/about">about page</a>.</mark>')
+        typewriter.typeString('If you want to learn about me, check out the <a href="/about">about page</a>.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('<mark>Or, visit the <a href="/projects">projects page</a> for my design portfolio.</mark>')
+        typewriter.typeString('Or, visit the <a href="/projects">projects page</a> for my design portfolio.')
           .pauseFor(1500)
           .start()
           .pauseFor(2500);
