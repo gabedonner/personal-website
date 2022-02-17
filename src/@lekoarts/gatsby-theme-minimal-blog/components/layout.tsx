@@ -59,7 +59,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             damping: 8,
             mass: 0.25,
             stiffness: 100,
-            duration: 0.25
+            duration: 5,
+            delay: .1,
           }}
         >
         <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
