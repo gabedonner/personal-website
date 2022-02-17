@@ -32,7 +32,7 @@ import HeroTyper from "../components/hero-typer.tsx"
   />
 </Box>-->
 
-<Box sx={{ bg: 'background', height: ['8em', '6em', null, '3.25em'], pt: 1, pl: 3, pr:[3], mt:[1, 1, 1], mr:[0, 4, '20%']}}>
+<Box sx={{ bg: 'background', height: ['8em', '6em', null, '3.25em'], pt: 1, pl: '.85em', pr: '.85em', mt:[1, 1, 1], mr:[0, 4, '20%']}}>
   <Text sx={{ bg: 'background', fontSize: 3, a: { color: 'text', textDecoration: 'underline'} }}>
     <Typewriter
       options={{
@@ -53,7 +53,7 @@ import HeroTyper from "../components/hero-typer.tsx"
           .pauseFor(800)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('I like visual art, philosophy, and')
+        typewriter.typeString('I like visual art, philosophy, and ')
           .start()
           .pauseFor(800)
           .changeDelay(100);
