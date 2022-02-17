@@ -50,7 +50,8 @@ const Homepage = ({ posts }: PostsProps) => {
         pb: [6], pt: [6], mt: -5, mb: -3, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
-        overflow: 'hidden' 
+        overflow: 'hidden',
+        boxShadow: 'rgb(0 0 0 / 8%) 0px 32px 32px 0px, rgb(0 0 0 / 8%) 0px 16px 16px 0px, rgb(0 0 0 / 8%) 0px 8px 8px 0px, rgb(0 0 0 / 8%) 0px 4px 4px 0px',
         }}>
         <Hero />
         <StaticImage 
@@ -62,7 +63,7 @@ const Homepage = ({ posts }: PostsProps) => {
               position: 'absolute', 
               top: 0, left: 0, 
               width: [1000], 
-              zIndex: [-4]
+              zIndex: [-4],
             }}
         />
       </section>
