@@ -52,15 +52,19 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 200 }} */
           initial={{ opacity: 0, y: 2.5 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ 
+            opacity: 1, 
+            y: 0,
+          }}
           exit={{ opacity: 0, y: -2.5 }}
           transition={{
             type: "spring",
             damping: 8,
-            mass: 0.25,
-            stiffness: 100,
-            duration: 5,
-            delay: .05,
+            mass: .25,
+            stiffness: 70,
+            // duration: .6,
+            delay: .03,
+            // bounce: .1,
           }}
         >
         <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
