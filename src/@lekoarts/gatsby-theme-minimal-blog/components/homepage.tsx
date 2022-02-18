@@ -46,12 +46,12 @@ const Homepage = ({ posts }: PostsProps) => {
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <section sx={{  
         position: 'relative', 
-        height: '30rem',
+        height: '27.5rem',
         pb: [6], pt: [6], mt: -5, mb: -3, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
-        boxShadow: 'rgb(0 0 0 / 8%) 0px 32px 32px 0px, rgb(0 0 0 / 8%) 0px 16px 16px 0px, rgb(0 0 0 / 8%) 0px 8px 8px 0px, rgb(0 0 0 / 8%) 0px 4px 4px 0px',
+        //boxShadow: 'rgb(0 0 0 / 6%) 0px 32px 32px 0px, rgb(0 0 0 / 6%) 0px 16px 16px 0px, rgb(0 0 0 / 6%) 0px 8px 8px 0px, rgb(0 0 0 / 6%) 0px 4px 4px 0px',
         }}>
         <Hero />
         <StaticImage 
