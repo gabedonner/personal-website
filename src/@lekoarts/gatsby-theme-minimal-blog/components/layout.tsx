@@ -60,7 +60,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           transition={{
             type: "spring",
             damping: 8,
-            mass: .25,
+            mass: .6,
             stiffness: 70,
             // duration: .6,
             delay: .03,
