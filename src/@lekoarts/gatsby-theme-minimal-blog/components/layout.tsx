@@ -47,10 +47,11 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
-      <motion.main
+      <motion.div
           /* initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 200 }} */
+          key={location.pathname}
           initial={{ opacity: 0, y: 2.5 }}
           animate={{ 
             opacity: 1, 
@@ -63,14 +64,14 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             mass: .6,
             stiffness: 70,
             // duration: .6,
-            delay: .03,
+            // delay: .03,
             // bounce: .1,
           }}
         >
         <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
           {children}
         </Box>
-      </motion.main>
+      </motion.div>
 
       <Footer />
     </Container>
