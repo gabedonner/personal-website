@@ -8,7 +8,7 @@ import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
 //https://www.framer.com/docs/animate-presence/
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 type LayoutProps = { children: React.ReactNode; className?: string }
