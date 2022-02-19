@@ -8,7 +8,7 @@ import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
 //https://www.framer.com/docs/animate-presence/
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 type LayoutProps = { children: React.ReactNode; className?: string }
@@ -60,7 +60,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           transition={{
             type: "spring",
             damping: 8,
-            mass: 1.5,
+            mass: .6,
             stiffness: 70,
             // duration: .6,
             delay: .03,
