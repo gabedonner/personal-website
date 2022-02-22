@@ -98,9 +98,10 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           //animate="animate"
           //exit="exit"
         >
-        <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
+        {/* <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
           {children}
-        </Box>
+        </Box> */}
+        {children}
       </motion.main>
       <Footer />
     </Container>
