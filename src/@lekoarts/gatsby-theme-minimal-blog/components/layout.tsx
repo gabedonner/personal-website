@@ -8,8 +8,33 @@ import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
 //https://www.framer.com/docs/animate-presence/
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion'
 
+
+// this is an alternate way to structure the animation variants
+/* const duration = 0.3
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 5
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+    transition: {
+      duration: duration,
+      delay: duration,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -10,
+    transition: { duration: duration },
+  },
+} */
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -47,32 +72,37 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
-      <motion.div
-          /* initial={{ opacity: 0, x: -200 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 200 }} */
-          key={location.pathname}
-          initial={{ opacity: 0, y: 2.5 }}
-          animate={{ 
-            opacity: 1, 
-            y: 0,
-          }}
-          exit={{ opacity: 0, y: -2.5 }}
-          transition={{
-            type: "spring",
-            damping: 8,
-            mass: .6,
-            stiffness: 70,
-            // duration: .6,
-            // delay: .03,
-            // bounce: .1,
-          }}
-        >
-        <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
-          {children}
-        </Box>
-      </motion.div>
-
+      <AnimatePresence>
+        <motion.main
+            //initial={{ opacity: 0, x: -200 }}
+            //animate={{ opacity: 1, x: 0 }}
+            //exit={{ opacity: 0, x: 200 }} 
+            initial={{ opacity: 0, y: 2.5 }}
+            animate={{ 
+              opacity: 1, 
+              y: 0,
+            }}
+            exit={{ opacity: 0, y: -2.5 }}
+            transition={{
+              type: "spring",
+              damping: 8,
+              mass: .6,
+              stiffness: 70,
+              // duration: .6,
+              // delay: .03,
+              // bounce: .1,
+            }}
+            //key={location.pathname}
+            //variants={variants}
+            //initial="initial"
+            //animate="animate"
+            //exit="exit"
+          >
+          <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
+            {children}
+          </Box>
+        </motion.main>
+      </AnimatePresence>
       <Footer />
     </Container>
   </React.Fragment>
