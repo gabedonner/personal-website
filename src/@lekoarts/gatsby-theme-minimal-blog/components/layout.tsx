@@ -72,37 +72,35 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
-      <AnimatePresence>
-        <motion.main
-            //initial={{ opacity: 0, x: -200 }}
-            //animate={{ opacity: 1, x: 0 }}
-            //exit={{ opacity: 0, x: 200 }} 
-            initial={{ opacity: 0, y: 2.5 }}
-            animate={{ 
-              opacity: 1, 
-              y: 0,
-            }}
-            exit={{ opacity: 0, y: -2.5 }}
-            transition={{
-              type: "spring",
-              damping: 8,
-              mass: .6,
-              stiffness: 70,
-              // duration: .6,
-              // delay: .03,
-              // bounce: .1,
-            }}
-            //key={location.pathname}
-            //variants={variants}
-            //initial="initial"
-            //animate="animate"
-            //exit="exit"
-          >
-          <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
-            {children}
-          </Box>
-        </motion.main>
-      </AnimatePresence>
+      <motion.main
+          //initial={{ opacity: 0, x: -200 }}
+          //animate={{ opacity: 1, x: 0 }}
+          //exit={{ opacity: 0, x: 200 }} 
+          initial={{ opacity: 0, y: 2.5 }}
+          animate={{ 
+            opacity: 1, 
+            y: 0,
+          }}
+          exit={{ opacity: 0, y: -2.5 }}
+          transition={{
+            type: "spring",
+            damping: 8,
+            mass: .6,
+            stiffness: 70,
+            // duration: .6,
+            // delay: .03,
+            // bounce: .1,
+          }}
+          //key={location.pathname}
+          //variants={variants}
+          //initial="initial"
+          //animate="animate"
+          //exit="exit"
+        >
+        <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
+          {children}
+        </Box>
+      </motion.main>
       <Footer />
     </Container>
   </React.Fragment>
