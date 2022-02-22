@@ -8,8 +8,7 @@ export const wrapPageElement = ({element}) => (
 );
 
 
-// scroll position magic to consider later
-
+// scroll position magic
 export const shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition
