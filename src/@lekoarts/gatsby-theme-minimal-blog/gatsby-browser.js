@@ -1,19 +1,18 @@
 import React from 'react';
 import {AnimatePresence} from 'framer-motion';
+import Layout from './components/layout.tsx';
 
-const transitionDelay = 500;
-
-/* export const wrapPageElement = ({element}) => (
+export const wrapPageElement = ({element}) => (
   <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
-); */
+);
 
-export function wrapPageElement({element, props}) {
+/* export function wrapPageElement({element, props}) {
   return (
     <AnimatePresence exitBeforeEnter>
       <Layout {...props}>{element}</Layout>
     </AnimatePresence>
   );
-}
+} */
 
 
 // scroll position magic
