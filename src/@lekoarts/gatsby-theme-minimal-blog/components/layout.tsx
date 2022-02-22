@@ -72,7 +72,6 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
-      <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
       <motion.main
           //initial={{ opacity: 0, x: -200 }}
           //animate={{ opacity: 1, x: 0 }}
@@ -98,11 +97,10 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           //animate="animate"
           //exit="exit"
         >
-          
+        <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
           {children}
-        
+        </Box>
       </motion.main>
-      </Box>
       <Footer />
     </Container>
   </React.Fragment>
