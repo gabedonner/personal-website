@@ -73,10 +73,10 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <Container>
       <Header />
       <motion.main
+          key={location.pathname}
           //initial={{ opacity: 0, x: -200 }}
           //animate={{ opacity: 1, x: 0 }}
           //exit={{ opacity: 0, x: 200 }} 
-          key="a"
           initial={{ opacity: 0, y: 2.5 }}
           animate={{ 
             opacity: 1, 
@@ -92,7 +92,6 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             // delay: .03,
             // bounce: .1,
           }}
-          //key={location.pathname}
           //variants={variants}
           //initial="initial"
           //animate="animate"
