@@ -85,6 +85,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             damping: 8,
             mass: .6,
             stiffness: 70,
+            when: 'beforeChildren',
             // duration: .6,
             // delay: .03,
             // bounce: .1,
