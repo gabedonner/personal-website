@@ -1,10 +1,78 @@
 import { jsx, Box, Grid, Link, Flex } from "theme-ui"
 
+<Box
+  sx={{
+    mt: [4],
+    pb: 4,
+    //flexGrow: 1,
+    // flexBasis: [256, 190, 256, 256],
+    //flexBasis: ['27.5%'],
+  }}>
+  <Text
+    sx={{
+      fontSize: [1, 2, 2],
+      color: 'secondary',
+      bg: 'background',
+      pr: 4, 
+    }}>
+    Websites
+  </Text>
+  <Box sx={{mr: 0, height: '1px', bg: 'divide', mt: '-.9em'}}></Box>
+</Box>
+
+<Box
+  sx={{
+    mb: 6,
+    flexGrow: 99999,
+    flexBasis: 0,
+    minWidth: 300,
+    mt: '4em',
+    //pl: '25%',
+    a: {
+      fontWeight: 'medium',
+      fontSize: [2, 3, 3],
+      color: 'text',
+      pr: 1,
+      ":hover": {
+        // color: `primary`,
+        // textDecoration: `none`,
+        pr: '1rem',
+      },
+    }
+    }}>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">iconiclinx.com</a>
+      <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
+      <br />
+      <Text variant='webDesc'>Media Consulting | Custom Wordpress</Text>
+    </Box>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">joansabaphotography.com</a>
+      <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
+      <br />
+      <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
+    </Box>
+    <Box sx={{
+      mb: 0,
+      }}>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">antique-exchange.com</a>
+      <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
+      <br />
+      <Text variant='webDesc'>Antique Consignment | Shopify</Text>  
+    </Box>
+</Box>
+
+
+<!--
 <Flex
   sx={{
     flexWrap: 'wrap',
     mb: [5],
-    mt: -4,
+    mt: 0,
     //variant: 'dividers.intersect',
   }}>
   <Box
@@ -19,17 +87,21 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
       sx={{
         fontSize: [1, 2, 2],
         color: 'secondary',
+        bg: 'background',
+        pr: 4, 
       }}>
       Websites
     </Text>
+    <Box sx={{mr: 4, height: '1px', bg: 'divide', mt: '-.9em'}}></Box>
   </Box>
   
   <Box
     sx={{
-      my: 4,
+      mb: 4,
       flexGrow: 99999,
       flexBasis: 0,
       minWidth: 300,
+      mt: '1.9em',
       a: {
         fontWeight: 'medium',
         fontSize: [2, 3, 3],
@@ -68,3 +140,5 @@ import { jsx, Box, Grid, Link, Flex } from "theme-ui"
       </Box>
   </Box>
 </Flex>
+
+-->
