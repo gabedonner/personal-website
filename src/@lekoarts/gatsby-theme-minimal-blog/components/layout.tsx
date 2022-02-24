@@ -39,6 +39,8 @@ const variants = {
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
+const pagePath = window.location.pathname
+
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
     <Global
@@ -75,6 +77,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       <Header />
 
       <motion.main
+          key={pagePath}
           initial={{ opacity: 0, y: 2.5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -2.5 }}
