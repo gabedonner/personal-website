@@ -110,6 +110,9 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
   </React.Fragment>
 )
 
+
+// something from Janessa Garrow's example for page transisitons
+// https://janessagarrow.com/blog/gatsby-framer-motion-page-transitions/
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
