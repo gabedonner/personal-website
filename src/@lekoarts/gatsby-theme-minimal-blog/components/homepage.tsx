@@ -47,12 +47,12 @@ const Homepage = ({ posts }: PostsProps) => {
       <section sx={{  
         position: 'relative', 
         height: '27.5rem',
-        pb: [6], pt: [6], mt: -4, mb: 5, 
+        pb: [6], pt: [6], mt: -3, mb: 5, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
-        border: '1px solid',
-        borderColor: 'divide',
+        //border: '1px solid',
+        //borderColor: 'muted',
         boxShadow: 'rgb(0 0 0 / 6%) 0px 32px 32px 0px, rgb(0 0 0 / 6%) 0px 16px 16px 0px, rgb(0 0 0 / 6%) 0px 8px 8px 0px, rgb(0 0 0 / 6%) 0px 4px 4px 0px',
         }}>
         <Hero />

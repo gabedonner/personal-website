@@ -1,5 +1,37 @@
 import { jsx, Box, Grid, Flex, Link } from "theme-ui"
 
+<Box
+  sx={{
+    mt: [4],
+    pb: 4,
+    flexGrow: 1,
+    // flexBasis: [256, 190, 256, 256],
+    flexBasis: ['27.5%'],
+  }}>
+  <Text
+    sx={{
+      fontSize: [1, 2, 2],
+      color: 'secondary',
+      bg: 'background',
+      pr: 4,
+    }}>
+    Projects
+  </Text>
+  <Box sx={{ height: '1px', bg: 'divide', mt: '-.9em'}} />
+  <Link 
+    href="/projects"
+    sx= {{
+      color: 'secondary',
+      float: 'right',
+    }}
+  >
+    See all
+  </Link>
+</Box>
+
+
+
+<!--
 <Flex
   sx={{
     flexWrap: 'wrap',
@@ -117,3 +149,4 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
       
   </Box>
 </Flex>
+-->
