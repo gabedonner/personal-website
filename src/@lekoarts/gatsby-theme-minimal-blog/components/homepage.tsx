@@ -46,7 +46,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <section sx={{  
         position: 'relative', 
-        height: '27.5rem',
+        height: '29.5rem',
         pb: [6], pt: [6], mt: -3, mb: 5, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
