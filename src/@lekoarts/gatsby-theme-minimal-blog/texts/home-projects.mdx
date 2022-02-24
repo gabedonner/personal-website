@@ -23,11 +23,100 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
     sx= {{
       color: 'secondary',
       float: 'right',
+      bg: 'background',
+      mt: '-.95em',
+      pl: 4,
     }}
   >
     See all
   </Link>
 </Box>
+
+<Box
+  sx={{
+    mt: 5,
+    flexGrow: 99999,
+    flexBasis: 0,
+    minWidth: 300,
+    a: {
+      color: 'text',
+      ":hover": {
+        // color: `primary`,
+        // textDecoration: `none`,
+      },
+    }
+    }}>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <Link variant="medium" href="/projects/nfuse">nfuse</Link>
+      <br />
+      <Text sx={{ color: `text`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
+        <a
+          href='/tags/branding'>
+          Branding
+        </a>
+        <a>, </a>
+        <a
+          href='/tags/graphic-design'>
+          Graphic Design
+        </a>
+      </Text>  
+    </Box>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <Link variant="medium" href="/projects/gatsby-book-cover">Great Gatsby Cover</Link>
+      <br />
+      <Text sx={{ color: `text`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
+        <a
+          href='/tags/branding'>
+          Graphic Design
+        </a>
+        <a>, </a>
+        <a
+          href='/tags/illustration'>
+          Illustration
+        </a>
+      </Text>  
+    </Box>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <Link variant="medium" href="/projects/green-rooftop-terrace">Green Rooftop Terrace</Link>
+      <br />
+      <Text sx={{ color: `text`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
+        <a
+          href='/tags/3-d-modeling'>
+          3D Modeling
+        </a>
+        <a>, </a>
+        <a
+          href='/tags/3-d-rendering'>
+          3D Rendering
+        </a>
+      </Text>  
+    </Box>
+    <Box sx={{
+      mb: 4,
+      }}>
+      <Link variant="medium" href="/projects/city-magazine-cover">City Magazine</Link>
+      <br />
+      <Text sx={{ color: `text`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
+        <a
+          href='/tags/graphic-design'>
+          Graphic Design
+        </a>
+        <a>, </a>
+        <a
+          href='/tags/illustration'>
+          Illustration
+        </a>
+      </Text>  
+    </Box>
+  </Box>
+
+
 
 
 
