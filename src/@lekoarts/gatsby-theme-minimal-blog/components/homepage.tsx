@@ -12,7 +12,7 @@ import { visuallyHidden } from "../styles/utils"
 // @ts-ignore
 import Hero from "../texts/hero"
 // @ts-ignore
-import Bottom from "../texts/bottom"
+import Websites from "../texts/home-websites"
 // @ts-ignore
 import Projects from "../texts/home-projects"
 // @ts-ignore
@@ -72,7 +72,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <List sx={{ variant: `section_bottom` }}>
         <Projects />
       </List> */}
-      <Bottom />
+      <Websites />
       <Projects />
     </Layout>
   )

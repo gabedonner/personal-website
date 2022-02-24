@@ -207,6 +207,12 @@ const theme = merge(tailwind, {
       borderTopColor: `divide`,
       pt: 3,
     },
+    intersect: {
+      borderTopStyle: `solid`,
+      borderTopWidth: `1px`,
+      borderTopColor: `divide`,
+      pt: 3,
+    }
   },
   links: {
     medium: {
