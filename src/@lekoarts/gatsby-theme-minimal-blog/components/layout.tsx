@@ -7,6 +7,8 @@ import Header from "./header"
 import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
+//import Transition from "./transition"
+
 //https://www.framer.com/docs/animate-presence/
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -99,6 +101,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           {children}
         </Box>
       </motion.main>
+      
       <Footer />
     </Container>
   </React.Fragment>
