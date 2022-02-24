@@ -2,7 +2,7 @@ import React from 'react';
 import {motion, AnimatePresence} from 'framer-motion';
 import Layout from './components/layout.tsx';
 
-export const wrapRootElement = ({element}) => (
+export const wrapPageElement = ({element}) => (
   <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
 );
 

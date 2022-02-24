@@ -78,21 +78,16 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       <Header />
 
       <motion.main
-          key={location.pathname}
-          //initial={{ opacity: 0, x: -200 }}
-          //animate={{ opacity: 1, x: 0 }}
-          //exit={{ opacity: 0, x: 200 }} 
           initial={{ opacity: 0, y: 2.5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -2.5 }}
           transition={{
             type: "spring",
-            damping: 8,
-            mass: .6,
-            stiffness: 70,
-            when: 'beforeChildren',
-            // duration: .6,
-            // delay: .03,
+            //damping: 1,
+            mass: .5,
+            stiffness: 80,
+            // duration: .2,
+            delay: .1,
             // bounce: .1,
           }}
           //variants={variants}
