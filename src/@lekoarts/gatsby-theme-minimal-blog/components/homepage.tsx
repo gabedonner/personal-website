@@ -56,7 +56,6 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
         <StaticImage 
           src='../images/old-film.png'
-          // src='../images/grid-pattern-wide.png'
           alt="Welcome" 
           sx={{
               backgroundColor: 'muted', 

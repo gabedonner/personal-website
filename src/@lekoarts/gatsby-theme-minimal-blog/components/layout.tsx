@@ -8,6 +8,8 @@ import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
 //import Transition from "./transition"
+import PropTypes from "prop-types"
+
 
 //https://www.framer.com/docs/animate-presence/
 import { motion, AnimatePresence } from 'framer-motion'
@@ -74,6 +76,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
+
       <motion.main
           key={location.pathname}
           //initial={{ opacity: 0, x: -200 }}
@@ -106,5 +109,9 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     </Container>
   </React.Fragment>
 )
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+}
 
 export default Layout
