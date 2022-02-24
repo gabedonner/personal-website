@@ -7,6 +7,9 @@ import Header from "./header"
 import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
+//import Transition from "./transition"
+import PropTypes from "prop-types"
+
 
 //https://www.framer.com/docs/animate-presence/
 import { motion, AnimatePresence } from 'framer-motion'
@@ -38,8 +41,6 @@ const variants = {
 } */
 
 type LayoutProps = { children: React.ReactNode; className?: string }
-
-const pagePath = window.location.pathname
 
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
@@ -77,7 +78,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       <Header />
 
       <motion.main
-          key={pagePath}
+          key="content"
           initial={{ opacity: 0, y: 2.5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -2.5 }}
