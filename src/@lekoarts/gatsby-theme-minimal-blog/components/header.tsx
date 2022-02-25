@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Flex } from "theme-ui"
+import { jsx, useColorMode, Flex, Box } from "theme-ui"
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import ColorModeToggle from "./colormode-toggle"
 import Navigation from "./navigation"
