@@ -16,29 +16,35 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 
 // this is an alternate way to structure the animation variants
-/* const duration = 0.3
+const enterDuration = 0.3
+const exitDuration = 0.2
+const delayDuration = 0.2
 
 const variants = {
   initial: {
     opacity: 0,
-    y: 5
+    y: 2.5
   },
   animate: {
     opacity: 1,
     y: 0,
+    //y: [0, -3, 0],
     x: 0,
+    //x: [0, 3, 0],
     transition: {
-      duration: duration,
-      delay: duration,
+      duration: enterDuration,
+      delay: delayDuration,
       when: "beforeChildren",
+      staggerChildren: 0.3,
     },
   },
   exit: {
     opacity: 0,
-    y: -10,
-    transition: { duration: duration },
+    y: -2.5,
+    //transition: { duration: duration },
+    transition: { ease: "easeOut", duration: exitDuration },
   },
-} */
+}
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -79,22 +85,22 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
 
       <motion.main
           key="content"
-          initial={{ opacity: 0, y: 2.5 }}
+          /* initial={{ opacity: 0, y: 2.5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -2.5 }}
           transition={{
             type: "spring",
             //damping: 1,
-            mass: .5,
-            stiffness: 80,
-            // duration: .2,
+            //mass: .5,
+            //stiffness: 80,
+            duration: .3,
             delay: .1,
             // bounce: .1,
-          }}
-          //variants={variants}
-          //initial="initial"
-          //animate="animate"
-          //exit="exit"
+          }} */
+          variants={variants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
         >
         <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
           {children}
