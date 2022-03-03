@@ -8,18 +8,19 @@ import Footer from "./footer"
 import CodeStyles from "../styles/code"
 import SkipNavLink from "./skip-nav"
 //import Transition from "./transition"
-import PropTypes from "prop-types"
+//import PropTypes from "prop-types"
 
 
 //https://www.framer.com/docs/animate-presence/
 import { motion, AnimatePresence } from 'framer-motion'
 
 
-// this is an alternate way to structure the animation variants
-const enterDuration = 0.3
-const exitDuration = 0.2
+// page transition durations
+const enterDuration = 0.4
+const exitDuration = 0.4
 const delayDuration = 0.2
 
+// structure for the page transition animation
 const variants = {
   initial: {
     opacity: 0,
@@ -36,13 +37,14 @@ const variants = {
       delay: delayDuration,
       when: "beforeChildren",
       staggerChildren: 0.3,
+      type: "tween",
     },
   },
   exit: {
     opacity: 0,
     y: -2.5,
     //transition: { duration: duration },
-    transition: { ease: "easeOut", duration: exitDuration },
+    transition: { duration: exitDuration },
   },
 }
 
