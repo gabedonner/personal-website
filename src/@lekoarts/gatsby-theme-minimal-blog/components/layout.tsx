@@ -16,12 +16,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 
 // page transition durations
-const enterDuration = 0.4
-const exitDuration = 0.5
-const delayDuration = 0.2
+const enterDuration = 0.3
+const exitDuration = 0.3
+const delayDuration = 0.3
 
 // structure for the page transition animation
-const variants = {
+/* const variants = {
   initial: {
     opacity: 0,
     y: 2.5
@@ -37,7 +37,7 @@ const variants = {
       delay: delayDuration,
       when: "beforeChildren",
       staggerChildren: 0.3,
-      type: "tween",
+      type: "spring",
     },
   },
   exit: {
@@ -49,7 +49,7 @@ const variants = {
       type: "spring", 
     },
   },
-}
+} */
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -90,22 +90,22 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
 
       <motion.main
           key="content"
-          /* initial={{ opacity: 0, y: 2.5 }}
+          initial={{ opacity: 0, y: 2.5 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -2.5 }}
           transition={{
             type: "spring",
             //damping: 1,
-            //mass: .5,
-            //stiffness: 80,
-            duration: .3,
+            mass: .5,
+            stiffness: 80,
+            //duration: .3,
             delay: .1,
             // bounce: .1,
-          }} */
-          variants={variants}
+          }} 
+          /* variants={variants}
           initial="initial"
           animate="animate"
-          exit="exit"
+          exit="exit" */
         >
         <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
           {children}
