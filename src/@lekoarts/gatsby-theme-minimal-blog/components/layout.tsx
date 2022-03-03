@@ -17,7 +17,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 // page transition durations
 const enterDuration = 0.4
-const exitDuration = 0.4
+const exitDuration = 0.5
 const delayDuration = 0.2
 
 // structure for the page transition animation
@@ -44,7 +44,10 @@ const variants = {
     opacity: 0,
     y: -2.5,
     //transition: { duration: duration },
-    transition: { duration: exitDuration },
+    transition: { 
+      duration: exitDuration,
+      type: "spring", 
+    },
   },
 }
 
