@@ -98,8 +98,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
             //damping: 1,
             mass: .5,
             stiffness: 80,
-            //duration: .3,
-            delay: .1,
+            //duration: .2,
+            delay: .05,
             // bounce: .1,
           }} 
           /* variants={variants}
