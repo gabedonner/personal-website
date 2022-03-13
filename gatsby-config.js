@@ -85,12 +85,13 @@ module.exports = {
         specialChars: '/:',
       },
     },
+    //https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/
     //added in svg plugin but have not set up the path yet
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /\.inline\.svg$/ // See below to configure properly
         }
       }
     },

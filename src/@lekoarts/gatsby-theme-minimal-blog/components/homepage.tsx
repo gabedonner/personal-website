@@ -53,10 +53,10 @@ const Homepage = ({ posts }: PostsProps) => {
         overflow: 'hidden',
         //border: '1px solid',
         //borderColor: 'muted',
-        boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
+        //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
         }}>
         <Hero />
-        <StaticImage 
+        {/* <StaticImage 
           src='../images/old-film.png'
           alt="Welcome" 
           sx={{
@@ -66,14 +66,8 @@ const Homepage = ({ posts }: PostsProps) => {
               width: [1000], 
               zIndex: [-4],
             }}
-        />
+        /> */}
       </section>
-      {/* <List sx={{ variant: `section_bottom` }}>
-        <Bottom />
-      </List>
-      <List sx={{ variant: `section_bottom` }}>
-        <Projects />
-      </List> */}
       <Websites />
       <Projects />
     </Layout>
