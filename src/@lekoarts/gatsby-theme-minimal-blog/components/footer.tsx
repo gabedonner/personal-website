@@ -16,11 +16,11 @@ const Footer = () => {
         a: {
           variant: `links.secondary`,
         },
-        flexDirection: [`column`, `column`, `row`],
+        flexDirection: [`row`, `row`, `row`],
         variant: `dividers.top`,
       }}
     >
-      <div>
+      <div sx={{justifyContent:'right'}}>
         &copy; {new Date().getFullYear()} {siteTitle}
       </div>
       {/* <div>
