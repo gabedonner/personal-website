@@ -8,7 +8,7 @@ const HomewebItems = () => {
     return (
         <Grid columns={[1, 1, 2, 2]}
         sx={{
-            gap: ['2em 0'],
+            gap: ['2em'],
             mb: 6,
             mx: 1,
             flexGrow: 99999,
@@ -35,7 +35,7 @@ const HomewebItems = () => {
             }}>
                 
                 <Box sx={{
-                mb: 3,
+                mb: 4,
                 width: ['375px','425px', '450px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 pr: 6,
@@ -66,11 +66,46 @@ const HomewebItems = () => {
                 <Text variant='webDesc'>Media Consulting | Webflow (WIP)</Text>
             </Box>
 
+
+            <Box sx={{
+            mb: 0,
+            }}>
+                <Box sx={{
+                mb: 4,
+                width: ['375px','425px', '450px', 'auto', 'auto',],
+                transition: 'all 1s ease',
+                pr: 6,
+                ":hover": {
+                    // color: `primary`,
+                    opacity: .75,
+                },
+                }}>
+                <motion.div
+                    whileHover={{
+                        scale: 1.02,
+                        transition: { duration: .5 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
+                    <StaticImage 
+                        src="../images/antique-exchange-snapshot.png" 
+                        alt="A dinosaur" 
+                    />
+                </Link>
+                </motion.div>
+            </Box>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">antique-exchange.com</a>
+            <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
+            <br />
+            <Text variant='webDesc'>Antique Consignment | Shopify</Text>  
+            </Box>
+
             <Box sx={{
             mb: 4,
             }}>
             <Box sx={{
-                mb: 3,
+                mb: 4,
                 width: ['375px','425px', '450px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 pr: 6,
@@ -100,39 +135,9 @@ const HomewebItems = () => {
             <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
             </Box>
 
-            <Box sx={{
-            mb: 0,
-            }}>
-                <Box sx={{
-                mb: 3,
-                width: ['375px','425px', '450px', 'auto', 'auto',],
-                transition: 'all 1s ease',
-                pr: 6,
-                ":hover": {
-                    // color: `primary`,
-                    opacity: .75,
-                },
-                }}>
-                <motion.div
-                    whileHover={{
-                        scale: 1.02,
-                        transition: { duration: .5 },
-                    }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
-                    <StaticImage 
-                        src="../images/antique-exchange-snapshot.png" 
-                        alt="A dinosaur" 
-                    />
-                </Link>
-                </motion.div>
-            </Box>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com">antique-exchange.com</a>
-            <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
-            <br />
-            <Text variant='webDesc'>Antique Consignment | Shopify</Text>  
-            </Box>
+
+
+
         </Grid>
     )
 }
