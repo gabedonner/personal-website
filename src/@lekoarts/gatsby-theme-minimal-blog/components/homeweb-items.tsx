@@ -13,7 +13,7 @@ const HomewebItems = () => {
             rowGap: ['5em'],
             mb: 6,
             ml: [0, 0, 0, 0],
-            px: ['0', '5em', 0, 1],
+            px: ['0', '0', 0, 1],
             flexGrow: 99999,
             flexBasis: 300,
             minWidth: 300,
@@ -40,7 +40,7 @@ const HomewebItems = () => {
                 
                 <Box sx={{
                 mb: 4,
-                width: ['80vw','500px', '325px', 'auto', 'auto',],
+                width: ['80vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
@@ -52,7 +52,7 @@ const HomewebItems = () => {
                             scale: 1.02,
                             transition: { duration: .5 },
                         }}
-                        whileTap={{ scale: 0.9 }}
+                        whileTap={{ scale: 0.95 }}
                     >
                     <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
                         <StaticImage 
@@ -76,7 +76,7 @@ const HomewebItems = () => {
             }}>
                 <Box sx={{
                 mb: 4,
-                width: ['80vw','500px', '325px', 'auto', 'auto',],
+                width: ['80vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
@@ -88,8 +88,8 @@ const HomewebItems = () => {
                         scale: 1.02,
                         transition: { duration: .5 },
                     }}
-                    whileTap={{ scale: 0.9 }}
-                >
+                    whileTap={{ scale: 0.95 }}
+                    >
                 <Link target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com" >
                     <StaticImage 
                         src="../images/antique-exchange-snapshot.png" 
@@ -110,7 +110,7 @@ const HomewebItems = () => {
             }}>
             <Box sx={{
                 mb: 4,
-                width: ['80vw','500px', '325px', 'auto', 'auto',],
+                width: ['80vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
@@ -123,8 +123,8 @@ const HomewebItems = () => {
                         scale: 1.02,
                         transition: { duration: .5 },
                     }}
-                    whileTap={{ scale: 0.9 }}
-                >
+                    whileTap={{ scale: 0.95 }}
+                    >
                 <Link target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com" >
                     <StaticImage 
                         src="../images/joansaba-website-snapshot.png" 
