@@ -18,7 +18,8 @@ import Projects from "../texts/home-projects"
 // @ts-ignore
 import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
-import HeroSVG from '../svg/hero-background.inline.svg'
+//import HeroSVG from '../svg/hero-background.inline.svg'
+import HeroSVG from '../svg/dot-graph.inline.svg'
 import ThreeHero from '../components/threejs-hero'
 import HomeWebsites from './homepage-websites'
 import HomewebItems from './homeweb-items'
@@ -49,17 +50,28 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
+      <section sx= {{
+        mt: '-1.1em',
+        position: 'static',
+        overflow: 'hidden',
+        height: '22em',
+        color: 'muted',
+      }}>
+        <HeroSVG />
+      </section>   
       <section sx={{  
         position: 'relative', 
-        pb: ['4em', '6em'], pt: [4], mt: 0, mb: 0, 
+        height: '20em',
+        pb: ['4em', '6em'], pt: [0], mt: '-18em', mb: 0, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
         //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
         }}>
         <Hero />
-      </section>
-      {/* <HeroSVG /> */}
+      </section>  
+      
+       
       <section>
         <HomeWebsites />
         <HomewebItems />

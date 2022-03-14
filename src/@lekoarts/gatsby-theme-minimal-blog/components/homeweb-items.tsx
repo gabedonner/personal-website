@@ -10,7 +10,7 @@ const HomewebItems = () => {
         sx={{
             //gap: ['4em'],
             columnGap: ['5em'],
-            rowGap: ['5em'],
+            rowGap: ['3em', '5em'],
             mb: 6,
             ml: [0, 0, 0, 0],
             px: ['0', '0', 0, 1],
@@ -40,7 +40,7 @@ const HomewebItems = () => {
                 
                 <Box sx={{
                 mb: 4,
-                width: ['80vw','70vw', '325px', 'auto', 'auto',],
+                width: ['90vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
@@ -75,8 +75,8 @@ const HomewebItems = () => {
             mx: 'auto',
             }}>
                 <Box sx={{
-                mb: 4,
-                width: ['80vw','70vw', '325px', 'auto', 'auto',],
+                mb: 3,
+                width: ['90vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
@@ -110,7 +110,7 @@ const HomewebItems = () => {
             }}>
             <Box sx={{
                 mb: 4,
-                width: ['80vw','70vw', '325px', 'auto', 'auto',],
+                width: ['90vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
