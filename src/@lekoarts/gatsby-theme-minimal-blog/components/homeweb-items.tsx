@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 
 const HomewebItems = () => {
     return (
-        <Grid columns={[1, 1, 2]}
+        <Grid columns={[1, 1, 2, 2]}
         sx={{
-            gap: [0, 0, '2em 0'],
+            gap: ['2em 0'],
             mb: 6,
             mx: 1,
             flexGrow: 99999,
@@ -36,7 +36,7 @@ const HomewebItems = () => {
                 
                 <Box sx={{
                 mb: 3,
-                width: 'auto',
+                width: ['375px','425px', '450px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 pr: 6,
                 ":hover": {
@@ -71,7 +71,7 @@ const HomewebItems = () => {
             }}>
             <Box sx={{
                 mb: 3,
-                width: 'auto',
+                width: ['375px','425px', '450px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 pr: 6,
                 ":hover": {
@@ -105,8 +105,9 @@ const HomewebItems = () => {
             }}>
                 <Box sx={{
                 mb: 3,
-                width: 'auto',
+                width: ['375px','425px', '450px', 'auto', 'auto',],
                 transition: 'all 1s ease',
+                pr: 6,
                 ":hover": {
                     // color: `primary`,
                     opacity: .75,
@@ -123,7 +124,6 @@ const HomewebItems = () => {
                     <StaticImage 
                         src="../images/antique-exchange-snapshot.png" 
                         alt="A dinosaur" 
-                        width={350}
                     />
                 </Link>
                 </motion.div>
