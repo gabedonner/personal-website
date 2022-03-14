@@ -53,7 +53,7 @@ const HomewebItems = () => {
                     >
                     <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
                         <StaticImage 
-                            src="../images/antique-exchange-snapshot.png" 
+                            src="../images/iconiclinx-website-snapshot.png" 
                             alt="A dinosaur" 
                         />
                     </Link>
@@ -88,7 +88,7 @@ const HomewebItems = () => {
                 >
                 <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
                     <StaticImage 
-                        src="../images/antique-exchange-snapshot.png" 
+                        src="../images/joansaba-website-snapshot.png" 
                         alt="A dinosaur" 
                     />
                 </Link>
