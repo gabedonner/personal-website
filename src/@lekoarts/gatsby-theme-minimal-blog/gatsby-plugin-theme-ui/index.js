@@ -28,7 +28,7 @@ const theme = merge(tailwind, {
         heading: tailwind.colors.white,
         divide: tailwind.colors.gray[8],
         //muted: tailwind.colors.gray[8],
-        muted: tailwind.colors.gray[6],
+        muted: tailwind.colors.gray[7],
       },
     },
   },
