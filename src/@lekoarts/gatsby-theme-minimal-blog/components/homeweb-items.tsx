@@ -50,7 +50,7 @@ const HomewebItems = () => {
                     <motion.div
                         whileHover={{
                             scale: 1.02,
-                            transition: { duration: .5 },
+                            transition: { duration: .3 },
                         }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -86,7 +86,7 @@ const HomewebItems = () => {
                 <motion.div
                     whileHover={{
                         scale: 1.02,
-                        transition: { duration: .5 },
+                        transition: { duration: .3 },
                     }}
                     whileTap={{ scale: 0.95 }}
                     >
@@ -121,7 +121,7 @@ const HomewebItems = () => {
                 <motion.div
                     whileHover={{
                         scale: 1.02,
-                        transition: { duration: .5 },
+                        transition: { duration: .3 },
                     }}
                     whileTap={{ scale: 0.95 }}
                     >
