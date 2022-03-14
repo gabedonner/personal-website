@@ -220,7 +220,7 @@ const theme = merge(tailwind, {
   },
   links: {
     medium: {
-      color: `secondary`,
+      color: `text`,
       fontSize: [2, 3, 3],
       textDecoration: `none`,
       fontWeight: 'medium',
