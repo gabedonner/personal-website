@@ -19,6 +19,7 @@ import Projects from "../texts/home-projects"
 import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
 import HeroSVG from '../images/hero-background.inline.svg'
+import ThreeHero from '../components/threejs-hero'
 
 
 type PostsProps = {
@@ -37,6 +38,8 @@ type PostsProps = {
   [key: string]: any
 }
 
+
+
 const Homepage = ({ posts }: PostsProps) => {
   const { basePath, blogPath } = useMinimalBlogConfig()
   const { siteTitle } = useSiteMetadata()
@@ -51,23 +54,11 @@ const Homepage = ({ posts }: PostsProps) => {
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
-        //border: '1px solid',
-        //borderColor: 'muted',
         //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
         }}>
         <Hero />
-        {/* <StaticImage 
-          src='../images/old-film.png'
-          alt="Welcome" 
-          sx={{
-              backgroundColor: 'muted', 
-              position: 'absolute', 
-              top: 0, left: 0, 
-              width: [1000], 
-              zIndex: [-4],
-            }}
-        /> */}
       </section>
+      <ThreeHero />
       <Websites />
       <Projects />
     </Layout>
