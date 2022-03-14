@@ -60,8 +60,10 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       {/* <HeroSVG /> */}
-      <HomeWebsites />
-      <HomewebItems />
+      <section>
+        <HomeWebsites />
+        <HomewebItems />
+      </section>
       {/* <Websites /> */}     
        <Projects />
     </Layout>

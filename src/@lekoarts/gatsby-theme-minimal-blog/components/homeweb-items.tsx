@@ -8,11 +8,14 @@ const HomewebItems = () => {
     return (
         <Grid columns={[1, 1, 2, 2]}
         sx={{
-            gap: ['2em'],
+            //gap: ['4em'],
+            columnGap: ['5em'],
+            rowGap: ['5em'],
             mb: 6,
-            mx: 1,
+            ml: [0, 0, 0, 0],
+            px: ['0', '5em', 0, 1],
             flexGrow: 99999,
-            flexBasis: 0,
+            flexBasis: 300,
             minWidth: 300,
             mt: '4em',
             //pl: '25%',
@@ -31,14 +34,14 @@ const HomewebItems = () => {
             }}>
             <Box sx={{
             mb: 4,
+            mx: 'auto',
             //border: '1px solid black',
             }}>
                 
                 <Box sx={{
                 mb: 4,
-                width: ['375px','425px', '450px', 'auto', 'auto',],
+                width: ['80vw','500px', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
-                pr: 6,
                 ":hover": {
                     // color: `primary`,
                     opacity: .75,
@@ -68,13 +71,13 @@ const HomewebItems = () => {
 
 
             <Box sx={{
-            mb: 0,
+            mb: 4,
+            mx: 'auto',
             }}>
                 <Box sx={{
                 mb: 4,
-                width: ['375px','425px', '450px', 'auto', 'auto',],
+                width: ['80vw','500px', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
-                pr: 6,
                 ":hover": {
                     // color: `primary`,
                     opacity: .75,
@@ -102,16 +105,17 @@ const HomewebItems = () => {
             </Box>
 
             <Box sx={{
-            mb: 4,
+            mb: 0,
+            mx: 'auto',
             }}>
             <Box sx={{
                 mb: 4,
-                width: ['375px','425px', '450px', 'auto', 'auto',],
+                width: ['80vw','500px', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
-                pr: 6,
                 ":hover": {
                     // color: `primary`,
                     opacity: .75,
+                    boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
                 },
                 }}>
                 <motion.div
