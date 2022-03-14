@@ -75,7 +75,7 @@ const HomewebItems = () => {
             mx: 'auto',
             }}>
                 <Box sx={{
-                mb: 3,
+                mb: 4,
                 width: ['90vw','70vw', '325px', 'auto', 'auto',],
                 transition: 'all 1s ease',
                 ":hover": {
