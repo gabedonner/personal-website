@@ -23,6 +23,7 @@ const theme = merge(tailwind, {
         primary: `#0ea5e9`,
         secondary: `#7f8ea3`,
         toggleIcon: tailwind.colors.gray[4],
+        //toggleIcon: `#0ea5e9`,
         // background: `#1A202C`,
         background: `#111827`,
         heading: tailwind.colors.white,
