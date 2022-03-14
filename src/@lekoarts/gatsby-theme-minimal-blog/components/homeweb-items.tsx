@@ -44,7 +44,7 @@ const HomewebItems = () => {
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
-                    opacity: .75,
+                    opacity: .90,
                 },
                 }}>
                     <motion.div
@@ -80,7 +80,7 @@ const HomewebItems = () => {
                 transition: 'all 1s ease',
                 ":hover": {
                     // color: `primary`,
-                    opacity: .75,
+                    opacity: .90,
                 },
                 }}>
                 <motion.div
@@ -114,7 +114,7 @@ const HomewebItems = () => {
                     transition: 'all 1s ease',
                     ":hover": {
                         // color: `primary`,
-                        opacity: .75,
+                        opacity: .90,
                         boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
                     },
                     }}>
