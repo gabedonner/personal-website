@@ -49,8 +49,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <section sx={{  
         position: 'relative', 
-        height: '15em',
-        pb: [6], pt: [4], mt: 0, mb: 5, 
+        pb: ['4em', '6em'], pt: [4], mt: 0, mb: 0, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
@@ -58,7 +57,6 @@ const Homepage = ({ posts }: PostsProps) => {
         }}>
         <Hero />
       </section>
-      <ThreeHero />
       <Websites />
       <Projects />
     </Layout>
