@@ -13,7 +13,7 @@ const HomewebItems = () => {
             rowGap: ['3em', '5em'],
             mb: 6,
             ml: [0, 0, 0, 0],
-            px: ['0', '0', 0, 1],
+            px: ['0', '0', 0, '1.7em'],
             flexGrow: 99999,
             flexBasis: 300,
             minWidth: 300,
