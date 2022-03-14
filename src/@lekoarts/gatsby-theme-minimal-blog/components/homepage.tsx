@@ -18,7 +18,7 @@ import Projects from "../texts/home-projects"
 // @ts-ignore
 import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
-import heroSVG from '../images/hero-background.svg'
+import HeroSVG from '../images/hero-background.inline.svg'
 
 
 type PostsProps = {

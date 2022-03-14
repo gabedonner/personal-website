@@ -66,6 +66,10 @@ module.exports = {
             name: `IBM Plex Sans`,
             file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap`,
           },
+          {
+            name: `Inter`,
+            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap`,
+          },
         ],
       },
     },
@@ -91,7 +95,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/ // See below to configure properly
+          include: /\.inline\.svg$/ // See above to configure properly
         }
       }
     },
