@@ -108,39 +108,36 @@ const HomewebItems = () => {
             mb: 0,
             mx: 'auto',
             }}>
-            <Box sx={{
-                mb: 4,
-                width: ['90vw','70vw', '325px', 'auto', 'auto',],
-                transition: 'all 1s ease',
-                ":hover": {
-                    // color: `primary`,
-                    opacity: .75,
-                    boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
-                },
-                }}>
-                <motion.div
-                    whileHover={{
-                        scale: 1.02,
-                        transition: { duration: .3 },
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                    >
-                <Link target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com" >
-                    <StaticImage 
-                        src="../images/joansaba-website-snapshot.png" 
-                        alt="Joan Saba Photography" 
-                    />
-                </Link>
-                </motion.div>
+                <Box sx={{
+                    mb: 4,
+                    width: ['90vw','70vw', '325px', 'auto', 'auto',],
+                    transition: 'all 1s ease',
+                    ":hover": {
+                        // color: `primary`,
+                        opacity: .75,
+                        boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
+                    },
+                    }}>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.02,
+                            transition: { duration: .3 },
+                        }}
+                        whileTap={{ scale: 0.95 }}
+                        >
+                    <Link target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com" >
+                        <StaticImage 
+                            src="../images/joansaba-website-snapshot.png" 
+                            alt="Joan Saba Photography" 
+                        />
+                    </Link>
+                    </motion.div>
+                </Box>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">joansabaphotography.com</a>
+                <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
+                <br />
+                <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
             </Box>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">joansabaphotography.com</a>
-            <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
-            <br />
-            <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
-            </Box>
-
-
-
 
         </Grid>
     )
