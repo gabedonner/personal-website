@@ -139,6 +139,12 @@ const HomewebItems = () => {
                 <Text variant='webDesc'>Travel Photography | Squarespace</Text>  
             </Box>
 
+            {/* <Box sx={{mt: -2, color: 'secondary'}}>
+                <Link href="/about">
+                    <Text sx={{color: 'secondary'}}>learn more about this website</Text>
+                </Link>           
+            </Box> */}
+
         </Grid>
     )
 }
