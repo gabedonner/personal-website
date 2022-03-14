@@ -87,7 +87,7 @@ const HomewebItems = () => {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.antique-exchange.com" >
                     <StaticImage 
                         src="../images/antique-exchange-snapshot.png" 
                         alt="A dinosaur" 
@@ -121,10 +121,10 @@ const HomewebItems = () => {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                <Link target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io" >
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com" >
                     <StaticImage 
                         src="../images/joansaba-website-snapshot.png" 
-                        alt="A dinosaur" 
+                        alt="Joan Saba Photography" 
                     />
                 </Link>
                 </motion.div>

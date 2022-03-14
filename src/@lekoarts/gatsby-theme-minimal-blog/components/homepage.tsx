@@ -62,8 +62,8 @@ const Homepage = ({ posts }: PostsProps) => {
       {/* <HeroSVG /> */}
       <HomeWebsites />
       <HomewebItems />
-      <Websites />
-      <Projects />
+      {/* <Websites /> */}     
+       <Projects />
     </Layout>
   )
 }
