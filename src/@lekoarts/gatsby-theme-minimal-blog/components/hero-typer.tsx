@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import TypeIt from "typeit-react";
 
+
+//https://www.typeitjs.com/
 export default () => {
   const [buttonText, setButtonText] = useState("Freeze");
   const [instance, setInstance] = useState(null);
