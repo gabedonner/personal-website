@@ -5,8 +5,8 @@
         </pattern>
         <radialGradient id="gradient">  
             <stop offset="5%" stop-color="white" stop-opacity="0.5" /> 
-            <stop offset="40%" stop-color="white" stop-opacity=".77" />  
-            <stop offset="95%" stop-color="white" stop-opacity=".3" />  
+            <stop offset="30%" stop-color="white" stop-opacity=".9" />  
+            <stop offset="90%" stop-color="white" stop-opacity=".4" />  
          </radialGradient>
 
          <mask id="gradient-mask">  
