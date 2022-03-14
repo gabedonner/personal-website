@@ -20,6 +20,8 @@ import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
 import HeroSVG from '../svg/hero-background.inline.svg'
 import ThreeHero from '../components/threejs-hero'
+import HomeWebsites from './homepage-websites'
+import HomewebItems from './homeweb-items'
 
 
 type PostsProps = {
@@ -58,6 +60,8 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       {/* <HeroSVG /> */}
+      <HomeWebsites />
+      <HomewebItems />
       <Websites />
       <Projects />
     </Layout>
