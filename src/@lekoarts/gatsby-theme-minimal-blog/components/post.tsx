@@ -62,7 +62,7 @@ const Post = ({ data: { post } }: PostProps) => (
       sx={{
         my: 5,
         // could this be where i can make images responsive?
-        ".gatsby-resp-image-wrapper": { my: [4, 4, 5], boxShadow: shadow.join(`, `) },
+        ".gatsby-resp-image-wrapper": { my: [4, 4, 5] },
         variant: `layout.content`,
       }}
     >
