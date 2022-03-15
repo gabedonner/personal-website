@@ -55,7 +55,7 @@ const Homepage = ({ posts }: PostsProps) => {
         position: 'static',
         overflow: 'hidden',
         height: '21.8em',
-        color: 'muted',
+        color: 'dots',
       }}>
         <HeroSVG />
       </section>   
