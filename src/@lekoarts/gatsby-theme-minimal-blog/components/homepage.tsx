@@ -54,7 +54,7 @@ const Homepage = ({ posts }: PostsProps) => {
         mt: '-1.1em',
         position: 'static',
         overflow: 'hidden',
-        height: '22em',
+        height: '21.8em',
         color: 'muted',
       }}>
         <HeroSVG />
@@ -62,7 +62,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <section sx={{  
         position: 'relative', 
         height: '20em',
-        pb: ['4em', '6em'], pt: [0], mt: '-18em', mb: 0, 
+        pb: ['4em', '6em'], pt: [0], mt: '-17.65em', mb: 0, 
         p: { fontSize: [2, 3, 3], mt: 3 }, 
         variant: `section_hero`,
         overflow: 'hidden',
