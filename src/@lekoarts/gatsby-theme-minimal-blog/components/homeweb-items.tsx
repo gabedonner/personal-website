@@ -55,13 +55,13 @@ const HomewebItems = () => {
                 }}>
                     <motion.div
                         whileHover={{
-                            scale: 1.03,
-                            y: -5,
+                            //scale: 1.03,
+                            y: -10,
                             //x: 5,
-                            //opacity: .90,
+                            opacity: .90,
                             //webkitFilter: `blur(4px)`,
                             //filter: `blur(35px)`,
-                            transition: { type: 'tween', duration: .5 },
+                            transition: { type: 'spring', duration: .75 },
                         }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -95,13 +95,13 @@ const HomewebItems = () => {
                 }}>
                 <motion.div
                     whileHover={{
-                        scale: 1.03,
-                        y: -5,
+                        //scale: 1.03,
+                        y: -10,
                         //x: 5,
-                        //opacity: .90,
+                        opacity: .90,
                         //webkitFilter: `blur(4px)`,
                         //filter: `blur(25px)`,
-                        transition: { type: 'tween', duration: .5 },
+                        transition: { type: 'spring', duration: .75 },
                     }}
                     whileTap={{ scale: 0.95 }}
                 >
@@ -134,13 +134,13 @@ const HomewebItems = () => {
                     }}>
                     <motion.div
                         whileHover={{
-                            scale: 1.03,
-                            y: -5,
+                            //scale: 1.03,
+                            y: -10,
                             //x: 5,
-                            //opacity: .90,
+                            opacity: .90,
                             //webkitFilter: `blur(4px)`,
                             //filter: `blur(25px)`,
-                            transition: { type: 'tween', duration: .5 },
+                            transition: { type: 'spring', duration: .75 },
                         }}
                         whileTap={{ scale: 0.95 }}
                     >
