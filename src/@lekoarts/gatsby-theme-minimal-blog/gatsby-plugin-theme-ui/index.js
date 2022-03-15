@@ -10,6 +10,7 @@ const theme = merge(tailwind, {
   colors: {
     //primary: tailwind.colors.purple[7],
     primary: `#0284c7`,
+    background: `#e1e0dd`,
     secondary: `#5f6c80`,
     toggleIcon: tailwind.colors.gray[8],
     heading: tailwind.colors.black,
