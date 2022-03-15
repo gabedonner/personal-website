@@ -155,7 +155,7 @@ const HomewebItems = () => {
                 <a target="_blank" rel="noopener noreferrer" href="https://www.joansabaphotography.com">joansabaphotography.com</a>
                 <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
                 <br />
-                <Text variant='webDesc'>2021 | Squarespace</Text>  
+                <Text variant='webDesc'>2021 / Squarespace</Text>  
             </Box>
 
             {/* <Box sx={{mt: -2, color: 'secondary'}}>
