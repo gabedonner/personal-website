@@ -1,20 +1,27 @@
-import { jsx, Box, Grid, Card, Link, Flex, AspectImage } from "theme-ui"
-import { graphql } from 'gatsby';
-import Typewriter from 'typewriter-effect';
-import { motion, AnimatePresence } from 'framer-motion';
+import { jsx, Box, Grid, Card, Link, Flex, AspectImage } from "theme-ui";
+import { graphql } from "gatsby";
+import Typewriter from "typewriter-effect";
+import { motion, AnimatePresence } from "framer-motion";
 import backgroundImageHero from "../images/grid-pattern.png";
 import { StaticImage } from "gatsby-plugin-image";
 import TypeIt from "typeit-react";
-import HeroTyper from "../components/hero-typer.tsx"
-
+import HeroTyper from "../components/hero-typer.tsx";
 
 <!--https://npm.io/package/typewriter-effect -->
 
 <!--https://www.typeitjs.com/-->
 <!--this is the other import that might be better. it allows playing and pausing-->
 
-<Box sx={{mb: 2, mt: ['.85em']}}>
-  <Text sx={{ ml: [0, '.5em'], pl:[0], fontSize: [5, 6, 6], fontWeight: `bold`, color: `text` }}>
+<Box sx={{ mb: 2, mt: [".85em"] }}>
+  <Text
+    sx={{
+      ml: [0, ".5em"],
+      pl: [0],
+      fontSize: [5, 6, 6],
+      fontWeight: `bold`,
+      color: `text`,
+    }}
+  >
     Gabe Donner&nbsp;
   </Text>
 </Box>
@@ -32,63 +39,90 @@ import HeroTyper from "../components/hero-typer.tsx"
   />
 </Box>-->
 
-<Box sx={{ bg: 'none', height: ['6em'], pt: 1, pl: [0, '1.7em', '1.7em'], pr: '12vw', mt:[1, 1, 1], mr:[0]}}>
-  <Text sx={{ bg: 'background', fontSize: [2,3], color: `text`, a: { color: 'primary', textDecoration: 'underline'} }}>
+<Box
+  sx={{
+    bg: "none",
+    height: ["6em"],
+    pt: 1,
+    pl: [0, "1.7em", "1.7em"],
+    pr: "12vw",
+    mt: [1, 1, 1],
+    mr: [0],
+  }}
+>
+  <Text
+    sx={{
+      bg: "background",
+      fontSize: [2, 3],
+      color: `text`,
+      a: { color: "primary", textDecoration: "underline" },
+    }}
+  >
     <Typewriter
       options={{
-          autoStart: true,
-          pauseFor: 1000,
-          cursor: '|',
-          delay: 30,
-          loop: true,
-          deleteSpeed: 5,
-        }}
+        autoStart: true,
+        pauseFor: 1000,
+        cursor: "|",
+        delay: 30,
+        loop: true,
+        deleteSpeed: 5,
+      }}
       onInit={(typewriter) => {
-        typewriter.typeString('Hi! ')
-          .pauseFor(1000)  
-          .start();
-        typewriter.typeString('I\'m a designer and web developer based out of New York City.')
+        typewriter.typeString("Hi! ").pauseFor(1000).start();
+        typewriter
+          .typeString(
+            "I'm a developer and designer based out of New York City."
+          )
           .pauseFor(2500)
           .start()
           .pauseFor(800)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('I like visual art, philosophy, and ')
+        typewriter
+          .typeString("I like visual art, philosophy, and ")
           .start()
           .pauseFor(800)
           .changeDelay(100);
-        typewriter.typeString('um')	
+        typewriter
+          .typeString("um")
           .start()
           .pauseFor(800)
           .deleteChars(2)
           .changeDelay(25);
-        typewriter.typeString(' ice cream.')
+        typewriter
+          .typeString(" ice cream.")
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.')
+        typewriter
+          .typeString(
+            'This website was built using using <a target="_blank" rel="noopener noreferrer" href="https://www.reactjs.org">React</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.com">Gatsby</a>.'
+          )
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('If you want to learn about me, check out the <a href="/about">about page</a>.')
+        typewriter
+          .typeString(
+            'If you want to learn about me, check out the <a href="/about">about page</a>.'
+          )
           .pauseFor(1500)
           .start()
           .pauseFor(2500)
           .deleteAll(5)
           .pauseFor(800);
-        typewriter.typeString('Or, visit the <a href="/projects">projects page</a> for my design portfolio.')
+        typewriter
+          .typeString(
+            'Or, visit the <a href="/projects">projects page</a> for my design portfolio.'
+          )
           .pauseFor(1500)
           .start()
           .pauseFor(1500)
           .changeDelay(1500);
-        typewriter.typeString(' . . ')
-          .pauseFor(1500)
-          .start()
-          .pauseFor(100);
+        typewriter.typeString(" . . ").pauseFor(1500).start().pauseFor(100);
       }}
     />
   </Text>
