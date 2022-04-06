@@ -1,4 +1,4 @@
-import { jsx, Box, Grid, Flex, Link } from "theme-ui"
+import { jsx, Box, Grid, Flex, Link } from "theme-ui";
 
 <Box
   sx={{
@@ -6,25 +6,27 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
     pb: [3, 4],
     flexGrow: 1,
     // flexBasis: [256, 190, 256, 256],
-    flexBasis: ['27.5%'],
-  }}>
+    flexBasis: ["27.5%"],
+  }}
+>
   <Text
     sx={{
       fontSize: [1, 2, 2],
-      color: 'secondary',
-      bg: 'background',
+      color: "secondary",
+      bg: "background",
       pr: 4,
-    }}>
+    }}
+  >
     Design Projects
   </Text>
-  <Box sx={{ height: '1px', bg: 'divide', mt: '-.9em'}} />
-  <Link 
+  <Box sx={{ height: "1px", bg: "divide", mt: "-.9em" }} />
+  <Link
     href="/projects"
-    sx= {{
-      color: 'secondary',
-      float: 'right',
-      bg: 'background',
-      mt: '-.95em',
+    sx={{
+      color: "secondary",
+      float: "right",
+      bg: "background",
+      mt: "-.95em",
       pl: 4,
     }}
   >
@@ -32,13 +34,14 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
   </Link>
 </Box>
 
-<Grid columns={[1, null, 2]}
+<Grid
+  columns={[1, null, 2]}
   sx={{
     //gap: [0, 0, '2em 0'],
-    columnGap: ['5em'],
-    rowGap: [1, 2, '2em'],
+    columnGap: ["5em"],
+    rowGap: [1, 2, "2em"],
     //px: ['0', '0', 0, '1.7em'],
-    mx: 'auto',
+    mx: "auto",
     mt: 5,
     flexGrow: 99999,
     flexBasis: 0,
@@ -49,78 +52,114 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
         // color: `primary`,
         // textDecoration: `none`,
       },
-    }
-    }}>
-    <Box sx={{
+    },
+  }}
+>
+  <Box
+    sx={{
       mb: 4,
-      }}>
-      <Link variant="medium" href="/projects/nfuse">nfuse</Link>
-      <br />
-      <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
-        <a
-          href='/tags/branding'>
-          Branding
-        </a>
-        <a>, </a>
-        <a
-          href='/tags/graphic-design'>
-          Graphic Design
-        </a>
-      </Text>  
-    </Box>
-    <Box sx={{
+    }}
+  >
+    <Link variant="medium" href="/projects/nfuse">
+      nfuse
+    </Link>
+    <br />
+    <Text
+      sx={{
+        color: `secondary`,
+        mt: 1,
+        a: {
+          color: `secondary`,
+          lineHeight: 2,
+          fontWeight: "regular",
+          fontSize: [1, 2, 2],
+        },
+      }}
+    >
+      <a href="/tags/branding">Branding</a>
+      <a>, </a>
+      <a href="/tags/graphic-design">Graphic Design</a>
+    </Text>
+  </Box>
+  <Box
+    sx={{
       mb: 4,
-      }}>
-      <Link variant="medium" href="/projects/gatsby-book-cover">Great Gatsby Cover</Link>
-      <br />
-      <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
-        <a
-          href='/tags/branding'>
-          Graphic Design
-        </a>
-        <a>, </a>
-        <a
-          href='/tags/illustration'>
-          Illustration
-        </a>
-      </Text>  
-    </Box>
-    <Box sx={{
+    }}
+  >
+    <Link variant="medium" href="/projects/gatsby-book-cover">
+      Great Gatsby Cover
+    </Link>
+    <br />
+    <Text
+      sx={{
+        color: `secondary`,
+        mt: 1,
+        a: {
+          color: `secondary`,
+          lineHeight: 2,
+          fontWeight: "regular",
+          fontSize: [1, 2, 2],
+        },
+      }}
+    >
+      <a href="/tags/branding">Graphic Design</a>
+      <a>, </a>
+      <a href="/tags/illustration">Illustration</a>
+    </Text>
+  </Box>
+  <Box
+    sx={{
       mb: 4,
-      }}>
-      <Link variant="medium" href="/projects/green-rooftop-terrace">Green Rooftop Terrace</Link>
-      <br />
-      <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
-        <a
-          href='/tags/3-d-modeling'>
-          3D Modeling
-        </a>
-        <a>, </a>
-        <a
-          href='/tags/3-d-rendering'>
-          3D Rendering
-        </a>
-      </Text>  
-    </Box>
-    <Box sx={{
+    }}
+  >
+    <Link variant="medium" href="/projects/green-rooftop-terrace">
+      Green Rooftop Terrace
+    </Link>
+    <br />
+    <Text
+      sx={{
+        color: `secondary`,
+        mt: 1,
+        a: {
+          color: `secondary`,
+          lineHeight: 2,
+          fontWeight: "regular",
+          fontSize: [1, 2, 2],
+        },
+      }}
+    >
+      <a href="/tags/3-d-modeling">3D Modeling</a>
+      <a>, </a>
+      <a href="/tags/3-d-rendering">3D Rendering</a>
+    </Text>
+  </Box>
+  <Box
+    sx={{
       mb: 4,
-      }}>
-      <Link variant="medium" href="/projects/city-magazine-cover">City Magazine</Link>
-      <br />
-      <Text sx={{ color: `secondary`, mt: 1, a: { color: `secondary`, lineHeight: 2, fontWeight: 'regular', fontSize: [1, 2, 2] }}}>
-        <a
-          href='/tags/graphic-design'>
-          Graphic Design
-        </a>
-        <a>, </a>
-        <a
-          href='/tags/illustration'>
-          Illustration
-        </a>
-      </Text>  
-    </Box>
-  </Grid>
-
+    }}
+  >
+    <Link variant="medium" href="/projects/city-magazine-cover">
+      City Magazine
+    </Link>
+    <br />
+    <Text
+      sx={{
+        color: `secondary`,
+        mt: 1,
+        a: {
+          color: `secondary`,
+          lineHeight: 2,
+          fontWeight: "regular",
+          fontSize: [1, 2, 2],
+        },
+      }}
+    >
+      <a href="/tags/graphic-design">Graphic Design</a>
+      <a>, </a>
+      <a href="/tags/illustration">Illustration</a>
+    </Text>
+  </Box>
+</Grid>
 
 <!--<Box
   sx={{
@@ -151,7 +190,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
           href='/tags/graphic-design'>
           Graphic Design
         </a>
-      </Text>  
+      </Text>
     </Box>
     <Box sx={{
       mb: 4,
@@ -168,7 +207,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
           href='/tags/illustration'>
           Illustration
         </a>
-      </Text>  
+      </Text>
     </Box>
     <Box sx={{
       mb: 4,
@@ -185,7 +224,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
           href='/tags/3-d-rendering'>
           3D Rendering
         </a>
-      </Text>  
+      </Text>
     </Box>
     <Box sx={{
       mb: 4,
@@ -202,13 +241,10 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
           href='/tags/illustration'>
           Illustration
         </a>
-      </Text>  
+      </Text>
     </Box>
   </Box>
 -->
-
-
-
 
 <!--
 <Flex
@@ -233,7 +269,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
     </Text>
     <br />
     <span sx={{color: 'secondary'}}>( </span>
-    <Link 
+    <Link
       href="/projects"
       sx= {{color: 'secondary'}}
     >
@@ -242,7 +278,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
     <span> )</span>
 
   </Box>
-  
+
   <Box
     sx={{
       mt: 4,
@@ -272,7 +308,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
             href='/tags/graphic-design'>
             Graphic Design
           </a>
-        </Text>  
+        </Text>
       </Box>
       <Box sx={{
         mb: 4,
@@ -289,7 +325,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
             href='/tags/illustration'>
             Illustration
           </a>
-        </Text>  
+        </Text>
       </Box>
       <Box sx={{
         mb: 4,
@@ -306,7 +342,7 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
             href='/tags/3-d-rendering'>
             3D Rendering
           </a>
-        </Text>  
+        </Text>
       </Box>
       <Box sx={{
         mb: 4,
@@ -323,9 +359,9 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui"
             href='/tags/illustration'>
             Illustration
           </a>
-        </Text>  
+        </Text>
       </Box>
-      
+
   </Box>
 </Flex>
 -->
