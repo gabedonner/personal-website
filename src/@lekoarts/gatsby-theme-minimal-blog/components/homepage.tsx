@@ -21,7 +21,7 @@ import { StaticImage } from "gatsby-plugin-image"
 //import HeroSVG from '../svg/hero-background.inline.svg'
 import HeroSVG from '../svg/dot-graph.inline.svg'
 import ThreeHero from '../components/threejs-hero'
-import HomeWebsites from './homepage-websites'
+import HomepageTitle from './homepage-title'
 import HomewebItems from './homeweb-items'
 
 
@@ -73,7 +73,7 @@ const Homepage = ({ posts }: PostsProps) => {
       
        
       <section>
-        <HomeWebsites />
+        <HomepageTitle title={"Client Websites"} />
         <HomewebItems />
       </section>
       {/* <Websites /> */}     
