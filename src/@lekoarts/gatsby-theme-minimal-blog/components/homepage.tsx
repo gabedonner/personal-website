@@ -23,6 +23,7 @@ import HeroSVG from '../svg/dot-graph.inline.svg'
 // import ThreeHero from '../components/threejs-hero'
 import HomepageTitle from './homepage-title'
 import HomewebItems from './homeweb-items'
+import DevProject from './dev-project'
 
 type PostsProps = {
   posts: {
@@ -76,6 +77,7 @@ const Homepage = ({ posts }: PostsProps) => {
       </section>
       <section>
         <HomepageTitle title={'Development Projects'} />
+        <DevProject />
       </section>
 
       <section>
