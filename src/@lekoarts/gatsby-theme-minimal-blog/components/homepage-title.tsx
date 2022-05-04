@@ -10,7 +10,8 @@ const HomepageTitle = ({title}: HomepageTitleProps) => {
     return (
         <Box gap={2} columns={[1, null, 2]}
             sx={{
-                pb: [4, 5],
+                pb: [4],
+                mb: 5,
                 //flexGrow: 1,
                 // flexBasis: [256, 190, 256, 256],
                 //flexBasis: ['27.5%'],

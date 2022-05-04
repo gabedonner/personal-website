@@ -1,39 +1,5 @@
 import { jsx, Box, Grid, Flex, Link } from "theme-ui";
 
-<Box
-  sx={{
-    mt: [4],
-    pb: [3, 4],
-    flexGrow: 1,
-    // flexBasis: [256, 190, 256, 256],
-    flexBasis: ["27.5%"],
-  }}
->
-  <Text
-    sx={{
-      fontSize: [1, 2, 2],
-      color: "secondary",
-      bg: "background",
-      pr: 4,
-    }}
-  >
-    Design Projects
-  </Text>
-  <Box sx={{ height: "1px", bg: "divide", mt: "-.9em" }} />
-  <Link
-    href="/projects"
-    sx={{
-      color: "secondary",
-      float: "right",
-      bg: "background",
-      mt: "-.95em",
-      pl: 4,
-    }}
-  >
-    See all
-  </Link>
-</Box>
-
 <Grid
   columns={[1, null, 2]}
   sx={{
@@ -42,7 +8,6 @@ import { jsx, Box, Grid, Flex, Link } from "theme-ui";
     rowGap: [1, 2, "2em"],
     //px: ['0', '0', 0, '1.7em'],
     mx: "auto",
-    mt: 5,
     flexGrow: 99999,
     flexBasis: 0,
     minWidth: 300,

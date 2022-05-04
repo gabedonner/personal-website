@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx, AspectImage } from "theme-ui"
-import { Link, useStaticQuery, graphql } from "gatsby"
+// import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "./layout"
-import Title from "./title"
-import Listing from "./listing"
-import List from "./list"
+// import Title from "./title"
+// import Listing from "./listing"
+// import List from "./list"
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import useSiteMetadata from "../hooks/use-site-metadata"
-import replaceSlashes from "../utils/replaceSlashes"
+// import replaceSlashes from "../utils/replaceSlashes"
 import { visuallyHidden } from "../styles/utils"
 // @ts-ignore
 import Hero from "../texts/hero"
@@ -20,7 +20,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // @ts-ignore
 //import HeroSVG from '../svg/hero-background.inline.svg'
 import HeroSVG from '../svg/dot-graph.inline.svg'
-import ThreeHero from '../components/threejs-hero'
+// import ThreeHero from '../components/threejs-hero'
 import HomepageTitle from './homepage-title'
 import HomewebItems from './homeweb-items'
 
@@ -76,7 +76,8 @@ const Homepage = ({ posts }: PostsProps) => {
         <HomepageTitle title={"Client Websites"} />
         <HomewebItems />
       </section>
-      {/* <Websites /> */}     
+      {/* <Websites /> */} 
+      <HomepageTitle title={"Design Projects"} />    
        <Projects />
     </Layout>
   )
