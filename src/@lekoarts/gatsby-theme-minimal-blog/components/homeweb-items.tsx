@@ -74,7 +74,7 @@ const HomewebItems = () => {
                     </motion.div>
                 </Box>
 
-                <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.webflow.io">iconiclinx.com</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.com">iconiclinx.com</a>
                 <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
                 <br />
                 <Text variant='webDesc'>2022 / Webflow (WIP)</Text>
