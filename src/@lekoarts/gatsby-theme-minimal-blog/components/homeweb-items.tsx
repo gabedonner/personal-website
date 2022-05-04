@@ -77,7 +77,7 @@ const HomewebItems = () => {
                 <a target="_blank" rel="noopener noreferrer" href="https://iconiclinx.com">iconiclinx.com</a>
                 <Text sx={{fontWeight: 'medium', fontSize: [2,3,3]}}>&nbsp;→</Text>
                 <br />
-                <Text variant='webDesc'>2022 / Webflow (WIP)</Text>
+                <Text variant='webDesc'>2022 / Webflow to Wordpress</Text>
             </Box>
 
 
