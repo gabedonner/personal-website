@@ -75,7 +75,7 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       <section>
-        <HomepageTitle title={'Client Websites'} />
+        <HomepageTitle title={'Development Projects'} />
       </section>
 
       <section>
