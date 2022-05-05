@@ -21,7 +21,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 //import HeroSVG from '../svg/hero-background.inline.svg'
 import HeroSVG from '../svg/dot-graph.inline.svg'
 // import ThreeHero from '../components/threejs-hero'
-import HomepageTitle from './homepage-title'
+import DivideTitle from './title-divide'
 import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
 
@@ -76,16 +76,16 @@ const Homepage = ({ posts }: PostsProps) => {
         <Hero />
       </section>
       <section>
-        <HomepageTitle title={'Development Projects'} />
+        <DivideTitle title={'Development Projects'} />
         <DevProject />
       </section>
 
       <section>
-        <HomepageTitle title={'Client Websites'} />
+        <DivideTitle title={'Client Websites'} />
         <HomewebItems />
       </section>
       {/* <Websites /> */}
-      <HomepageTitle title={'Design Projects'} />
+      <DivideTitle title={'Design Projects'} />
       <Projects />
     </Layout>
   )
