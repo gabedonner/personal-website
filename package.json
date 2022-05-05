@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^4.0.0",
+    "eslint": "^7.32.0",
     "framer-motion": "^5.4.5",
     "gatsby": "^4.0.0",
     "gatsby-background-image": "^1.6.0",
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "prettier": "^2.6.2"
   }
 }
