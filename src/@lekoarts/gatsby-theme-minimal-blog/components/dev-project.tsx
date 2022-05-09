@@ -30,9 +30,12 @@ const DevProject = ({
         <br />
         <Text sx={{}}>{description}</Text>
         <Box sx={{ pt: 3 }}>
-          <Link href={visitHref}>Visit Site →</Link>
-          <br />
-          <Link href={githubHref}>Github →</Link>
+          <Link sx={{ pr: 3 }} href={visitHref}>
+            Visit Site →
+          </Link>
+          <Link sx={{}} href={githubHref}>
+            Github →
+          </Link>
         </Box>
       </Box>
     </Grid>
