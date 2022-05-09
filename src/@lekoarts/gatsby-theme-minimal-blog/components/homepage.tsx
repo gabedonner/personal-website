@@ -77,7 +77,12 @@ const Homepage = ({ posts }: PostsProps) => {
       </section>
       <section>
         <DivideTitle title={'Development Projects'} />
-        <DevProject />
+        <DevProject
+          title={"NYT Critic's Picks"}
+          description={
+            'A searchable collection of all the movies picked by New York Times critics. Built with Next.js, the NYT REST API, MUI, and Framer Motion.'
+          }
+        />
       </section>
 
       <section>

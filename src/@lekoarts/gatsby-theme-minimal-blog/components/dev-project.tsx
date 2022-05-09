@@ -2,7 +2,12 @@
 import { jsx, Text, Box, Grid, Heading, Link } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const DevProject = () => {
+type DevProjectProps = {
+  title: string
+  description: string
+}
+
+const DevProject = ({ title, description }: DevProjectProps) => {
   return (
     <Grid
       gap={[4]}
@@ -15,12 +20,9 @@ const DevProject = () => {
         alt="iconiclinx"
       />
       <Box sx={{ pt: 2 }}>
-        <Heading>NYT Critic's Picks</Heading>
+        <Heading>{title}</Heading>
         <br />
-        <Text sx={{}}>
-          A searchable collection of all the movies picked by New York Times
-          critics. Built with Next.js, the NYT REST API, MUI, and Framer Motion.
-        </Text>
+        <Text sx={{}}>{description}</Text>
         <Box sx={{ pt: 3 }}>
           <Link>Visit Site</Link>
           <br />
