@@ -5,9 +5,16 @@ import { StaticImage } from 'gatsby-plugin-image'
 type DevProjectProps = {
   title: string
   description: string
+  visitHref: string
+  githubHref: string
 }
 
-const DevProject = ({ title, description }: DevProjectProps) => {
+const DevProject = ({
+  title,
+  description,
+  visitHref,
+  githubHref,
+}: DevProjectProps) => {
   return (
     <Grid
       gap={[4]}
@@ -23,9 +30,9 @@ const DevProject = ({ title, description }: DevProjectProps) => {
         <br />
         <Text sx={{}}>{description}</Text>
         <Box sx={{ pt: 3 }}>
-          <Link>Visit Site</Link>
+          <Link href={visitHref}>Visit Site</Link>
           <br />
-          <Link>Github</Link>
+          <Link href={githubHref}>Github</Link>
         </Box>
       </Box>
     </Grid>
