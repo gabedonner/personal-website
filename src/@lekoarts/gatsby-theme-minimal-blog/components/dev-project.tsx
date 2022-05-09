@@ -21,10 +21,12 @@ const DevProject = ({
       columns={[1, 1, 2]}
       sx={{ pb: 6, px: 4, alignItems: 'start' }}
     >
-      <StaticImage
-        src="../images/iconiclinx-website-snapshot.png"
-        alt="iconiclinx"
-      />
+      <Link href={visitHref}>
+        <StaticImage
+          src="../images/nyt-critics-picks-screenshot.png"
+          alt="NTY Critics Picks"
+        />
+      </Link>
       <Box sx={{}}>
         <Heading>{title}</Heading>
         <br />
