@@ -25,14 +25,14 @@ const DevProject = ({
         src="../images/iconiclinx-website-snapshot.png"
         alt="iconiclinx"
       />
-      <Box sx={{ pt: 2 }}>
+      <Box sx={{}}>
         <Heading>{title}</Heading>
         <br />
         <Text sx={{}}>{description}</Text>
         <Box sx={{ pt: 3 }}>
-          <Link href={visitHref}>Visit Site</Link>
+          <Link href={visitHref}>Visit Site →</Link>
           <br />
-          <Link href={githubHref}>Github</Link>
+          <Link href={githubHref}>Github →</Link>
         </Box>
       </Box>
     </Grid>
