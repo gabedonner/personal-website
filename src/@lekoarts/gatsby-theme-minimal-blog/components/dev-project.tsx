@@ -15,7 +15,6 @@ const DevProject = ({ title, description }: DevProjectProps) => {
       sx={{ pb: 6, px: 4, alignItems: 'start' }}
     >
       <StaticImage
-        sx={{}}
         src="../images/iconiclinx-website-snapshot.png"
         alt="iconiclinx"
       />
