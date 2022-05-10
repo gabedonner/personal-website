@@ -17,17 +17,23 @@ const DevProject = ({
 }: DevProjectProps) => {
   return (
     <Grid
-      gap={[4]}
+      gap={[5]}
       columns={[1, 1, 2]}
-      sx={{ pb: 6, px: 3, alignItems: 'start' }}
+      sx={{ pb: 6, px: [0, 0, 4], alignItems: 'center' }}
     >
-      <Link sx={{ width: ['450px', '450px', 'auto'] }} href={visitHref}>
+      <Link
+        sx={{
+          width: ['450px', '450px', 'auto'],
+          boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+        }}
+        href={visitHref}
+      >
         <StaticImage
           src="../images/nyt-critics-picks-screenshot.png"
           alt={title}
         />
       </Link>
-      <Box sx={{ pr: 4, pt: 1 }}>
+      <Box sx={{ pr: 4, pt: 1, width: ['450px', '450px', 'auto'] }}>
         <Link href={visitHref}>
           <Heading>{title}</Heading>
         </Link>
