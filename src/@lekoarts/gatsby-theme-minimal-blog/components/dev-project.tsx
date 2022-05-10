@@ -19,7 +19,7 @@ const DevProject = ({
     <Grid
       gap={[4]}
       columns={[1, 1, 2]}
-      sx={{ pb: 6, px: 0, alignItems: 'start' }}
+      sx={{ pb: 6, px: 3, alignItems: 'start' }}
     >
       <Link href={visitHref}>
         <StaticImage
@@ -27,7 +27,7 @@ const DevProject = ({
           alt="NTY Critics Picks"
         />
       </Link>
-      <Box sx={{}}>
+      <Box sx={{ pr: 4 }}>
         <Heading>{title}</Heading>
         <Box sx={{ pt: 3 }}>
           <Text sx={{ pt: 4 }}>{description}</Text>
