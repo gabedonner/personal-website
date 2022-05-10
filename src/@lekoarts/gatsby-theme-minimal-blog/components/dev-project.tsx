@@ -21,7 +21,7 @@ const DevProject = ({
       columns={[1, 1, 2]}
       sx={{ pb: 6, px: 3, alignItems: 'start' }}
     >
-      <Link href={visitHref}>
+      <Link sx={{ width: ['450px', '450px', 'auto'] }} href={visitHref}>
         <StaticImage
           src="../images/nyt-critics-picks-screenshot.png"
           alt={title}
