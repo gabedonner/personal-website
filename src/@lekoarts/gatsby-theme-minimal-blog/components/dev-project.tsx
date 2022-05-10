@@ -24,11 +24,13 @@ const DevProject = ({
       <Link href={visitHref}>
         <StaticImage
           src="../images/nyt-critics-picks-screenshot.png"
-          alt="NTY Critics Picks"
+          alt={title}
         />
       </Link>
-      <Box sx={{ pr: 4 }}>
-        <Heading>{title}</Heading>
+      <Box sx={{ pr: 4, pt: 1 }}>
+        <Link href={visitHref}>
+          <Heading>{title}</Heading>
+        </Link>
         <Box sx={{ pt: 3 }}>
           <Text sx={{ pt: 4 }}>{description}</Text>
         </Box>
