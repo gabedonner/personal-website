@@ -23,13 +23,12 @@ const DevProject = ({
         sx={{
           pb: 6,
           px: [0, 0, 0],
-          justifyContent: 'center',
           alignItems: 'center',
         }}
       >
         <Link
           sx={{
-            width: ['450px', '450px', 'auto'],
+            width: ['auto', '450px', 'auto'],
             boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
             '&:hover': {
               boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
@@ -43,17 +42,27 @@ const DevProject = ({
           />
         </Link>
         <Box sx={{ pr: 4, pt: 1, width: ['450px', '450px', 'auto'] }}>
-          <Link href={visitHref}>
+          <Link href={visitHref} target="_blank" rel="noopener noreferrer">
             <Heading>{title}</Heading>
           </Link>
           <Box sx={{ pt: 3 }}>
             <Text sx={{ pt: 4 }}>{description}</Text>
           </Box>
           <Box sx={{ pt: 3 }}>
-            <Link sx={{ pr: 3 }} href={visitHref}>
+            <Link
+              sx={{ pr: 3 }}
+              href={visitHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit Site →
             </Link>
-            <Link sx={{}} href={githubHref}>
+            <Link
+              sx={{}}
+              href={githubHref}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Github →
             </Link>
           </Box>
