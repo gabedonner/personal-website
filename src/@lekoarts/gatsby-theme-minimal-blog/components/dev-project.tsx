@@ -19,7 +19,7 @@ const DevProject = ({
     <Grid
       gap={[4]}
       columns={[1, 1, 2]}
-      sx={{ pb: 6, px: 4, alignItems: 'start' }}
+      sx={{ pb: 6, px: 0, alignItems: 'start' }}
     >
       <Link href={visitHref}>
         <StaticImage
@@ -29,8 +29,9 @@ const DevProject = ({
       </Link>
       <Box sx={{}}>
         <Heading>{title}</Heading>
-        <br />
-        <Text sx={{}}>{description}</Text>
+        <Box sx={{ pt: 3 }}>
+          <Text sx={{ pt: 4 }}>{description}</Text>
+        </Box>
         <Box sx={{ pt: 3 }}>
           <Link sx={{ pr: 3 }} href={visitHref}>
             Visit Site →
