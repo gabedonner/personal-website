@@ -25,6 +25,9 @@ const DevProject = ({
         sx={{
           width: ['450px', '450px', 'auto'],
           boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+          '&:hover': {
+            boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+          },
         }}
         href={visitHref}
       >
