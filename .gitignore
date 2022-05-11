@@ -68,6 +68,9 @@ typings/
 **/.cache
 public
 
+# inactive content
+inactive-content
+
 .idea
 .vscode
 .DS_Store
