@@ -65,7 +65,7 @@ const HomewebItems = () => {
             //   //filter: `blur(35px)`,
             //   transition: { type: 'spring', duration: 0.75 },
             // }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.98 }}
           >
             <Link
               target="_blank"
@@ -119,7 +119,7 @@ const HomewebItems = () => {
             //   //filter: `blur(25px)`,
             //   transition: { type: 'spring', duration: 0.75 },
             // }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.98 }}
           >
             <Link
               target="_blank"
