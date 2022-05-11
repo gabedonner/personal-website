@@ -41,31 +41,31 @@ const HomewebItems = () => {
           //border: '1px solid black',
         }}
       >
-        <Box
-          sx={{
-            mb: 4,
-            width: ['90vw', '70vw', '325px', 'auto', 'auto'],
-            transition: 'all 1s ease',
-            borderColor: 'pink',
-            overflow: 'none',
-
-            boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-            '&:hover': {
-              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-            },
-          }}
+        <motion.div
+          // whileHover={{
+          //   //scale: 1.03,
+          //   y: -10,
+          //   //x: 5,
+          //   opacity: 0.9,
+          //   //webkitFilter: `blur(4px)`,
+          //   //filter: `blur(35px)`,
+          //   transition: { type: 'spring', duration: 0.75 },
+          // }}
+          whileTap={{ scale: 0.98 }}
         >
-          <motion.div
-            // whileHover={{
-            //   //scale: 1.03,
-            //   y: -10,
-            //   //x: 5,
-            //   opacity: 0.9,
-            //   //webkitFilter: `blur(4px)`,
-            //   //filter: `blur(35px)`,
-            //   transition: { type: 'spring', duration: 0.75 },
-            // }}
-            whileTap={{ scale: 0.98 }}
+          <Box
+            sx={{
+              mb: 4,
+              width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+              transition: 'all 1s ease',
+              borderColor: 'pink',
+              overflow: 'none',
+
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+              '&:hover': {
+                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+              },
+            }}
           >
             <Link
               target="_blank"
@@ -77,8 +77,8 @@ const HomewebItems = () => {
                 alt="iconiclinx"
               />
             </Link>
-          </motion.div>
-        </Box>
+          </Box>
+        </motion.div>
 
         <a
           target="_blank"
@@ -98,28 +98,28 @@ const HomewebItems = () => {
           mx: 'auto',
         }}
       >
-        <Box
-          sx={{
-            mb: 4,
-            width: ['90vw', '70vw', '325px', 'auto', 'auto'],
-            transition: 'all 1s ease',
-            boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-            '&:hover': {
-              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-            },
-          }}
+        <motion.div
+          // whileHover={{
+          //   //scale: 1.03,
+          //   y: -10,
+          //   //x: 5,
+          //   opacity: 0.9,
+          //   //webkitFilter: `blur(4px)`,
+          //   //filter: `blur(25px)`,
+          //   transition: { type: 'spring', duration: 0.75 },
+          // }}
+          whileTap={{ scale: 0.98 }}
         >
-          <motion.div
-            // whileHover={{
-            //   //scale: 1.03,
-            //   y: -10,
-            //   //x: 5,
-            //   opacity: 0.9,
-            //   //webkitFilter: `blur(4px)`,
-            //   //filter: `blur(25px)`,
-            //   transition: { type: 'spring', duration: 0.75 },
-            // }}
-            whileTap={{ scale: 0.98 }}
+          <Box
+            sx={{
+              mb: 4,
+              width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+              transition: 'all 1s ease',
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+              '&:hover': {
+                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+              },
+            }}
           >
             <Link
               target="_blank"
@@ -131,8 +131,9 @@ const HomewebItems = () => {
                 alt="A dinosaur"
               />
             </Link>
-          </motion.div>
-        </Box>
+          </Box>
+        </motion.div>
+
         <a
           target="_blank"
           rel="noopener noreferrer"
