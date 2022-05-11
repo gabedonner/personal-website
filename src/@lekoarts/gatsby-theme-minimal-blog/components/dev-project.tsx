@@ -34,26 +34,33 @@ const DevProject = ({
           //   //x: 5,
           //   opacity: 0.9,
           //   //webkitFilter: `blur(4px)`,
-          //   //filter: `blur(25px)`,
+          //   //filter: `blur(35px)`,
           //   transition: { type: 'spring', duration: 0.75 },
           // }}
           whileTap={{ scale: 0.98 }}
         >
-          <Link
+          <Box
             sx={{
-              width: ['auto', '450px', 'auto'],
+              transition: 'all 1s ease',
+
               boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
               '&:hover': {
                 boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
               },
             }}
-            href={visitHref}
           >
-            <StaticImage
-              src="../images/nyt-critics-picks-screenshot.png"
-              alt={title}
-            />
-          </Link>
+            <Link
+              sx={{
+                width: ['auto', '450px', 'auto'],
+              }}
+              href={visitHref}
+            >
+              <StaticImage
+                src="../images/nyt-critics-picks-screenshot.png"
+                alt={title}
+              />
+            </Link>
+          </Box>
         </motion.div>
         <Box sx={{ pr: 4, pt: 1, width: ['450px', '450px', 'auto'] }}>
           <Link href={visitHref} target="_blank" rel="noopener noreferrer">
