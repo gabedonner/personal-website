@@ -53,6 +53,8 @@ const DevProject = ({
                 width: ['auto', '450px', 'auto'],
               }}
               href={visitHref}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <StaticImage
                 src="../images/nyt-critics-picks-screenshot.png"
