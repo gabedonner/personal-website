@@ -63,7 +63,7 @@ const DevProject = ({
             </Link>
           </Box>
         </motion.div>
-        <Box sx={{ pr: 4, pt: [2, 1], width: ['450px', '450px', 'auto'] }}>
+        <Box sx={{ pr: [0, 4], pt: [2, 1], width: ['auto', '450px', 'auto'] }}>
           <Link href={visitHref} target="_blank" rel="noopener noreferrer">
             <Heading>{title}</Heading>
           </Link>
