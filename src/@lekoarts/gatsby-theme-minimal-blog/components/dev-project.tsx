@@ -42,7 +42,6 @@ const DevProject = ({
           <Box
             sx={{
               transition: 'all 1s ease',
-
               boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
               '&:hover': {
                 boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
@@ -62,7 +61,7 @@ const DevProject = ({
             </Link>
           </Box>
         </motion.div>
-        <Box sx={{ pr: 4, pt: 1, width: ['450px', '450px', 'auto'] }}>
+        <Box sx={{ pr: 4, pt: [0, 1], width: ['450px', '450px', 'auto'] }}>
           <Link href={visitHref} target="_blank" rel="noopener noreferrer">
             <Heading>{title}</Heading>
           </Link>
