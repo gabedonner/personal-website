@@ -1,6 +1,4 @@
-<h1 align="left">
-  Gabe's Website
-</h1>
+##Gabe's Website
 
 This website shadows the [`@lekoarts/gatsby-theme-minimal-blog`](https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-minimal-blog) by [Lekoarts](https://www.lekoarts.de).
 
