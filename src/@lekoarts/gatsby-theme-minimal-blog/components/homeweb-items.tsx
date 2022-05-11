@@ -10,9 +10,9 @@ const HomewebItems = () => {
     <Grid
       columns={[1, 1, 2, 2]}
       sx={{
-        //gap: ['4em'],
-        columnGap: ['5em'],
-        rowGap: ['3em', '5em'],
+        gap: ['4em'],
+        // columnGap: ['5em'],
+        // rowGap: ['3em', '5em'],
         mb: 6,
         ml: [0, 0, 0, 0],
         //px: ['0', '0', 0, '1.7em'],
