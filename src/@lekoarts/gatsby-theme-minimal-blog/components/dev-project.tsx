@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Text, Box, Grid, Heading, Link, Container } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
+import { motion } from 'framer-motion'
 
 type DevProjectProps = {
   title: string
@@ -26,21 +27,34 @@ const DevProject = ({
           alignItems: 'center',
         }}
       >
-        <Link
-          sx={{
-            width: ['auto', '450px', 'auto'],
-            boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-            '&:hover': {
-              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-            },
-          }}
-          href={visitHref}
+        <motion.div
+          // whileHover={{
+          //   //scale: 1.03,
+          //   y: -10,
+          //   //x: 5,
+          //   opacity: 0.9,
+          //   //webkitFilter: `blur(4px)`,
+          //   //filter: `blur(25px)`,
+          //   transition: { type: 'spring', duration: 0.75 },
+          // }}
+          whileTap={{ scale: 0.98 }}
         >
-          <StaticImage
-            src="../images/nyt-critics-picks-screenshot.png"
-            alt={title}
-          />
-        </Link>
+          <Link
+            sx={{
+              width: ['auto', '450px', 'auto'],
+              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+              '&:hover': {
+                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+              },
+            }}
+            href={visitHref}
+          >
+            <StaticImage
+              src="../images/nyt-critics-picks-screenshot.png"
+              alt={title}
+            />
+          </Link>
+        </motion.div>
         <Box sx={{ pr: 4, pt: 1, width: ['450px', '450px', 'auto'] }}>
           <Link href={visitHref} target="_blank" rel="noopener noreferrer">
             <Heading>{title}</Heading>
