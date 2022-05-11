@@ -42,15 +42,15 @@ const HomewebItems = () => {
         }}
       >
         <motion.div
-          // whileHover={{
-          //   //scale: 1.03,
-          //   y: -10,
-          //   //x: 5,
-          //   opacity: 0.9,
-          //   //webkitFilter: `blur(4px)`,
-          //   //filter: `blur(35px)`,
-          //   transition: { type: 'spring', duration: 0.75 },
-          // }}
+          whileHover={{
+            scale: 1.01,
+            //   y: -10,
+            //   //x: 5,
+            //   opacity: 0.9,
+            //   //webkitFilter: `blur(4px)`,
+            //   //filter: `blur(35px)`,
+            //   transition: { type: 'spring', duration: 0.75 },
+          }}
           whileTap={{ scale: 0.98 }}
         >
           <Box
@@ -99,15 +99,15 @@ const HomewebItems = () => {
         }}
       >
         <motion.div
-          // whileHover={{
-          //   //scale: 1.03,
-          //   y: -10,
-          //   //x: 5,
-          //   opacity: 0.9,
-          //   //webkitFilter: `blur(4px)`,
-          //   //filter: `blur(25px)`,
-          //   transition: { type: 'spring', duration: 0.75 },
-          // }}
+          whileHover={{
+            scale: 1.01,
+            //   y: -10,
+            //   //x: 5,
+            //   opacity: 0.9,
+            //   //webkitFilter: `blur(4px)`,
+            //   //filter: `blur(35px)`,
+            //   transition: { type: 'spring', duration: 0.75 },
+          }}
           whileTap={{ scale: 0.98 }}
         >
           <Box
