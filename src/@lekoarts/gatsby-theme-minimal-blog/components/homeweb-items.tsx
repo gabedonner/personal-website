@@ -49,23 +49,22 @@ const HomewebItems = () => {
             borderColor: 'pink',
             overflow: 'none',
 
-            ':hover': {
-              // color: `primary`,
-              //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
-              //border: '2px solid',
+            boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+            '&:hover': {
+              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
             },
           }}
         >
           <motion.div
-            whileHover={{
-              //scale: 1.03,
-              y: -10,
-              //x: 5,
-              opacity: 0.9,
-              //webkitFilter: `blur(4px)`,
-              //filter: `blur(35px)`,
-              transition: { type: 'spring', duration: 0.75 },
-            }}
+            // whileHover={{
+            //   //scale: 1.03,
+            //   y: -10,
+            //   //x: 5,
+            //   opacity: 0.9,
+            //   //webkitFilter: `blur(4px)`,
+            //   //filter: `blur(35px)`,
+            //   transition: { type: 'spring', duration: 0.75 },
+            // }}
             whileTap={{ scale: 0.95 }}
           >
             <Link
@@ -104,21 +103,22 @@ const HomewebItems = () => {
             mb: 4,
             width: ['90vw', '70vw', '325px', 'auto', 'auto'],
             transition: 'all 1s ease',
-            ':hover': {
-              // color: `primary`,
+            boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+            '&:hover': {
+              boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
             },
           }}
         >
           <motion.div
-            whileHover={{
-              //scale: 1.03,
-              y: -10,
-              //x: 5,
-              opacity: 0.9,
-              //webkitFilter: `blur(4px)`,
-              //filter: `blur(25px)`,
-              transition: { type: 'spring', duration: 0.75 },
-            }}
+            // whileHover={{
+            //   //scale: 1.03,
+            //   y: -10,
+            //   //x: 5,
+            //   opacity: 0.9,
+            //   //webkitFilter: `blur(4px)`,
+            //   //filter: `blur(25px)`,
+            //   transition: { type: 'spring', duration: 0.75 },
+            // }}
             whileTap={{ scale: 0.95 }}
           >
             <Link
