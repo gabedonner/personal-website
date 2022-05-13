@@ -247,8 +247,8 @@ const Blog = () => {
             City Magazine Cover
           </Text>
           <p>
-            A cover mockup for a hypothetical magazine called "City" for an
-            issue focusing on Baltimore.
+            A cover mockup and collage illustration for a hypothetical magazine
+            called "City" for an issue focusing on Baltimore.
           </p>
         </Box>
       </DesignProjectGrid>
