@@ -252,7 +252,7 @@ const Blog = () => {
           </p>
         </Box>
       </DesignProjectGrid>
-      <Flex sx={{ justifyContent: 'space-between' }}>
+      <Flex sx={{ justifyContent: 'space-between', px: [2, 0] }}>
         <Link sx={{ fontSize: 18 }} href="/">
           &#x2190; Home
         </Link>
