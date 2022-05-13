@@ -45,7 +45,7 @@ const HomeBottomSection = () => {
         gap: ['4em'],
         // columnGap: ['5em'],
         // rowGap: ['3em', '5em'],
-        mb: 6,
+        // mb: 6,
         ml: [0, 0, 0, 0],
         //px: ['0', '0', 0, '1.7em'],
         flexGrow: 99999,
@@ -110,7 +110,7 @@ const HomeBottomSection = () => {
         <Box sx={{ pt: 30, fontSize: 18 }}>
           <Link href="/about">About →</Link>
         </Box>
-        <Box sx={{ pt: 30, fontSize: 18 }}>
+        <Box sx={{ pt: 20, fontSize: 18 }}>
           <Link href="/design">Design Portfolio →</Link>
         </Box>
       </Box>
