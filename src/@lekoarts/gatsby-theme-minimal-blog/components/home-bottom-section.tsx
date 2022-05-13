@@ -108,7 +108,7 @@ const HomeBottomSection = () => {
           </Box>
         </Link> */}
         <Box sx={{ pt: 30, fontSize: 18 }}>
-          <Link href="/about">About →</Link>
+          <Link href="/about">About Page →</Link>
         </Box>
         <Box sx={{ pt: 20, fontSize: 18 }}>
           <Link href="/design">Design Portfolio →</Link>
