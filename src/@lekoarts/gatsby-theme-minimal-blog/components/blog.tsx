@@ -7,20 +7,25 @@ import Listing from './listing'
 import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
 import replaceSlashes from '../utils/replaceSlashes'
 import Seo from './seo'
+import DivideTitle from './title-divide'
 
-type PostsProps = {
-  posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
-    tags?: {
-      name: string
-      slug: string
-    }[]
-  }[]
+// type PostsProps = {
+//   posts: {
+//     slug: string
+//     title: string
+//     date: string
+//     excerpt: string
+//     description: string
+//     timeToRead?: number
+//     tags?: {
+//       name: string
+//       slug: string
+//     }[]
+//   }[]
+// }
+
+const Divider = () => {
+  return <Box sx={{ mr: 0, height: '1.5px', bg: 'divide', mb: 40 }}></Box>
 }
 
 const DesignProjectGrid = ({ children }: any) => {
@@ -31,7 +36,8 @@ const DesignProjectGrid = ({ children }: any) => {
   )
 }
 
-const Blog = ({ posts }: PostsProps) => {
+// const Blog = ({ posts }: PostsProps) => {
+const Blog = () => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
 
   return (
@@ -93,6 +99,7 @@ const Blog = ({ posts }: PostsProps) => {
           </p>
         </Box>
       </DesignProjectGrid>
+      <Divider />
       <DesignProjectGrid>
         <Link href="/design/city-magazine-cover">
           <StaticImage
@@ -108,6 +115,7 @@ const Blog = ({ posts }: PostsProps) => {
           {/* <Text variant="webDesc">City Magazine Cover</Text> */}
         </Box>
       </DesignProjectGrid>
+      <Divider />
       <DesignProjectGrid>
         <Box>
           <Link href="/design/city-magazine-cover">
@@ -141,6 +149,7 @@ const Blog = ({ posts }: PostsProps) => {
           </p>
         </Box>
       </DesignProjectGrid>
+      <Divider />
       <DesignProjectGrid>
         <Box>
           <Link href="/design/city-magazine-cover">
