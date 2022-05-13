@@ -24,6 +24,7 @@ import DivideTitle from './title-divide'
 import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
 //import Projects from '../texts/home-projects'
+import { motion } from 'framer-motion'
 
 type PostsProps = {
   posts: {
@@ -39,6 +40,32 @@ type PostsProps = {
     }[]
   }[]
   [key: string]: any
+}
+
+const SectionReveal = ({ children }: any) => {
+  const sectionRevealAnimations = {
+    hidden: { opacity: 0, y: 5, height: '100%' },
+    visible: { opacity: 1, y: 0 },
+  }
+
+  const transition = {
+    duration: 1,
+    ease: [0.6, 0.01, -0.05, 0.9],
+  }
+
+  return (
+    <motion.div
+      variants={sectionRevealAnimations}
+      // ref={ref}
+      initial="hidden"
+      //animate={controls}
+      transition={transition}
+      whileInView="visible"
+      viewport={{ once: true, margin: '-100px' }}
+    >
+      {children}
+    </motion.div>
+  )
 }
 
 const Homepage = ({ posts }: PostsProps) => {
@@ -75,8 +102,12 @@ const Homepage = ({ posts }: PostsProps) => {
       >
         <Hero />
       </section>
-      <section>
+
+      <SectionReveal>
         <DivideTitle title={'Development Projects'} />
+      </SectionReveal>
+
+      <SectionReveal>
         <DevProject
           title={"NYT Critic's Picks"}
           description={
@@ -85,12 +116,13 @@ const Homepage = ({ posts }: PostsProps) => {
           visitHref={`https://nyt-critics-picks.vercel.app`}
           githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
         />
-      </section>
-
-      <section>
+      </SectionReveal>
+      <SectionReveal>
         <DivideTitle title={'Client Websites'} />
+      </SectionReveal>
+      <SectionReveal>
         <HomewebItems />
-      </section>
+      </SectionReveal>
       {/* <Websites /> */}
       {/* <DivideTitle title={'Design Projects'} /> */}
       {/* <Projects /> */}
