@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Grid, Link, Flex, Text } from 'theme-ui'
-import { StaticImage } from 'gatsby-plugin-image'
 
 interface HomepageTitleProps {
   title: string
