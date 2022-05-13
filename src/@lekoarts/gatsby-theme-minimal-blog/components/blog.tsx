@@ -34,7 +34,6 @@ const DesignProjectGrid = ({ children }: any) => {
   const projectAnimations = {
     hidden: { opacity: 0, y: 5, height: '100%' },
     visible: { opacity: 1, y: 0 },
-    tap: { scale: 0.98 },
   }
 
   const transition = {
