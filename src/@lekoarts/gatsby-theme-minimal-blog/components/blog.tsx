@@ -59,14 +59,14 @@ const Blog = () => {
       {/* <Listing posts={posts} sx={{ mt: [4, 5] }} /> */}
       <DesignProjectGrid>
         <Box>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/lav-deodorant.jpg"
               alt="iconiclinx"
             />
           </Link>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mb: 0 }}
               src="../images/design-imgs/deodorant-spread.jpg"
@@ -102,14 +102,14 @@ const Blog = () => {
       <Divider />
       <DesignProjectGrid>
         <Box>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/gatsby-cover-mockup.jpg"
               alt="gatsby cover mockup"
             />
           </Link>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/gatsby-book-cover.jpg"
@@ -136,21 +136,21 @@ const Blog = () => {
       <Divider />
       <DesignProjectGrid>
         <Box>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/rooftop-detail.jpg"
               alt="gatsby cover mockup"
             />
           </Link>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/roof-terrace-iso-right.jpg"
               alt="gatsby cover mockup"
             />
           </Link>
-          <Link href="/design/city-magazine-cover">
+          <Link>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/rooftop-iso.jpg"
@@ -179,7 +179,7 @@ const Blog = () => {
       </DesignProjectGrid>
       <Divider />
       <DesignProjectGrid>
-        <Link href="/design/city-magazine-cover">
+        <Link>
           <StaticImage
             sx={{ mx: 0 }}
             src="../images/design-imgs/city-magazine-cover.jpg"
