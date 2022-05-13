@@ -57,7 +57,7 @@ const HomeBottomSection = () => {
     >
       <Box
         sx={{
-          mb: 4,
+          mb: [3, 4],
           pr: 3,
           // mx: 'auto',
           //border: '1px solid black',
