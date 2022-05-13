@@ -3,8 +3,39 @@ import { jsx, Box, Grid, Link, Flex, Text } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
 import DivideTitle from './title-divide'
+import { Link as TLink } from 'gatsby'
 //https://blog.maximeheckel.com/posts/advanced-animation-patterns-with-framer-motion/
 //how to animate children on hover
+
+interface MiniDivideTitleProps {
+  title: string
+}
+
+const MiniDivideTitle = ({ title }: MiniDivideTitleProps) => {
+  return (
+    <Box
+      sx={{
+        pb: 15,
+        mb: 2,
+        //flexGrow: 1,
+        // flexBasis: [256, 190, 256, 256],
+        //flexBasis: ['27.5%'],
+      }}
+    >
+      <Text
+        sx={{
+          fontSize: [1, 2, 2],
+          color: 'secondary',
+          bg: 'background',
+          pr: 4,
+        }}
+      >
+        {title}
+      </Text>
+      <Box sx={{ mr: 0, height: '1px', bg: 'divide', mt: '-.9em' }}></Box>
+    </Box>
+  )
+}
 
 const HomeBottomSection = () => {
   return (
@@ -22,29 +53,33 @@ const HomeBottomSection = () => {
         minWidth: 300,
         //pl: '25%',
         pt: 25,
-        a: {
-          fontWeight: 'medium',
-          fontSize: [2, 3, 3],
-          color: 'text',
-          textDecoration: 'none',
-          pr: 1,
-          ':hover': {
-            // color: `primary`,
-            textDecoration: 'underline',
-            pr: '1rem',
-          },
-        },
       }}
     >
       <Box
         sx={{
           mb: 4,
+          pr: 3,
           // mx: 'auto',
           //border: '1px solid black',
         }}
       >
-        <DivideTitle title="This Website" />
-        <Text>text here</Text>
+        <MiniDivideTitle title="This Website" />
+        <Box sx={{ mt: 40 }}>
+          <Text>
+            This website was built using React, Gatsby, Theme UI, and Framer.
+            Motion.
+          </Text>
+          <br />
+          <Box sx={{ pt: 30, fontSize: 18 }}>
+            <Link
+              href="https://github.com/gabedonner/nyt-critics-picks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github →
+            </Link>
+          </Box>
+        </Box>
       </Box>
       <Box
         sx={{
@@ -53,9 +88,31 @@ const HomeBottomSection = () => {
           //border: '1px solid black',
         }}
       >
-        <DivideTitle title="Design Portfolio" />
-
-        <Text>text here</Text>
+        <MiniDivideTitle title="See Also" />
+        {/* <Link href="/">
+          <Box
+            sx={{
+              p: [90, 25, 90, 25],
+              borderRight: '1px solid',
+              borderBottom: '1px solid',
+              borderLeft: '1px solid',
+              borderColor: 'divide',
+              textAlign: 'center',
+              transition: 'all .5s ease',
+              '&:hover': {
+                bg: 'divide',
+              },
+            }}
+          >
+            <Text sx={{}}>Arrow</Text>
+          </Box>
+        </Link> */}
+        <Box sx={{ pt: 30, fontSize: 18 }}>
+          <Link href="/about">About →</Link>
+        </Box>
+        <Box sx={{ pt: 30, fontSize: 18 }}>
+          <Link href="/design">Design Portfolio →</Link>
+        </Box>
       </Box>
     </Grid>
   )
