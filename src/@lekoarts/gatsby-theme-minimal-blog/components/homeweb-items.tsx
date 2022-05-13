@@ -71,7 +71,7 @@ const HomewebItems = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://iconiclinx.webflow.io"
+              href="https://iconiclinx.com"
             >
               <StaticImage
                 src="../images/iconiclinx-website-snapshot.png"
