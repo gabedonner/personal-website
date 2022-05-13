@@ -32,7 +32,7 @@ const Divider = () => {
 
 const DesignProjectGrid = ({ children }: any) => {
   const projectAnimations = {
-    hidden: { opacity: 0, y: 5, height: '100%' },
+    hidden: { opacity: 0, y: 15, height: '100%' },
     visible: { opacity: 1, y: 0 },
   }
 
@@ -49,7 +49,7 @@ const DesignProjectGrid = ({ children }: any) => {
       //animate={controls}
       transition={transition}
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, margin: '-100px' }}
     >
       <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
         {children}

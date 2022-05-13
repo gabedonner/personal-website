@@ -44,7 +44,7 @@ type PostsProps = {
 
 const SectionReveal = ({ children }: any) => {
   const sectionRevealAnimations = {
-    hidden: { opacity: 0, y: 5, height: '100%' },
+    hidden: { opacity: 0, y: 15, height: '100%' },
     visible: { opacity: 1, y: 0 },
   }
 
