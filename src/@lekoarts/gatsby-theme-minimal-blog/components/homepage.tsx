@@ -14,7 +14,6 @@ import Hero from '../texts/hero'
 // @ts-ignore
 import Websites from '../texts/home-websites'
 // @ts-ignore
-import Projects from '../texts/home-projects'
 // @ts-ignore
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
@@ -24,6 +23,7 @@ import HeroSVG from '../svg/dot-graph.inline.svg'
 import DivideTitle from './title-divide'
 import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
+//import Projects from '../texts/home-projects'
 
 type PostsProps = {
   posts: {
@@ -92,8 +92,8 @@ const Homepage = ({ posts }: PostsProps) => {
         <HomewebItems />
       </section>
       {/* <Websites /> */}
-      <DivideTitle title={'Design Projects'} />
-      <Projects />
+      {/* <DivideTitle title={'Design Projects'} /> */}
+      {/* <Projects /> */}
     </Layout>
   )
 }
