@@ -25,6 +25,7 @@ import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
 //import Projects from '../texts/home-projects'
 import { motion } from 'framer-motion'
+import HomeBottomSection from './home-bottom-section'
 
 type PostsProps = {
   posts: {
@@ -122,6 +123,9 @@ const Homepage = ({ posts }: PostsProps) => {
       </SectionReveal>
       <SectionReveal>
         <HomewebItems />
+      </SectionReveal>
+      <SectionReveal>
+        <HomeBottomSection />
       </SectionReveal>
       {/* <Websites /> */}
       {/* <DivideTitle title={'Design Projects'} /> */}
