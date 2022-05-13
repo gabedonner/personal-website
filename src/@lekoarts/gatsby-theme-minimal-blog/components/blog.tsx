@@ -127,6 +127,42 @@ const Blog = () => {
           <Link>
             <StaticImage
               sx={{ mb: 40 }}
+              src="../images/design-imgs/big-ben-cover1.jpg"
+              alt="big ben cover 1"
+            />
+          </Link>
+          <Link>
+            <StaticImage
+              sx={{ mx: 0 }}
+              src="../images/design-imgs/big-ben-cover2.jpg"
+              alt="big ben cover 2"
+            />
+          </Link>
+        </Box>
+        <Box>
+          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            Big Ben Album Covers
+          </Text>
+          <p>
+            A cover series for two live albums by the Baltimore-based band Big
+            Ben.
+          </p>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://bigbenband.bandcamp.com/"
+            >
+              Check them out on Bandcamp &#x2192;
+            </a>
+          </p>
+        </Box>
+      </DesignProjectGrid>
+      <DesignProjectGrid>
+        <Box>
+          <Link>
+            <StaticImage
+              sx={{ mb: 40 }}
               src="../images/design-imgs/gatsby-cover-mockup.jpg"
               alt="gatsby cover mockup"
             />
@@ -143,7 +179,7 @@ const Blog = () => {
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Gatsby Book Cover
           </Text>
-          <p>A cover mockup for The Great Gatsby</p>
+          <p>A cover mockup for The Great Gatsby.</p>
           <p>
             <a
               target="_blank"
@@ -184,8 +220,8 @@ const Blog = () => {
             Green Rooftop Terrace
           </Text>
           <p>
-            A Renderings for a rooftop terrace built using sustainable
-            materials.
+            A Renderings for a rooftop terrace built using sustainable materials
+            and indigenous plants.
           </p>
           <p>
             <a
@@ -211,44 +247,8 @@ const Blog = () => {
             City Magazine Cover
           </Text>
           <p>
-            A magazine cover mockup for a hypothetical magazine called "City"
-            for an issue focusing on Baltimore.
-          </p>
-        </Box>
-      </DesignProjectGrid>
-      <DesignProjectGrid>
-        <Box>
-          <Link>
-            <StaticImage
-              sx={{ mb: 40 }}
-              src="../images/design-imgs/big-ben-cover1.jpg"
-              alt="big ben cover 1"
-            />
-          </Link>
-          <Link>
-            <StaticImage
-              sx={{ mx: 0 }}
-              src="../images/design-imgs/big-ben-cover2.jpg"
-              alt="big ben cover 2"
-            />
-          </Link>
-        </Box>
-        <Box>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            Big Ben Album Covers
-          </Text>
-          <p>
-            A cover series for two live albums by the Baltimore-based band Big
-            Ben
-          </p>
-          <p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://bigbenband.bandcamp.com/"
-            >
-              Check them out on Bandcamp &#x2192;
-            </a>
+            A cover mockup for a hypothetical magazine called "City" for an
+            issue focusing on Baltimore.
           </p>
         </Box>
       </DesignProjectGrid>
