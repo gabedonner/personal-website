@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Heading, Link, Flex, Grid, Box, Text } from 'theme-ui'
 //import { Link } from 'gatsby'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from './layout'
 import Listing from './listing'
@@ -8,6 +9,7 @@ import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
 import replaceSlashes from '../utils/replaceSlashes'
 import Seo from './seo'
 import DivideTitle from './title-divide'
+import { motion } from 'framer-motion'
 
 // type PostsProps = {
 //   posts: {
@@ -29,10 +31,33 @@ const Divider = () => {
 }
 
 const DesignProjectGrid = ({ children }: any) => {
+  const projectAnimations = {
+    hidden: { opacity: 0, y: 5, height: '100%' },
+    visible: { opacity: 1, y: 0 },
+    tap: { scale: 0.98 },
+  }
+
+  const transition = {
+    duration: 1,
+    ease: [0.6, 0.01, -0.05, 0.9],
+    delayChildren: 0.5,
+  }
+
   return (
-    <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
-      {children}
-    </Grid>
+    <motion.div
+      variants={projectAnimations}
+      // ref={ref}
+      initial="hidden"
+      //animate={controls}
+      transition={transition}
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
+        {children}
+      </Grid>
+      {/* <Divider /> */}
+    </motion.div>
   )
 }
 
@@ -99,7 +124,6 @@ const Blog = () => {
           </p>
         </Box>
       </DesignProjectGrid>
-      <Divider />
       <DesignProjectGrid>
         <Box>
           <Link>
@@ -133,7 +157,6 @@ const Blog = () => {
           </p>
         </Box>
       </DesignProjectGrid>
-      <Divider />
       <DesignProjectGrid>
         <Box>
           <Link>
@@ -177,7 +200,6 @@ const Blog = () => {
           </p>
         </Box>
       </DesignProjectGrid>
-      <Divider />
       <DesignProjectGrid>
         <Link>
           <StaticImage
