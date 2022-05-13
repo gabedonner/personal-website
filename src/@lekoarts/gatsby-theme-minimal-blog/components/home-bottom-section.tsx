@@ -72,7 +72,7 @@ const HomeBottomSection = () => {
           <br />
           <Box sx={{ pt: 30, fontSize: 18 }}>
             <Link
-              href="https://github.com/gabedonner/personal-site"
+              href="https://github.com/gabedonner/personal-website"
               target="_blank"
               rel="noopener noreferrer"
             >
