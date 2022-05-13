@@ -13,7 +13,7 @@ const HomewebItems = () => {
         gap: ['4em'],
         // columnGap: ['5em'],
         // rowGap: ['3em', '5em'],
-        mb: 5,
+        mb: [4, 5],
         ml: [0, 0, 0, 0],
         //px: ['0', '0', 0, '1.7em'],
         flexGrow: 99999,
@@ -37,7 +37,7 @@ const HomewebItems = () => {
     >
       <Box
         sx={{
-          mb: 4,
+          mb: [3, 4],
           mx: 'auto',
           //border: '1px solid black',
         }}

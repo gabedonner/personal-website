@@ -22,7 +22,7 @@ const DevProject = ({
         gap={[4, 5]}
         columns={[1, 1, 2]}
         sx={{
-          pb: 6,
+          pb: [60, 6],
           px: [0, 0, 0],
           alignItems: 'center',
         }}
