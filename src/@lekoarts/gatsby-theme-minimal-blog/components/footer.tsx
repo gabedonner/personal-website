@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Link } from "theme-ui"
-import useSiteMetadata from "../hooks/use-site-metadata"
+import { jsx, Link } from 'theme-ui'
+import useSiteMetadata from '../hooks/use-site-metadata'
 
 const Footer = () => {
   const { siteTitle } = useSiteMetadata()
@@ -11,7 +11,7 @@ const Footer = () => {
         boxSizing: `border-box`,
         display: `flex`,
         justifyContent: `right`,
-        mt: [6],
+        mt: [5],
         color: `secondary`,
         a: {
           variant: `links.secondary`,
@@ -20,7 +20,7 @@ const Footer = () => {
         variant: `dividers.top`,
       }}
     >
-      <div sx={{justifyContent:'right'}}>
+      <div sx={{ justifyContent: 'right' }}>
         &copy; {new Date().getFullYear()} {siteTitle}
       </div>
       {/* <div>
