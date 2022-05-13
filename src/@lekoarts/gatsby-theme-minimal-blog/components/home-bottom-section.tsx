@@ -76,7 +76,7 @@ const HomeBottomSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github →
+              See the code →
             </Link>
           </Box>
         </Box>
