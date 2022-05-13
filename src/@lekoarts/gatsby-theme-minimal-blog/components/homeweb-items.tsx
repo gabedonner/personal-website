@@ -20,6 +20,7 @@ const HomewebItems = () => {
         flexBasis: 300,
         minWidth: 300,
         //pl: '25%',
+        pt: 25,
         a: {
           fontWeight: 'medium',
           fontSize: [2, 3, 3],

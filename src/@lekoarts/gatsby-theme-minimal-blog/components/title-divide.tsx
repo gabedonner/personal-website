@@ -9,7 +9,7 @@ const HomepageTitle = ({ title }: HomepageTitleProps) => {
   return (
     <Box
       sx={{
-        pb: [4],
+        pb: 15,
         mb: 5,
         //flexGrow: 1,
         // flexBasis: [256, 190, 256, 256],

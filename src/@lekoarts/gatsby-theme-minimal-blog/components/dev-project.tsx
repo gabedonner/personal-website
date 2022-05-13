@@ -17,7 +17,7 @@ const DevProject = ({
   githubHref,
 }: DevProjectProps) => {
   return (
-    <Container>
+    <Container sx={{ mt: -10 }}>
       <Grid
         gap={[4, 5]}
         columns={[1, 1, 2]}
