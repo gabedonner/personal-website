@@ -72,6 +72,25 @@ const Blog = ({ posts }: PostsProps) => {
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             nfuse LLC
           </Text>
+          <p>
+            nfuse LLC is a bodycare company that specializes in magnesium-based
+            products, implementing a patented transdermal delivery system.
+          </p>
+
+          <p>
+            Beginning in 2016, I've been responsible for the company's branding
+            and package design. Today, nfuse products are sold at over 1,000
+            stores around the United States, including CVS and Whole Foods.
+          </p>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.nfusemagnesium.com"
+            >
+              Click here to see their website &#8594;
+            </a>
+          </p>
         </Box>
       </DesignProjectGrid>
       <DesignProjectGrid>
@@ -109,7 +128,17 @@ const Blog = ({ posts }: PostsProps) => {
         <Box>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Gatsby Book Cover
-          </Text>{' '}
+          </Text>
+          <p>A cover mockup for The Great Gatsby</p>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1Fz5sCV5t3dekwvFpyM2xEgSxSmf2Gn0X/view?usp=sharing"
+            >
+              Click here to see the full brief &#x2192;
+            </a>
+          </p>
         </Box>
       </DesignProjectGrid>
       <DesignProjectGrid>
@@ -132,7 +161,20 @@ const Blog = ({ posts }: PostsProps) => {
         <Box>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Green Rooftop Terrace
-          </Text>{' '}
+          </Text>
+          <p>
+            A Renderings for a rooftop terrace built using sustainable
+            materials.
+          </p>
+          <p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
+            >
+              Click here to see the full brief &#x2192;
+            </a>
+          </p>
         </Box>
       </DesignProjectGrid>
     </Layout>
