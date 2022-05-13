@@ -252,6 +252,14 @@ const Blog = () => {
           </p>
         </Box>
       </DesignProjectGrid>
+      <Flex sx={{ justifyContent: 'space-between' }}>
+        <Link sx={{ fontSize: 18 }} href="/">
+          &#x2190; Home
+        </Link>
+        <Link sx={{ fontSize: 18 }} href="/about">
+          About &#x2192;
+        </Link>
+      </Flex>
     </Layout>
   )
 }
