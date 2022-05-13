@@ -23,16 +23,16 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
-        blogPath: '/projects',
-        postsPrefix: '/projects',
+        blogPath: '/design',
+        postsPrefix: '/design',
         navigation: [
           {
             title: `Home`,
             slug: `/`,
           },
           {
-            title: `Projects`,
-            slug: `/projects`,
+            title: `Design`,
+            slug: `/design`,
           },
           {
             title: `About`,
@@ -42,7 +42,7 @@ module.exports = {
         externalLinks: [
           {
             name: `Email`,
-            url: `mailto:contact@gabedonner.com`
+            url: `mailto:contact@gabedonner.com`,
           },
           {
             name: `CV`,
@@ -92,12 +92,12 @@ module.exports = {
     //https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/
     //added in svg plugin but have not set up the path yet
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /\.inline\.svg$/ // See above to configure properly
-        }
-      }
+          include: /\.inline\.svg$/, // See above to configure properly
+        },
+      },
     },
     //`gatsby-plugin-sharp`,
     {
@@ -173,7 +173,7 @@ module.exports = {
                   excerpt: post.excerpt,
                   url,
                   guid: url,
-                  custom_elements: [{ "content:encoded": content }],
+                  custom_elements: [{ 'content:encoded': content }],
                 }
               }),
             query: `
