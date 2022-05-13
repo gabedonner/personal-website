@@ -30,7 +30,7 @@ const Divider = () => {
 
 const DesignProjectGrid = ({ children }: any) => {
   return (
-    <Grid columns={[1, 1, 2, 2]} sx={{ mb: 120, gap: 60 }}>
+    <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
       {children}
     </Grid>
   )
@@ -97,22 +97,6 @@ const Blog = () => {
               Click here to see their website &#8594;
             </a>
           </p>
-        </Box>
-      </DesignProjectGrid>
-      <Divider />
-      <DesignProjectGrid>
-        <Link href="/design/city-magazine-cover">
-          <StaticImage
-            sx={{ mx: 0 }}
-            src="../images/design-imgs/city-magazine-cover.jpg"
-            alt="city magazine cover"
-          />
-        </Link>
-        <Box>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            City Magazine Cover
-          </Text>
-          {/* <Text variant="webDesc">City Magazine Cover</Text> */}
         </Box>
       </DesignProjectGrid>
       <Divider />
@@ -184,6 +168,22 @@ const Blog = () => {
               Click here to see the full brief &#x2192;
             </a>
           </p>
+        </Box>
+      </DesignProjectGrid>
+      <Divider />
+      <DesignProjectGrid>
+        <Link href="/design/city-magazine-cover">
+          <StaticImage
+            sx={{ mx: 0 }}
+            src="../images/design-imgs/city-magazine-cover.jpg"
+            alt="city magazine cover"
+          />
+        </Link>
+        <Box>
+          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            City Magazine Cover
+          </Text>
+          {/* <Text variant="webDesc">City Magazine Cover</Text> */}
         </Box>
       </DesignProjectGrid>
     </Layout>
