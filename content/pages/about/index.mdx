@@ -3,9 +3,9 @@ title: About
 slug: "/about"
 ---
 
-import { Box } from "theme-ui";
+import { Box, Link, Text } from "theme-ui"
 
-<Box sx={{ mr: [0, 2], my: 5 }}>
+<Box sx={{ mr: [0, 2], mt: 5, mb: 40 }}>
   <p>Hi! I'm Gabe.</p>
   <p>
     Since 2015, I've worked as a freelance developer and designer for
@@ -48,7 +48,40 @@ import { Box } from "theme-ui";
   </p>
 </Box>
 
-[CV](https://drive.google.com/file/d/1_e7RnFWboJDe52S_ipONo8rd4ohdZ6vy/view?usp=sharing)
+<!-- [CV](https://drive.google.com/file/d/1_e7RnFWboJDe52S_ipONo8rd4ohdZ6vy/view?usp=sharing)
 / [Email](mailto:contact@gabedonner.com)
 / [LinkedIn](https://www.linkedin.com/in/gabedonner/)
-/ [Github](https://github.com/gabedonner/)
+/ [Github](https://github.com/gabedonner/) -->
+
+<Box sx={{fontSize: 20, pb: 20}}>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://drive.google.com/file/d/1_e7RnFWboJDe52S_ipONo8rd4ohdZ6vy/view?usp=sharing"
+    >
+    CV
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+  <Link
+    href="mailto:contact@gabedonner.com"
+    >
+    Email
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://www.linkedin.com/in/gabedonner/"
+    >
+    LinkedIn
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/gabedonner/"
+    >
+    Github
+  </Link>
+</Box>
