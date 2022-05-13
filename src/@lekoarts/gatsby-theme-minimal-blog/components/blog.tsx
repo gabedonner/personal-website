@@ -112,13 +112,13 @@ const Blog = () => {
             around the United States, including CVS and Whole Foods.
           </p>
           <p>
-            <a
+            <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.nfusemagnesium.com"
             >
               Click here to see their website &#8594;
-            </a>
+            </Link>
           </p>
         </Box>
       </DesignProjectGrid>
@@ -148,13 +148,13 @@ const Blog = () => {
             Ben.
           </p>
           <p>
-            <a
+            <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://bigbenband.bandcamp.com/"
             >
               Check them out on Bandcamp &#x2192;
-            </a>
+            </Link>
           </p>
         </Box>
       </DesignProjectGrid>
@@ -181,13 +181,13 @@ const Blog = () => {
           </Text>
           <p>A cover mockup for The Great Gatsby.</p>
           <p>
-            <a
+            <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1Fz5sCV5t3dekwvFpyM2xEgSxSmf2Gn0X/view?usp=sharing"
             >
               Click here to see the full brief &#x2192;
-            </a>
+            </Link>
           </p>
         </Box>
       </DesignProjectGrid>
@@ -224,13 +224,13 @@ const Blog = () => {
             and indigenous plants.
           </p>
           <p>
-            <a
+            <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
             >
               Click here to see the full brief &#x2192;
-            </a>
+            </Link>
           </p>
         </Box>
       </DesignProjectGrid>
