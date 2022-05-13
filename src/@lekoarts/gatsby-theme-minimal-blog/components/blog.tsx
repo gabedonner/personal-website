@@ -86,14 +86,14 @@ const Blog = () => {
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/lav-deodorant.jpg"
-              alt="iconiclinx"
+              alt="nfuse lavender deodorant"
             />
           </Link>
           <Link>
             <StaticImage
               sx={{ mb: 0 }}
               src="../images/design-imgs/deodorant-spread.jpg"
-              alt="iconiclinx"
+              alt="nfuse deodorant spread"
             />
           </Link>
         </Box>
@@ -171,7 +171,7 @@ const Blog = () => {
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/gatsby-book-cover.jpg"
-              alt="gatsby cover mockup"
+              alt="gatsby book cover layout"
             />
           </Link>
         </Box>
@@ -197,21 +197,21 @@ const Blog = () => {
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/rooftop-detail.jpg"
-              alt="gatsby cover mockup"
+              alt="rooftop terrace render detail"
             />
           </Link>
           <Link>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/roof-terrace-iso-right.jpg"
-              alt="gatsby cover mockup"
+              alt="rooftop terrace render iso"
             />
           </Link>
           <Link>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/rooftop-iso.jpg"
-              alt="rooftop iso"
+              alt="rooftop terrace wireframe iso"
             />
           </Link>
         </Box>
