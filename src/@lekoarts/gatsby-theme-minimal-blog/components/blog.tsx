@@ -84,9 +84,9 @@ const Blog = () => {
           </p>
 
           <p>
-            Beginning in 2016, I've been responsible for the company's branding
-            and package design. Today, nfuse products are sold at over 1,000
-            stores around the United States, including CVS and Whole Foods.
+            Since 2016, I've been responsible for the company's branding and
+            package design. Today, nfuse products are sold at over 1,000 stores
+            around the United States, including CVS and Whole Foods.
           </p>
           <p>
             <a
@@ -145,9 +145,16 @@ const Blog = () => {
           </Link>
           <Link href="/design/city-magazine-cover">
             <StaticImage
-              sx={{ mx: 0 }}
+              sx={{ mb: 40 }}
               src="../images/design-imgs/roof-terrace-iso-right.jpg"
               alt="gatsby cover mockup"
+            />
+          </Link>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mx: 0 }}
+              src="../images/design-imgs/rooftop-iso.jpg"
+              alt="rooftop iso"
             />
           </Link>
         </Box>
