@@ -25,7 +25,7 @@ type PostsProps = {
 
 const DesignProjectGrid = ({ children }: any) => {
   return (
-    <Grid columns={[1, 1, 2, 2]} sx={{ mb: 60, gap: 60 }}>
+    <Grid columns={[1, 1, 2, 2]} sx={{ mb: 120, gap: 60 }}>
       {children}
     </Grid>
   )
@@ -52,6 +52,29 @@ const Blog = ({ posts }: PostsProps) => {
       </Flex> */}
       {/* <Listing posts={posts} sx={{ mt: [4, 5] }} /> */}
       <DesignProjectGrid>
+        <Box>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mb: 40 }}
+              src="../images/design-imgs/lav-deodorant.jpg"
+              alt="iconiclinx"
+            />
+          </Link>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mb: 0 }}
+              src="../images/design-imgs/deodorant-spread.jpg"
+              alt="iconiclinx"
+            />
+          </Link>
+        </Box>
+        <Box>
+          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            nfuse LLC
+          </Text>
+        </Box>
+      </DesignProjectGrid>
+      <DesignProjectGrid>
         <Link href="/design/city-magazine-cover">
           <StaticImage
             sx={{ mx: 0 }}
@@ -67,30 +90,48 @@ const Blog = ({ posts }: PostsProps) => {
         </Box>
       </DesignProjectGrid>
       <DesignProjectGrid>
-        <Link href="/design/city-magazine-cover">
-          <StaticImage
-            sx={{ mx: 0 }}
-            src="../images/design-imgs/lav-deodorant.jpg"
-            alt="iconiclinx"
-          />
-        </Link>
         <Box>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            nfuse LLC
-          </Text>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mb: 40 }}
+              src="../images/design-imgs/gatsby-cover-mockup.jpg"
+              alt="gatsby cover mockup"
+            />
+          </Link>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mx: 0 }}
+              src="../images/design-imgs/gatsby-book-cover.jpg"
+              alt="gatsby cover mockup"
+            />
+          </Link>
         </Box>
-      </DesignProjectGrid>
-      <DesignProjectGrid>
-        <Link href="/design/city-magazine-cover">
-          <StaticImage
-            sx={{ mx: 0 }}
-            src="../images/design-imgs/gatsby-cover-mockup.jpg"
-            alt="iconiclinx"
-          />
-        </Link>
         <Box>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Gatsby Book Cover
+          </Text>{' '}
+        </Box>
+      </DesignProjectGrid>
+      <DesignProjectGrid>
+        <Box>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mb: 40 }}
+              src="../images/design-imgs/rooftop-detail.jpg"
+              alt="gatsby cover mockup"
+            />
+          </Link>
+          <Link href="/design/city-magazine-cover">
+            <StaticImage
+              sx={{ mx: 0 }}
+              src="../images/design-imgs/roof-terrace-iso-right.jpg"
+              alt="gatsby cover mockup"
+            />
+          </Link>
+        </Box>
+        <Box>
+          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            Green Rooftop Terrace
           </Text>{' '}
         </Box>
       </DesignProjectGrid>
