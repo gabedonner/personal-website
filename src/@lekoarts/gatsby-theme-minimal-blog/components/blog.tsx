@@ -97,7 +97,7 @@ const Blog = () => {
             />
           </Link>
         </Box>
-        <Box>
+        <Box sx={{ px: 2 }}>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             nfuse LLC
           </Text>
@@ -139,7 +139,7 @@ const Blog = () => {
             />
           </Link>
         </Box>
-        <Box>
+        <Box sx={{ px: 2 }}>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Big Ben Album Covers
           </Text>
@@ -175,7 +175,7 @@ const Blog = () => {
             />
           </Link>
         </Box>
-        <Box>
+        <Box sx={{ px: 2 }}>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Gatsby Book Cover
           </Text>
@@ -215,7 +215,7 @@ const Blog = () => {
             />
           </Link>
         </Box>
-        <Box>
+        <Box sx={{ px: 2 }}>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             Green Rooftop Terrace
           </Text>
@@ -242,7 +242,7 @@ const Blog = () => {
             alt="city magazine cover"
           />
         </Link>
-        <Box>
+        <Box sx={{ px: 2 }}>
           <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
             City Magazine Cover
           </Text>
