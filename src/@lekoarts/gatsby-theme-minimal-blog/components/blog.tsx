@@ -34,7 +34,7 @@ const Divider = () => {
 
 const DesignProjectGrid = ({ children }: any) => {
   return (
-    <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
+    <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 45] }}>
       {children}
     </Grid>
   )
