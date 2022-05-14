@@ -1,15 +1,23 @@
 /** @jsx jsx */
-import * as React from "react"
-import { jsx, Link as TLink } from "theme-ui"
-import { Link } from "gatsby"
-import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
-import replaceSlashes from "../utils/replaceSlashes"
+import * as React from 'react'
+import { jsx, Link as TLink } from 'theme-ui'
+import { Link } from 'gatsby'
+import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
+import replaceSlashes from '../utils/replaceSlashes'
 
 type NavigationProps = {
   nav: {
     title: string
     slug: string
   }[]
+}
+
+const CVLink = () => {
+  return (
+    <TLink target="_blank" rel="noopener noreferrer" href={`/Resume-2022.pdf`}>
+      CV
+    </TLink>
+  )
 }
 
 function AsLink(props: any) {
@@ -22,12 +30,23 @@ const Navigation = ({ nav }: NavigationProps) => {
   return (
     <React.Fragment>
       {nav && nav.length > 0 && (
-        <nav sx={{ "a:not(:last-of-type)": { mr: 3 }, fontSize: [1, `18px`], ".active": { color: `heading` } }}>
+        <nav
+          sx={{
+            'a:not(:last-of-type)': { mr: 3 },
+            fontSize: [1, `18px`],
+            '.active': { color: `heading` },
+          }}
+        >
           {nav.map((item) => (
-            <TLink key={item.slug} as={AsLink} to={replaceSlashes(`/${basePath}/${item.slug}`)}>
+            <TLink
+              key={item.slug}
+              as={AsLink}
+              to={replaceSlashes(`/${basePath}/${item.slug}`)}
+            >
               {item.title}
             </TLink>
           ))}
+          <CVLink />
         </nav>
       )}
     </React.Fragment>
