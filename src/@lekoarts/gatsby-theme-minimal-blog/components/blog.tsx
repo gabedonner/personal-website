@@ -91,8 +91,10 @@ const Blog = () => {
 
             <p>
               Since 2016, I've been responsible for the company's branding and
-              package design. Today, nfuse products are sold at over 1,000
-              stores around the United States, including CVS and Whole Foods.
+              package design, and developed a custom Wordpress e-commerce site
+              for their launch. As of 2022, nfuse products are sold at over
+              1,000 locations across the United States, including CVS and Whole
+              Foods.
             </p>
             <p>
               <Link
