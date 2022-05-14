@@ -69,8 +69,8 @@ const HomeBottomSection = () => {
         <RevealAnimationWrapper>
           <Box sx={{}}>
             <Text>
-              This website was built using React, Gatsby, Theme UI, and Framer
-              Motion.
+              This website was built using React, Gatsby, Typescript, Theme UI,
+              and Framer Motion.
             </Text>
             <br />
             <Box sx={{ pt: 30, fontSize: 18 }}>
