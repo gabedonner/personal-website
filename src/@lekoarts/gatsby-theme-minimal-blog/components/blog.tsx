@@ -209,8 +209,8 @@ const Blog = () => {
               Green Rooftop Terrace
             </Text>
             <p>
-              A Renderings for a rooftop terrace built using sustainable
-              materials and indigenous plants.
+              Renderings for a rooftop terrace built using sustainable materials
+              and indigenous plants.
             </p>
             <p>
               <Link
@@ -218,7 +218,7 @@ const Blog = () => {
                 rel="noopener noreferrer"
                 href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
               >
-                Click here to see the full brief &#x2192;
+                Click here to see the full design brief &#x2192;
               </Link>
             </p>
           </Box>
