@@ -244,6 +244,38 @@ const Blog = () => {
           </Box>
         </EnterAnimationWrapper>
       </DesignProjectGrid>
+      <DesignProjectGrid>
+        <Box>
+          <RevealAnimationWrapper>
+            <StaticImage
+              sx={{
+                mb: 0,
+                border: '1px dotted',
+                borderColor: 'muted',
+              }}
+              src="../images/design-imgs/sns-logo.png"
+              alt="station north sound logo"
+            />
+          </RevealAnimationWrapper>
+        </Box>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              Station North Sound
+            </Text>
+            <p>Logo for a Baltimore-based recording studio.</p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://http://www.stationnorthsound.com/"
+              >
+                Check out their website &#8594;
+              </Link>
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
+      </DesignProjectGrid>
       <Flex sx={{ justifyContent: 'space-between', px: [2, 0] }}>
         <Link sx={{ fontSize: 18 }} href="/">
           &#x2190; Home
