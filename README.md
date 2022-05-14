@@ -11,8 +11,6 @@ If you use npm 7 or above use the `--legacy-peer-deps` flag. If you use npm 6 yo
 npm install --legacy-peer-deps
 ```
 
-### **Open the code and start customizing!**
-
 Start the site by running `npm run develop`.
 
 Your site is now running at `http://localhost:8000`
