@@ -5,6 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
 import DivideTitle from './title-divide'
 import RevealAnimationWrapper from './reveal-animation-wrapper'
+import EnterAnimationWrapper from './enter-animation-wrapper'
 //https://blog.maximeheckel.com/posts/advanced-animation-patterns-with-framer-motion/
 //how to animate children on hover
 
@@ -42,14 +43,14 @@ const HomewebItems = () => {
           },
         }}
       >
-        <RevealAnimationWrapper>
-          <Box
-            sx={{
-              mb: [3, 4],
-              mx: 'auto',
-              //border: '1px solid black',
-            }}
-          >
+        <Box
+          sx={{
+            mb: [3, 4],
+            mx: 'auto',
+            //border: '1px solid black',
+          }}
+        >
+          <RevealAnimationWrapper>
             <motion.div
               whileHover={{
                 scale: 1.01,
@@ -88,7 +89,8 @@ const HomewebItems = () => {
                 </Link>
               </Box>
             </motion.div>
-
+          </RevealAnimationWrapper>
+          <EnterAnimationWrapper delayDuration={0}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -101,15 +103,15 @@ const HomewebItems = () => {
             </Text>
             <br />
             <Text variant="webDesc">2022 / Webflow to Wordpress</Text>
-          </Box>
-        </RevealAnimationWrapper>
-        <RevealAnimationWrapper>
-          <Box
-            sx={{
-              mb: 4,
-              mx: 'auto',
-            }}
-          >
+          </EnterAnimationWrapper>
+        </Box>
+        <Box
+          sx={{
+            mb: 4,
+            mx: 'auto',
+          }}
+        >
+          <RevealAnimationWrapper>
             <motion.div
               whileHover={{
                 scale: 1.01,
@@ -145,7 +147,8 @@ const HomewebItems = () => {
                 </Link>
               </Box>
             </motion.div>
-
+          </RevealAnimationWrapper>
+          <EnterAnimationWrapper delayDuration={0}>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -158,8 +161,8 @@ const HomewebItems = () => {
             </Text>
             <br />
             <Text variant="webDesc">2021 / Shopify</Text>
-          </Box>
-        </RevealAnimationWrapper>
+          </EnterAnimationWrapper>
+        </Box>
 
         {/* <Box sx={{
             mb: 0,

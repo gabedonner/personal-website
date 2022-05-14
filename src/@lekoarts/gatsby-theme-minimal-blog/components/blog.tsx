@@ -10,6 +10,8 @@ import replaceSlashes from '../utils/replaceSlashes'
 import Seo from './seo'
 import DivideTitle from './title-divide'
 import { motion } from 'framer-motion'
+import RevealAnimationWrapper from './reveal-animation-wrapper'
+import EnterAnimationWrapper from './enter-animation-wrapper'
 
 // type PostsProps = {
 //   posts: {
@@ -31,31 +33,10 @@ const Divider = () => {
 }
 
 const DesignProjectGrid = ({ children }: any) => {
-  const projectAnimations = {
-    hidden: { opacity: 0, y: 15, height: '100%' },
-    visible: { opacity: 1, y: 0 },
-  }
-
-  const transition = {
-    duration: 1,
-    ease: [0.6, 0.01, -0.05, 0.9],
-  }
-
   return (
-    <motion.div
-      variants={projectAnimations}
-      // ref={ref}
-      initial="hidden"
-      //animate={controls}
-      transition={transition}
-      whileInView="visible"
-      viewport={{ once: true, margin: '-100px' }}
-    >
-      <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
-        {children}
-      </Grid>
-      {/* <Divider /> */}
-    </motion.div>
+    <Grid columns={[1, 1, 2, 2]} sx={{ mb: [90, 120], gap: [30, 60] }}>
+      {children}
+    </Grid>
   )
 }
 
@@ -82,175 +63,186 @@ const Blog = () => {
       {/* <Listing posts={posts} sx={{ mt: [4, 5] }} /> */}
       <DesignProjectGrid>
         <Box>
-          <Link>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/lav-deodorant.jpg"
               alt="nfuse lavender deodorant"
             />
-          </Link>
-          <Link>
+          </RevealAnimationWrapper>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 0 }}
               src="../images/design-imgs/deodorant-spread.jpg"
               alt="nfuse deodorant spread"
             />
-          </Link>
+          </RevealAnimationWrapper>
         </Box>
-        <Box sx={{ px: [2, 0] }}>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            nfuse LLC
-          </Text>
-          <p>
-            nfuse LLC is a bodycare company that specializes in magnesium-based
-            products, implementing a patented transdermal delivery system.
-          </p>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              nfuse LLC
+            </Text>
+            <p>
+              nfuse LLC is a bodycare company that specializes in
+              magnesium-based products, implementing a patented transdermal
+              delivery system.
+            </p>
 
-          <p>
-            Since 2016, I've been responsible for the company's branding and
-            package design. Today, nfuse products are sold at over 1,000 stores
-            around the United States, including CVS and Whole Foods.
-          </p>
-          <p>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.nfusemagnesium.com"
-            >
-              Click here to see their website &#8594;
-            </Link>
-          </p>
-        </Box>
+            <p>
+              Since 2016, I've been responsible for the company's branding and
+              package design. Today, nfuse products are sold at over 1,000
+              stores around the United States, including CVS and Whole Foods.
+            </p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.nfusemagnesium.com"
+              >
+                Click here to see their website &#8594;
+              </Link>
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <Link>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/big-ben-cover1.jpg"
               alt="big ben cover 1"
             />
-          </Link>
-          <Link>
+          </RevealAnimationWrapper>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/big-ben-cover2.jpg"
               alt="big ben cover 2"
             />
-          </Link>
+          </RevealAnimationWrapper>
         </Box>
-        <Box sx={{ px: [2, 0] }}>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            Big Ben Album Covers
-          </Text>
-          <p>
-            A cover series for two live albums by the Baltimore-based band Big
-            Ben.
-          </p>
-          <p>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://bigbenband.bandcamp.com/"
-            >
-              Check them out on Bandcamp &#x2192;
-            </Link>
-          </p>
-        </Box>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              Big Ben Album Covers
+            </Text>
+            <p>
+              A cover series for two live albums by the Baltimore-based band Big
+              Ben.
+            </p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://bigbenband.bandcamp.com/"
+              >
+                Check them out on Bandcamp &#x2192;
+              </Link>
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <Link>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/gatsby-cover-mockup.jpg"
               alt="gatsby cover mockup"
             />
-          </Link>
-          <Link>
+          </RevealAnimationWrapper>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/gatsby-book-cover.jpg"
               alt="gatsby book cover layout"
             />
-          </Link>
+          </RevealAnimationWrapper>
         </Box>
-        <Box sx={{ px: [2, 0] }}>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            Gatsby Book Cover
-          </Text>
-          <p>A cover mockup for The Great Gatsby.</p>
-          <p>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1Fz5sCV5t3dekwvFpyM2xEgSxSmf2Gn0X/view?usp=sharing"
-            >
-              Click here to see the full brief &#x2192;
-            </Link>
-          </p>
-        </Box>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              Gatsby Book Cover
+            </Text>
+            <p>A cover mockup for The Great Gatsby.</p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1Fz5sCV5t3dekwvFpyM2xEgSxSmf2Gn0X/view?usp=sharing"
+              >
+                Click here to see the full brief &#x2192;
+              </Link>
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <Link>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/rooftop-detail.jpg"
               alt="rooftop terrace render detail"
             />
-          </Link>
-          <Link>
+          </RevealAnimationWrapper>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/roof-terrace-iso-right.jpg"
               alt="rooftop terrace render iso"
             />
-          </Link>
-          <Link>
+          </RevealAnimationWrapper>
+          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/rooftop-iso.jpg"
               alt="rooftop terrace wireframe iso"
             />
-          </Link>
+          </RevealAnimationWrapper>
         </Box>
-        <Box sx={{ px: [2, 0] }}>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            Green Rooftop Terrace
-          </Text>
-          <p>
-            A Renderings for a rooftop terrace built using sustainable materials
-            and indigenous plants.
-          </p>
-          <p>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
-            >
-              Click here to see the full brief &#x2192;
-            </Link>
-          </p>
-        </Box>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              Green Rooftop Terrace
+            </Text>
+            <p>
+              A Renderings for a rooftop terrace built using sustainable
+              materials and indigenous plants.
+            </p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
+              >
+                Click here to see the full brief &#x2192;
+              </Link>
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
-        <Link>
+        <RevealAnimationWrapper>
           <StaticImage
             sx={{ mx: 0 }}
             src="../images/design-imgs/city-magazine-cover.jpg"
             alt="city magazine cover"
           />
-        </Link>
-        <Box sx={{ px: [2, 0] }}>
-          <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-            City Magazine Cover
-          </Text>
-          <p>
-            A cover mockup and collage illustration for a hypothetical magazine
-            called "City" for an issue focusing on Baltimore.
-          </p>
-        </Box>
+        </RevealAnimationWrapper>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              City Magazine Cover
+            </Text>
+            <p>
+              A cover mockup and collage illustration for a hypothetical
+              magazine called "City" for an issue focusing on Baltimore.
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
       </DesignProjectGrid>
       <Flex sx={{ justifyContent: 'space-between', px: [2, 0] }}>
         <Link sx={{ fontSize: 18 }} href="/">

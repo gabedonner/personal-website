@@ -108,16 +108,14 @@ const Homepage = ({ posts }: PostsProps) => {
         <DivideTitle title={'Development Projects'} />
       </SectionReveal>
 
-      <SectionReveal>
-        <DevProject
-          title={"NYT Critic's Picks"}
-          description={
-            'A searchable collection of all the movies picked by New York Times critics. Built with Next.js, the NYT REST API, MUI, and Framer Motion.'
-          }
-          visitHref={`https://nyt-critics-picks.vercel.app`}
-          githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
-        />
-      </SectionReveal>
+      <DevProject
+        title={"NYT Critic's Picks"}
+        description={
+          'A searchable collection of all the movies picked by New York Times critics. Built with Next.js, the NYT REST API, MUI, and Framer Motion.'
+        }
+        visitHref={`https://nyt-critics-picks.vercel.app`}
+        githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
+      />
       <HomewebItems />
       <HomeBottomSection />
     </Layout>
