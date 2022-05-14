@@ -1,153 +1,167 @@
 /** @jsx jsx */
+import React from 'react'
 import { jsx, Box, Grid, Link, Flex, Text } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
+import DivideTitle from './title-divide'
+import RevealAnimationWrapper from './reveal-animation-wrapper'
 //https://blog.maximeheckel.com/posts/advanced-animation-patterns-with-framer-motion/
 //how to animate children on hover
 
 const HomewebItems = () => {
   return (
-    <Grid
-      columns={[1, 1, 2, 2]}
-      sx={{
-        gap: ['4em'],
-        // columnGap: ['5em'],
-        // rowGap: ['3em', '5em'],
-        mb: [4, 5],
-        ml: [0, 0, 0, 0],
-        //px: ['0', '0', 0, '1.7em'],
-        flexGrow: 99999,
-        flexBasis: 300,
-        minWidth: 300,
-        //pl: '25%',
-        pt: 25,
-        a: {
-          fontWeight: 'medium',
-          fontSize: [2, 3, 3],
-          color: 'text',
-          textDecoration: 'none',
-          pr: 1,
-          ':hover': {
-            // color: `primary`,
-            textDecoration: 'underline',
-            pr: '1rem',
-          },
-        },
-      }}
-    >
-      <Box
+    <section>
+      <RevealAnimationWrapper>
+        <DivideTitle title={'Client Websites'} />
+      </RevealAnimationWrapper>
+      <Grid
+        columns={[1, 1, 2, 2]}
         sx={{
-          mb: [3, 4],
-          mx: 'auto',
-          //border: '1px solid black',
+          gap: ['4em'],
+          // columnGap: ['5em'],
+          // rowGap: ['3em', '5em'],
+          mb: [4, 5],
+          ml: [0, 0, 0, 0],
+          //px: ['0', '0', 0, '1.7em'],
+          flexGrow: 99999,
+          flexBasis: 300,
+          minWidth: 300,
+          //pl: '25%',
+          pt: 25,
+          a: {
+            fontWeight: 'medium',
+            fontSize: [2, 3, 3],
+            color: 'text',
+            textDecoration: 'none',
+            pr: 1,
+            ':hover': {
+              // color: `primary`,
+              textDecoration: 'underline',
+              pr: '1rem',
+            },
+          },
         }}
       >
-        <motion.div
-          whileHover={{
-            scale: 1.01,
-            //   y: -10,
-            //   //x: 5,
-            //   opacity: 0.9,
-            //   //webkitFilter: `blur(4px)`,
-            //   //filter: `blur(35px)`,
-            //   transition: { type: 'spring', duration: 0.75 },
-          }}
-          whileTap={{ scale: 0.98 }}
-        >
+        <RevealAnimationWrapper>
           <Box
             sx={{
-              mb: 4,
-              width: ['90vw', '70vw', '325px', 'auto', 'auto'],
-              transition: 'all 1s ease',
-              borderColor: 'pink',
-              overflow: 'none',
-
-              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-              '&:hover': {
-                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-              },
+              mb: [3, 4],
+              mx: 'auto',
+              //border: '1px solid black',
             }}
           >
-            <Link
+            <motion.div
+              whileHover={{
+                scale: 1.01,
+                //   y: -10,
+                //   //x: 5,
+                //   opacity: 0.9,
+                //   //webkitFilter: `blur(4px)`,
+                //   //filter: `blur(35px)`,
+                //   transition: { type: 'spring', duration: 0.75 },
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Box
+                sx={{
+                  mb: 4,
+                  width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+                  transition: 'all 1s ease',
+                  borderColor: 'pink',
+                  overflow: 'none',
+
+                  boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+                  '&:hover': {
+                    boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+                  },
+                }}
+              >
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://iconiclinx.com"
+                >
+                  <StaticImage
+                    src="../images/iconiclinx-website-snapshot.png"
+                    alt="iconiclinx"
+                  />
+                </Link>
+              </Box>
+            </motion.div>
+
+            <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://iconiclinx.com"
             >
-              <StaticImage
-                src="../images/iconiclinx-website-snapshot.png"
-                alt="iconiclinx"
-              />
-            </Link>
+              iconiclinx.com
+            </a>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              &nbsp;→
+            </Text>
+            <br />
+            <Text variant="webDesc">2022 / Webflow to Wordpress</Text>
           </Box>
-        </motion.div>
-
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://iconiclinx.com"
-        >
-          iconiclinx.com
-        </a>
-        <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>&nbsp;→</Text>
-        <br />
-        <Text variant="webDesc">2022 / Webflow to Wordpress</Text>
-      </Box>
-
-      <Box
-        sx={{
-          mb: 4,
-          mx: 'auto',
-        }}
-      >
-        <motion.div
-          whileHover={{
-            scale: 1.01,
-            //   y: -10,
-            //   //x: 5,
-            //   opacity: 0.9,
-            //   //webkitFilter: `blur(4px)`,
-            //   //filter: `blur(35px)`,
-            //   transition: { type: 'spring', duration: 0.75 },
-          }}
-          whileTap={{ scale: 0.98 }}
-        >
+        </RevealAnimationWrapper>
+        <RevealAnimationWrapper>
           <Box
             sx={{
               mb: 4,
-              width: ['90vw', '70vw', '325px', 'auto', 'auto'],
-              transition: 'all 1s ease',
-              boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-              '&:hover': {
-                boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-              },
+              mx: 'auto',
             }}
           >
-            <Link
+            <motion.div
+              whileHover={{
+                scale: 1.01,
+                //   y: -10,
+                //   //x: 5,
+                //   opacity: 0.9,
+                //   //webkitFilter: `blur(4px)`,
+                //   //filter: `blur(35px)`,
+                //   transition: { type: 'spring', duration: 0.75 },
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Box
+                sx={{
+                  mb: 4,
+                  width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+                  transition: 'all 1s ease',
+                  boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+                  '&:hover': {
+                    boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+                  },
+                }}
+              >
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.antique-exchange.com"
+                >
+                  <StaticImage
+                    src="../images/antique-exchange-snapshot.png"
+                    alt="A dinosaur"
+                  />
+                </Link>
+              </Box>
+            </motion.div>
+
+            <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.antique-exchange.com"
             >
-              <StaticImage
-                src="../images/antique-exchange-snapshot.png"
-                alt="A dinosaur"
-              />
-            </Link>
+              antique-exchange.com
+            </a>
+            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+              &nbsp;→
+            </Text>
+            <br />
+            <Text variant="webDesc">2021 / Shopify</Text>
           </Box>
-        </motion.div>
+        </RevealAnimationWrapper>
 
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antique-exchange.com"
-        >
-          antique-exchange.com
-        </a>
-        <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>&nbsp;→</Text>
-        <br />
-        <Text variant="webDesc">2021 / Shopify</Text>
-      </Box>
-
-      {/* <Box sx={{
+        {/* <Box sx={{
             mb: 0,
             mx: 'auto',
             }}>
@@ -185,7 +199,8 @@ const HomewebItems = () => {
                 <br />
                 <Text variant='webDesc'>2021 / Squarespace</Text>  
             </Box> */}
-    </Grid>
+      </Grid>
+    </section>
   )
 }
 
