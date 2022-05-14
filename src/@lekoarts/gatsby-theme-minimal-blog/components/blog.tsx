@@ -225,51 +225,6 @@ const Blog = () => {
         </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
-        <Box>
-          <RevealAnimationWrapper>
-            <StaticImage
-              sx={{ mb: 40 }}
-              src="../images/design-imgs/rooftop-detail.jpg"
-              alt="rooftop terrace render detail"
-            />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
-            <StaticImage
-              sx={{ mb: 40 }}
-              src="../images/design-imgs/roof-terrace-iso-right.jpg"
-              alt="rooftop terrace render iso"
-            />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
-            <StaticImage
-              sx={{ mx: 0 }}
-              src="../images/design-imgs/rooftop-iso.jpg"
-              alt="rooftop terrace wireframe iso"
-            />
-          </RevealAnimationWrapper>
-        </Box>
-        <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
-              Green Rooftop Terrace
-            </Text>
-            <p>
-              A Renderings for a rooftop terrace built using sustainable
-              materials and indigenous plants.
-            </p>
-            <p>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1dznIwQOUSCeOm1p94C2TXieRYcNue7c3/view?usp=sharing"
-              >
-                Click here to see the full brief &#x2192;
-              </Link>
-            </p>
-          </Box>
-        </EnterAnimationWrapper>
-      </DesignProjectGrid>
-      <DesignProjectGrid>
         <RevealAnimationWrapper>
           <StaticImage
             sx={{ mx: 0 }}
