@@ -51,6 +51,13 @@ module.exports = {
         ],
       },
     },
+    // The only required option is the domain
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `gabedonner.com`,
+      },
+    },
 
     {
       resolve: `gatsby-omni-font-loader`,
