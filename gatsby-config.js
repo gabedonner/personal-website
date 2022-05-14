@@ -38,6 +38,10 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `CV`,
+            slug: `/Resume-2022.pdf`,
+          },
         ],
         externalLinks: [
           {
