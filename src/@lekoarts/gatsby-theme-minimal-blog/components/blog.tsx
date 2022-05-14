@@ -212,7 +212,7 @@ const Blog = () => {
             </Text>
             <p>
               Renderings for a rooftop terrace built using sustainable materials
-              and indigenous plants.
+              and indigenous plants. Made with Sketchup and V-Ray.
             </p>
             <p>
               <Link
