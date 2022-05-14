@@ -20,7 +20,7 @@ const RevealAnimationWrapper = ({ children }: any) => {
       //animate={controls}
       transition={transition}
       whileInView="visible"
-      viewport={{ once: true, margin: '-100px' }}
+      viewport={{ once: true, margin: '-75px' }}
     >
       {children}
     </motion.div>
