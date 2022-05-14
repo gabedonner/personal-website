@@ -118,15 +118,8 @@ const Homepage = ({ posts }: PostsProps) => {
           githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
         />
       </SectionReveal>
-      <SectionReveal>
-        <DivideTitle title={'Client Websites'} />
-      </SectionReveal>
-      <SectionReveal>
-        <HomewebItems />
-      </SectionReveal>
-      <SectionReveal>
-        <HomeBottomSection />
-      </SectionReveal>
+      <HomewebItems />
+      <HomeBottomSection />
       {/* <Websites /> */}
       {/* <DivideTitle title={'Design Projects'} /> */}
       {/* <Projects /> */}
