@@ -120,9 +120,6 @@ const Homepage = ({ posts }: PostsProps) => {
       </SectionReveal>
       <HomewebItems />
       <HomeBottomSection />
-      {/* <Websites /> */}
-      {/* <DivideTitle title={'Design Projects'} /> */}
-      {/* <Projects /> */}
     </Layout>
   )
 }
