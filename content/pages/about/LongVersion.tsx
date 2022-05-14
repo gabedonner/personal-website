@@ -8,8 +8,9 @@ const LongVersion = () => {
         mr: [0, 2],
         mt: 5,
         mb: 40,
-        fontSize: '1.25rem',
+        fontSize: ['1rem', '1.25rem'],
         lineHeight: '1.625em',
+        letterSpacing: '-0.003em',
       }}
     >
       <p>Hi! I'm Gabe.</p>
@@ -33,7 +34,7 @@ const LongVersion = () => {
           NYU Gallatin
         </Link>{' '}
         with an individualized major that combined topics from Media Studies,
-        Philosophy, and American Studies — in other words, I leaned to write
+        Philosophy, and American Studies — in other words, I learned to write
         thoughtfully, think across disciplines, and ask good questions. During
         the same period, I also earned a minor in Graphic Design from{' '}
         <Link
@@ -74,7 +75,9 @@ const LongVersion = () => {
         >
           The Access Project
         </Link>
+        {'. '}
       </p>
+
       {/* <p>Thanks for stopping by, and feel free to reach out!</p> */}
     </Box>
   )
