@@ -108,6 +108,15 @@ const HomeBottomSection = () => {
           </Box>
         </Link> */}
         <Box sx={{ pt: 30, fontSize: 18 }}>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`/Resume-2022.pdf`}
+          >
+            Resume →
+          </Link>
+        </Box>
+        <Box sx={{ pt: 20, fontSize: 18 }}>
           <Link href="/about">About Page →</Link>
         </Box>
         <Box sx={{ pt: 20, fontSize: 18 }}>
