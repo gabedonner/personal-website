@@ -1,30 +1,16 @@
 /** @jsx jsx */
 import { jsx, AspectImage } from 'theme-ui'
-// import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from './layout'
-// import Title from "./title"
-// import Listing from "./listing"
-// import List from "./list"
 import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
 import useSiteMetadata from '../hooks/use-site-metadata'
-// import replaceSlashes from "../utils/replaceSlashes"
 import { visuallyHidden } from '../styles/utils'
-// @ts-ignore
-import Hero from '../texts/hero'
 import HeroComponent from './hero'
-// @ts-ignore
-import Websites from '../texts/home-websites'
-// @ts-ignore
-// @ts-ignore
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
-//import HeroSVG from '../svg/hero-background.inline.svg'
 import HeroSVG from '../svg/dot-graph.inline.svg'
-// import ThreeHero from '../components/threejs-hero'
 import DivideTitle from './title-divide'
 import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
-//import Projects from '../texts/home-projects'
 import { motion } from 'framer-motion'
 import HomeBottomSection from './home-bottom-section'
 
