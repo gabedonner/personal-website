@@ -4,6 +4,16 @@ import { jsx, Box } from 'theme-ui'
 import HeroText from './hero-text'
 // @ts-ignore
 import HeroSVG from '../svg/dot-graph.inline.svg'
+// @ts-ignore
+import LinkedInIcon from '../svg/linkedin-icon.inline.svg'
+
+const SocialIcons = () => {
+  return (
+    <Box sx={{ position: 'absolute', right: 0, bottom: 0 }}>
+      <LinkedInIcon />
+    </Box>
+  )
+}
 
 const HomepageHero = () => {
   return (
@@ -34,6 +44,7 @@ const HomepageHero = () => {
         }}
       >
         <HeroText />
+        <SocialIcons />
       </Box>
     </section>
   )
