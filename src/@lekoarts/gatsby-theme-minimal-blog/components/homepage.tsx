@@ -4,7 +4,7 @@ import Layout from './layout'
 import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
 import useSiteMetadata from '../hooks/use-site-metadata'
 import { visuallyHidden } from '../styles/utils'
-import HeroComponent from './hero'
+import HeroComponent from './hero-text'
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
 import HeroSVG from '../svg/dot-graph.inline.svg'
