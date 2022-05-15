@@ -11,6 +11,7 @@ import useSiteMetadata from '../hooks/use-site-metadata'
 import { visuallyHidden } from '../styles/utils'
 // @ts-ignore
 import Hero from '../texts/hero'
+import HeroComponent from './hero'
 // @ts-ignore
 import Websites from '../texts/home-websites'
 // @ts-ignore
@@ -101,7 +102,7 @@ const Homepage = ({ posts }: PostsProps) => {
           //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
         }}
       >
-        <Hero />
+        <HeroComponent />
       </section>
 
       <SectionReveal>
