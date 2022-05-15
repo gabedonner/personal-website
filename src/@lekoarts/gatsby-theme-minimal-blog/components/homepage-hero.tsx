@@ -1,17 +1,56 @@
 /** @jsx jsx */
 import React from 'react'
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Link, Flex } from 'theme-ui'
 import HeroText from './hero-text'
 // @ts-ignore
 import HeroSVG from '../svg/dot-graph.inline.svg'
 // @ts-ignore
 import LinkedInIcon from '../svg/linkedin-icon.inline.svg'
+// @ts-ignore
+import GithubIcon from '../svg/github-icon.inline.svg'
 
 const SocialIcons = () => {
   return (
-    <Box sx={{ position: 'absolute', right: 0, bottom: 0 }}>
-      <LinkedInIcon />
-    </Box>
+    <Flex
+      sx={{
+        position: 'absolute',
+        flexDirection: 'row',
+        right: 2,
+        bottom: 4,
+        gap: 2,
+        opacity: 0.5,
+      }}
+    >
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/gabedonner/"
+        sx={{
+          color: 'dots',
+          mr: 2,
+          ':hover': {
+            // color: `primary`,
+            color: 'primary',
+          },
+        }}
+      >
+        <LinkedInIcon />
+      </Link>
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.github.com/gabedonner"
+        sx={{
+          color: 'dots',
+          ':hover': {
+            // color: `primary`,
+            color: 'primary',
+          },
+        }}
+      >
+        <GithubIcon />
+      </Link>
+    </Flex>
   )
 }
 
