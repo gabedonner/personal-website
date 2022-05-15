@@ -4,15 +4,14 @@ import Layout from './layout'
 import useMinimalBlogConfig from '../hooks/use-minimal-blog-config'
 import useSiteMetadata from '../hooks/use-site-metadata'
 import { visuallyHidden } from '../styles/utils'
-import HeroComponent from './hero-text'
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
-import HeroSVG from '../svg/dot-graph.inline.svg'
 import DivideTitle from './title-divide'
 import HomewebItems from './homeweb-items'
 import DevProject from './dev-project'
 import { motion } from 'framer-motion'
 import HomeBottomSection from './home-bottom-section'
+import HomepageHero from './homepage-hero'
 
 type PostsProps = {
   posts: {
@@ -63,34 +62,7 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
-      <section
-        sx={{
-          mt: '-1.1em',
-          position: 'static',
-          overflow: 'hidden',
-          height: '21.8em',
-          color: 'dots',
-        }}
-      >
-        <HeroSVG />
-      </section>
-      <section
-        sx={{
-          position: 'relative',
-          height: '20em',
-          pb: ['4em', '6em'],
-          pt: [0],
-          mt: '-17.65em',
-          mb: 0,
-          p: { fontSize: [2, 3, 3], mt: 3 },
-          variant: `section_hero`,
-          overflow: 'hidden',
-          //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
-        }}
-      >
-        <HeroComponent />
-      </section>
-
+      <HomepageHero />
       <SectionReveal>
         <DivideTitle title={'Development Projects'} />
       </SectionReveal>
