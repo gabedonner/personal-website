@@ -15,8 +15,8 @@ const SocialIcons = () => {
       sx={{
         position: 'absolute',
         flexDirection: 'row',
-        right: 2,
-        bottom: 4,
+        right: 15,
+        bottom: [38, 38],
         gap: 2,
         opacity: 0.5,
       }}
