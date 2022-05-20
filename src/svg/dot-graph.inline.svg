@@ -4,9 +4,9 @@
             <rect width="2" height="2" x="0" y="0" fill="currentcolor" style="fill: var(--pattern-channel-1, currentcolor)" />
         </pattern>
         <radialGradient id="gradient">  
-            <stop offset="0%" stop-color="white" stop-opacity="0.5" /> 
+            <stop offset="5%" stop-color="white" stop-opacity="0.5" /> 
             <stop offset="30%" stop-color="white" stop-opacity=".9" />  
-            <stop offset="30%" stop-color="white" stop-opacity=".35" />  
+            <stop offset="90%" stop-color="white" stop-opacity=".35" />  
          </radialGradient>
 
          <mask id="gradient-mask">  
