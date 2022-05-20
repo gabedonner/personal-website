@@ -1,0 +1,55 @@
+---
+title: About
+slug: "/resume"
+---
+
+import { Box, Link, Text } from "theme-ui"
+import Resume from "./Resume"
+
+
+<Box sx={{mr: '33%', mb: 5}}>
+  <Text
+    sx={{
+      fontSize: 4,
+      fontWeight: '400',
+      lineHeight: '1.6em',
+    }}
+  >
+    I'm a jack-of-all-trades with a passion for making beautiful things on the internet
+  </Text>
+</Box>
+
+
+
+<Box sx={{fontSize: ['1rem', 20], pb: 20}}>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href={`/Resume-2022.pdf`}
+    >
+    CV
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+  <Link
+    href="mailto:contact@gabedonner.com"
+    >
+    Email
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://www.linkedin.com/in/gabedonner/"
+    >
+    LinkedIn
+  </Link>
+  <Text sx={{color: 'muted'}}> / </Text>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/gabedonner/"
+    >
+    Github
+  </Link>
+</Box>
