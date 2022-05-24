@@ -16,12 +16,11 @@ const LongVersion = () => {
       <p>Hi! I'm Gabe.</p>
       <p>
         Since 2015, I’ve been making websites and filling numerous development
-        and design-related roles as a freelancer. Web development was always the
-        main passion, so in early 2021 I started digging into all things
-        Javascript to pursue a career in front-end engineering, learning as much
-        as possible about making applications that are beautiful, functional,
-        and engaging. React was my first love, but I have a soft spot for Svelte
-        and Vue as well.
+        and design-related roles as a freelancer. In early 2021 I started
+        digging into all things Javascript to pursue a career in front-end
+        engineering, learning as much as possible about making applications that
+        are beautiful, functional, and engaging. React was my first love, but I
+        have a soft spot for Svelte and Vue as well.
       </p>
 
       <p>
