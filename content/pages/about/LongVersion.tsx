@@ -5,7 +5,7 @@ const LongVersion = () => {
   return (
     <Box
       sx={{
-        mr: [0, 2],
+        mr: [0, 5],
         mt: 5,
         mb: 40,
         fontSize: ['1rem', '1.25rem'],
@@ -46,9 +46,9 @@ const LongVersion = () => {
       </p>
       <p>
         Ultimately, the most rewarding part of my work has been solving problems
-        for clients and working hard to deliver on their vision. I’ve had the
-        opportunity to work for many wonderful small businesses and non-profits
-        across the United States, including{' '}
+        for clients and materializing their vision. I’ve had the opportunity to
+        work for many wonderful small businesses and non-profits across the
+        United States, including{' '}
         <Link
           target="_blank"
           rel="noopener noreferrer"
