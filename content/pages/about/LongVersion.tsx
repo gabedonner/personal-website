@@ -16,7 +16,7 @@ const LongVersion = () => {
       <p>Hi! I'm Gabe.</p>
       <p>
         Since 2015, I’ve been making websites and filling numerous development
-        and design-related roles as a freelancer. In early 2021 I started
+        and design-related roles as a freelancer. In early 2021, I started
         digging into all things front-end, learning as much as possible about
         making applications that are beautiful, functional, and engaging.
       </p>
