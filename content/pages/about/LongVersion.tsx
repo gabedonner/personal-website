@@ -17,10 +17,8 @@ const LongVersion = () => {
       <p>
         Since 2015, I’ve been making websites and filling numerous development
         and design-related roles as a freelancer. In early 2021 I started
-        digging into all things Javascript to pursue a career in front-end
-        engineering, learning as much as possible about making applications that
-        are beautiful, functional, and engaging. React was my first love, but I
-        have a soft spot for Svelte and Vue as well.
+        digging into all things front-end, learning as much as possible about
+        making applications that are beautiful, functional, and engaging.
       </p>
 
       <p>
@@ -44,7 +42,7 @@ const LongVersion = () => {
           NYU Steinhardt
         </Link>{' '}
         and took classes in Computer Science, Web Development, and Interactive
-        Narrative to bolster my freelance skills.
+        Narrative.
       </p>
       <p>
         Ultimately, the most rewarding part of my work has been solving problems
