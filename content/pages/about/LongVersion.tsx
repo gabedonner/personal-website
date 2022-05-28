@@ -30,8 +30,8 @@ const LongVersion = () => {
         >
           NYU Gallatin
         </Link>{' '}
-        with an individualized major that combined topics from Media Studies,
-        Philosophy, and American Studies — in other words, I learned to write
+        with an individualized major that combined topics from Philosophy, Media
+        Studies, and American Studies — in other words, I learned to write
         thoughtfully, think across disciplines, and ask good questions. During
         the same period, I also earned a minor in Graphic Design from{' '}
         <Link
