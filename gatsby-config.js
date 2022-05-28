@@ -81,6 +81,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-no-index`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

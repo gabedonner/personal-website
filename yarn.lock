@@ -6555,6 +6555,11 @@
     "unist-util-remove" "^1.0.3"
     "unist-util-visit" "^1.4.1"
 
+"gatsby-plugin-no-index@^1.0.2":
+  "integrity" "sha512-gCRkGfhBBdfEf/jc+Mos9J70FtJcM/39SjxBWpO8KpOASZEre6lsuDFnF0u8bc44VExN76GNEmpUf271LHPH3Q=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-no-index/-/gatsby-plugin-no-index-1.0.2.tgz"
+  "version" "1.0.2"
+
 "gatsby-plugin-page-creator@^4.0.0":
   "integrity" "sha512-JCNlfQaO8NLLSoprlEUE5EzzMB9erWUeMTcc1m10OL34mLGwHBr+7cE9EERg4Ez/ajD7iRsERjRnl1/WiZCgRw=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.0.0.tgz"
