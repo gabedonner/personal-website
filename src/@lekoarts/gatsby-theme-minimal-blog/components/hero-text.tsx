@@ -38,31 +38,31 @@ const TypewriterComponent = () => {
             .pauseFor(800)
             .deleteAll(5)
             .pauseFor(800)
-          typewriter
-            .typeString('I like visual art, philosophy, and ')
-            .start()
-            .pauseFor(800)
-            .changeDelay(100)
-          typewriter
-            .typeString('um')
-            .start()
-            .pauseFor(800)
-            .deleteChars(2)
-            .changeDelay(25)
-          typewriter
-            .typeString(' ice cream.')
-            .pauseFor(1500)
-            .start()
-            .pauseFor(2500)
-            .deleteAll(5)
-            .pauseFor(800)
-          typewriter
-            .typeString('Reloading Gabe_Bot')
-            .pauseFor(1500)
-            .start()
-            .pauseFor(1500)
-            .changeDelay(1500)
-          typewriter.typeString(' . . .').pauseFor(1500).start().pauseFor(100)
+          // typewriter
+          //   .typeString('I like visual art, philosophy, and ')
+          //   .start()
+          //   .pauseFor(800)
+          //   .changeDelay(100)
+          // typewriter
+          //   .typeString('um')
+          //   .start()
+          //   .pauseFor(800)
+          //   .deleteChars(2)
+          //   .changeDelay(25)
+          // typewriter
+          //   .typeString(' ice cream.')
+          //   .pauseFor(1500)
+          //   .start()
+          //   .pauseFor(2500)
+          //   .deleteAll(5)
+          //   .pauseFor(800)
+          // typewriter
+          //   .typeString('Reloading Gabe_Bot')
+          //   .pauseFor(1500)
+          //   .start()
+          //   .pauseFor(1500)
+          //   .changeDelay(1500)
+          // typewriter.typeString(' . . .').pauseFor(1500).start().pauseFor(100)
         }}
       />
     </Text>
