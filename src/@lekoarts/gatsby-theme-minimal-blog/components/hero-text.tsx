@@ -24,7 +24,7 @@ const TypewriterComponent = () => {
           pauseFor: 1000,
           cursor: '|',
           delay: 30,
-          loop: true,
+          loop: false,
           deleteSpeed: 5,
         }}
         onInit={(typewriter) => {
@@ -36,8 +36,8 @@ const TypewriterComponent = () => {
             .pauseFor(2500)
             .start()
             .pauseFor(800)
-            .deleteAll(5)
-            .pauseFor(800)
+          // .deleteAll(5)
+          // .pauseFor(800)
           // typewriter
           //   .typeString('I like visual art, philosophy, and ')
           //   .start()
