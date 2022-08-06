@@ -21,14 +21,14 @@ const TypewriterComponent = () => {
       <Typewriter
         options={{
           autoStart: true,
-          pauseFor: 1000,
+          //pauseFor: 1000,
           cursor: '|',
           delay: 30,
           loop: false,
           deleteSpeed: 5,
         }}
         onInit={(typewriter) => {
-          typewriter.typeString('Hi! ').pauseFor(1000).start()
+          typewriter.pauseFor(250).typeString('Hi! ').pauseFor(1000).start()
           typewriter
             .typeString(
               "I'm a developer and designer based out of New York City."
