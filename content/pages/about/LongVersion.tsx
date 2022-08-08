@@ -5,7 +5,7 @@ const LongVersion = () => {
   return (
     <Box
       sx={{
-        mr: [0, 5],
+        mr: [0, 3],
         mt: 5,
         mb: 40,
         fontSize: ['1rem', '1.25rem'],
