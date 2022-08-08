@@ -18,7 +18,7 @@ const TypewriterComponent = () => {
         a: { color: 'primary', textDecoration: 'underline' },
       }}
     >
-      <Typewriter
+      {/* <Typewriter
         options={{
           autoStart: true,
           //pauseFor: 1000,
@@ -64,7 +64,7 @@ const TypewriterComponent = () => {
           //   .changeDelay(1500)
           // typewriter.typeString(' . . .').pauseFor(1500).start().pauseFor(100)
         }}
-      />
+      /> */}
     </Text>
   )
 }
@@ -78,7 +78,7 @@ const Hero = () => {
             ml: [0, '.5em'],
             pl: [0],
             fontSize: [5, 6, 6],
-            fontWeight: `bold`,
+            fontWeight: `semibold`,
             color: `text`,
           }}
         >
