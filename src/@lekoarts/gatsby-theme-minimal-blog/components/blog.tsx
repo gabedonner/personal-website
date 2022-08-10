@@ -87,7 +87,13 @@ const Blog = () => {
               },
             }}
           >
-            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
+            <Text
+              sx={{
+                //  fontFamily: 'Cormorant Garamond',
+                fontWeight: 'medium',
+                fontSize: [3, 4, 4],
+              }}
+            >
               nfuse LLC
             </Text>
             <p>
