@@ -22,6 +22,18 @@ const Hero = () => {
         >
           Gabe Donner
         </Text>
+        {/* <Text
+          sx={{
+            ml: [0, '.25em'],
+            // pl: [0],
+            fontSize: [3, 4, 4],
+            fontWeight: `light`,
+            //color: `primary`,
+            color: 'primary',
+          }}
+        >
+          *
+        </Text> */}
       </Box>
 
       <Box
@@ -33,11 +45,12 @@ const Hero = () => {
           pr: '12vw',
           mt: [1, 1, 1],
           mr: [0],
+          //borderLeft: '1px solid black',
         }}
       >
         <Text
           sx={{
-            //ml: [0, '.5em'],
+            // ml: [0, '-.6em'],
             pl: [0],
             fontSize: [5, 6, 6],
             fontWeight: `500`,
@@ -54,7 +67,7 @@ const Hero = () => {
       <Box
         sx={{
           mb: 2,
-          mt: '64px',
+          mt: '76px',
           pl: ['3px', '1.7em', '1.7em'],
           a: {
             fontWeight: 'regular',
@@ -65,17 +78,18 @@ const Hero = () => {
             ':hover': {
               // color: `primary`,
               textDecoration: 'none',
-              pr: '1rem',
+              pr: '.7rem',
             },
           },
         }}
       >
-        <Link href="/about">Learn More</Link>
+        <Link href="/about">More about me</Link>
         <Text
           sx={{
             fontWeight: 'medium',
             fontSize: [2, 3, 3],
             color: 'secondary',
+            verticalAlign: '3px',
           }}
         >
           &nbsp;→
