@@ -63,10 +63,10 @@ const Homepage = ({ posts }: PostsProps) => {
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <HomepageHero />
+      <HomewebItems />
       <SectionReveal>
         <DivideTitle title={'Development Projects'} />
       </SectionReveal>
-
       <DevProject
         title={"NYT Critic's Picks"}
         description={
@@ -75,7 +75,6 @@ const Homepage = ({ posts }: PostsProps) => {
         visitHref={`https://nyt-critics-picks.vercel.app`}
         githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
       />
-      <HomewebItems />
       <HomeBottomSection />
     </Layout>
   )
