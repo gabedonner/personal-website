@@ -1,6 +1,6 @@
-import { merge } from "theme-ui"
-import { transparentize } from "@theme-ui/color"
-import { tailwind } from "@theme-ui/presets"
+import { merge } from 'theme-ui'
+import { transparentize } from '@theme-ui/color'
+import { tailwind } from '@theme-ui/presets'
 
 const theme = merge(tailwind, {
   initialColorModeName: `light`,
@@ -40,7 +40,7 @@ const theme = merge(tailwind, {
     body: `"Inter", Arial, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,
   },
 
-/*   fontSizes: [
+  /*   fontSizes: [
     12, 14, 16, 18, 24, 32, 48, 64, 72,
   ], */
 
@@ -62,8 +62,8 @@ const theme = merge(tailwind, {
       fontSize: [1, 2, 2, 2],
       letterSpacing: `-0.003em`,
       lineHeight: `body`,
-      "--baseline-multiplier": 0.179,
-      "--x-height-multiplier": 0.35,
+      '--baseline-multiplier': 0.179,
+      '--x-height-multiplier': 0.35,
       wordBreak: `break-word`,
     },
     ul: {
@@ -71,8 +71,8 @@ const theme = merge(tailwind, {
         fontSize: [1, 1, 2],
         letterSpacing: `-0.003em`,
         lineHeight: `body`,
-        "--baseline-multiplier": 0.179,
-        "--x-height-multiplier": 0.35,
+        '--baseline-multiplier': 0.179,
+        '--x-height-multiplier': 0.35,
       },
     },
     ol: {
@@ -80,8 +80,8 @@ const theme = merge(tailwind, {
         fontSize: [1, 1, 2],
         letterSpacing: `-0.003em`,
         lineHeight: `body`,
-        "--baseline-multiplier": 0.179,
-        "--x-height-multiplier": 0.35,
+        '--baseline-multiplier': 0.179,
+        '--x-height-multiplier': 0.35,
       },
     },
     h1: {
@@ -160,7 +160,7 @@ const theme = merge(tailwind, {
       py: [3, 4],
       px: [3, 4],
       // maxWidth: `1024px`,
-      maxWidth: `1024px`
+      maxWidth: `1024px`,
     },
   },
   text: {
@@ -177,7 +177,7 @@ const theme = merge(tailwind, {
     },
   },
 
-//bg: 'background', fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'
+  //bg: 'background', fontSize: [3, 3, 3], a: { color: 'text', textDecoration: 'underline'
 
   copyButton: {
     backgroundColor: transparentize(`primary`, 0.8),
@@ -188,10 +188,10 @@ const theme = merge(tailwind, {
     fontFamily: `body`,
     letterSpacing: `0.025rem`,
     transition: `default`,
-    "&[disabled]": {
+    '&[disabled]': {
       cursor: `not-allowed`,
     },
-    ":not([disabled]):hover": {
+    ':not([disabled]):hover': {
       bg: `primary`,
       color: `white`,
     },
@@ -220,7 +220,7 @@ const theme = merge(tailwind, {
       borderTopWidth: `1px`,
       borderTopColor: `divide`,
       pt: 3,
-    }
+    },
   },
   links: {
     medium: {
@@ -228,30 +228,28 @@ const theme = merge(tailwind, {
       fontSize: [2, 3, 3],
       textDecoration: `none`,
       fontWeight: 'medium',
-      ":hover": {
+      ':hover': {
         textDecoration: `underline`,
       },
-      ":focus": {
-      },
+      ':focus': {},
     },
     tag: {
       color: `secondary`,
       textDecoration: `none`,
       fontWeight: 'light',
-      ":hover": {
+      ':hover': {
         textDecoration: `underline`,
       },
-      ":focus": {
-      },
+      ':focus': {},
     },
     secondary: {
       color: `secondary`,
       textDecoration: `none`,
-      ":hover": {
+      ':hover': {
         color: `heading`,
         textDecoration: `underline`,
       },
-      ":focus": {
+      ':focus': {
         color: `heading`,
       },
     },
