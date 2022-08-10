@@ -17,10 +17,12 @@ const HomepageTitle = ({ title }: HomepageTitleProps) => {
     >
       <Text
         sx={{
-          fontSize: [1, 2, 2],
+          fontSize: [2, 3, 3],
           color: 'secondary',
           bg: 'background',
           pr: 4,
+          fontFamily: 'Cormorant Garamond',
+          fontStyle: 'italic',
         }}
       >
         {title}
