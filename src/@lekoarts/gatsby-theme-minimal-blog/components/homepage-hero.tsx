@@ -59,7 +59,7 @@ const HomepageHero = () => {
     <section>
       <Box
         sx={{
-          mt: '-1.1em',
+          mt: '-1.7em',
           position: 'static',
           overflow: 'hidden',
           height: '21.8em',
@@ -71,7 +71,7 @@ const HomepageHero = () => {
       <Box
         sx={{
           position: 'relative',
-          height: '20em',
+          height: '26em',
           pb: ['4em', '6em'],
           pt: [0],
           mt: '-17.65em',
@@ -83,7 +83,7 @@ const HomepageHero = () => {
         }}
       >
         <HeroText />
-        <SocialIcons />
+        {/* <SocialIcons /> */}
       </Box>
     </section>
   )
