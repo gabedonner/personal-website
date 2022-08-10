@@ -80,7 +80,7 @@ const Blog = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
               nfuse LLC
             </Text>
             <p>
@@ -127,7 +127,7 @@ const Blog = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
               Big Ben Album Covers
             </Text>
             <p>
@@ -165,7 +165,7 @@ const Blog = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
               Gatsby Book Cover
             </Text>
             <p>A cover mockup for The Great Gatsby.</p>
@@ -207,7 +207,7 @@ const Blog = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
               Green Rooftop Terrace
             </Text>
             <p>
