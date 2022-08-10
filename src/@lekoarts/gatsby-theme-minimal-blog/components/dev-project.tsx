@@ -26,6 +26,7 @@ const DevProject = ({
         sx={{
           pb: [60, 6],
           px: [0, 0, 0],
+          pt: '45px',
           alignItems: 'center',
         }}
       >
