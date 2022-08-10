@@ -32,35 +32,66 @@ const SectionReveal = ({ children }: any) => {
   )
 }
 
+const RotateReveal = ({ children }: any) => {
+  const sectionRevealRotateAnimations = {
+    hidden: { opacity: 1, height: '100%' },
+    visible: {
+      opacity: 1,
+      transform: 'rotate(-1.2deg)',
+      letterSpacing: '.05rem',
+    },
+  }
+
+  const transition = {
+    duration: 1,
+    ease: [0.6, 0.01, -0.05, 0.9],
+    delay: 0.33,
+  }
+
+  return (
+    <motion.div
+      variants={sectionRevealRotateAnimations}
+      // ref={ref}
+      initial="hidden"
+      //animate={controls}
+      transition={transition}
+      whileInView="visible"
+      viewport={{ once: true, margin: '-60px' }}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
 const Hero = () => {
   return (
     <SectionReveal>
       <Box>
-        <Box sx={{ mb: 2, mt: ['0px'] }}>
-          <Text
-            sx={{
-              ml: [0, '1em'],
-              // pl: [0],
-              fontSize: [3, 4, 4],
-              fontWeight: `semibold`,
-              //color: `primary`,
-              color: 'primary',
-            }}
-          >
-            Gabe Donner
-          </Text>
-          {/* <Text
+        <Box
           sx={{
-            ml: [0, '.25em'],
-            // pl: [0],
-            fontSize: [3, 4, 4],
-            fontWeight: `light`,
-            //color: `primary`,
-            color: 'primary',
+            mb: 2,
+            pb: '5px',
+            mt: ['0px'],
+            //transform: 'rotate(-.8deg)',
+            // ':hover': {
+            //   transform: 'rotate(-1deg)',
+            // },
           }}
         >
-          *
-        </Text> */}
+          <RotateReveal>
+            <Text
+              sx={{
+                ml: [0, '.6em'],
+                // pl: [0],
+                fontSize: ['2rem'],
+                fontWeight: `semibold`,
+                //color: `primary`,
+                color: 'primary',
+              }}
+            >
+              Gabe Donner
+            </Text>
+          </RotateReveal>
         </Box>
 
         <Box
@@ -68,13 +99,29 @@ const Hero = () => {
             bg: 'none',
             //height: ['6em'],
             pt: 1,
-            pl: ['3px', '1.7em', '1.7em'],
+            pl: ['3px', '1.7em', '5em'],
             pr: '12vw',
             mt: [1, 1, 1],
             mr: [0],
             //borderLeft: '1px solid black',
           }}
         >
+          <Text
+            sx={{
+              // ml: [0, '-.6em'],
+              pl: [],
+              fontSize: [5, 6, 6],
+              fontWeight: `500`,
+              color: `text`,
+              fontFamily: `Cormorant Garamond`,
+              fontStyle: 'italic',
+              lineHeight: '62px',
+              verticalAlign: '8px',
+              ml: '-1.25em',
+            }}
+          >
+            ⤷&nbsp;&nbsp;
+          </Text>
           <Text
             sx={{
               // ml: [0, '-.6em'],
@@ -95,7 +142,7 @@ const Hero = () => {
           sx={{
             mb: 2,
             mt: '42px',
-            pl: ['3px', '1.7em', '1.7em'],
+            pl: ['3px', '1.7em', '5.2em'],
             a: {
               fontWeight: 'regular',
               fontSize: [2, 3, 3],
@@ -110,7 +157,7 @@ const Hero = () => {
             },
           }}
         >
-          <Link href="/about">More about me</Link>
+          <Link href="/about">Who??</Link>
           <Text
             sx={{
               fontWeight: 'medium',
@@ -137,7 +184,7 @@ const Hero = () => {
             →
           </Text>
           <Link sx={{ ml: '1em' }} href="/about">
-            Get in touch
+            Contact
           </Link>
           <Text
             sx={{
