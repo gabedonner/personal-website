@@ -9,34 +9,21 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Hero = () => {
   return (
     <Box>
-      <Box sx={{ mb: 2, mt: ['-4px'] }}>
+      <Box sx={{ mb: 2, mt: ['0px'] }}>
         <Text
           sx={{
-            ml: [0, '.7em'],
-            pl: [0],
-            fontSize: [4, 5, 5],
+            ml: [0, '1em'],
+            // pl: [0],
+            fontSize: [3, 4, 4],
             fontWeight: `semibold`,
             //color: `primary`,
             color: 'primary',
           }}
         >
-          Gabe Donner&nbsp;
+          Gabe Donner
         </Text>
       </Box>
 
-      {/* <Box
-        sx={{
-          bg: 'none',
-          height: ['6em'],
-          pt: 1,
-          pl: ['3px', '1.7em', '1.7em'],
-          pr: '12vw',
-          mt: [1, 1, 1],
-          mr: [0],
-        }}
-      >
-        <TypewriterComponent />
-      </Box> */}
       <Box
         sx={{
           bg: 'none',
@@ -53,13 +40,45 @@ const Hero = () => {
             //ml: [0, '.5em'],
             pl: [0],
             fontSize: [5, 6, 6],
-            //fontWeight: `500`,
+            fontWeight: `500`,
             color: `text`,
-            fontFamily: `Cardo`,
+            fontFamily: `Cormorant Garamond`,
             fontStyle: 'italic',
+            lineHeight: '62px',
           }}
         >
           A front-end developer with an eye for design and a mind for strategy
+        </Text>
+      </Box>
+
+      <Box
+        sx={{
+          mb: 2,
+          mt: '64px',
+          pl: ['3px', '1.7em', '1.7em'],
+          a: {
+            fontWeight: 'regular',
+            fontSize: [2, 3, 3],
+            color: 'secondary',
+            textDecoration: 'none',
+            pr: 1,
+            ':hover': {
+              // color: `primary`,
+              textDecoration: 'none',
+              pr: '1rem',
+            },
+          },
+        }}
+      >
+        <Link href="/about">Learn More</Link>
+        <Text
+          sx={{
+            fontWeight: 'medium',
+            fontSize: [2, 3, 3],
+            color: 'secondary',
+          }}
+        >
+          &nbsp;→
         </Text>
       </Box>
     </Box>
