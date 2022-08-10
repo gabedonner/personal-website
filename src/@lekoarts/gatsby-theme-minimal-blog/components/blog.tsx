@@ -79,7 +79,14 @@ const Blog = () => {
           </RevealAnimationWrapper>
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
+          <Box
+            sx={{
+              px: [2, 0],
+              p: {
+                //fontFamily: 'Cormorant Garamond',
+              },
+            }}
+          >
             <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
               nfuse LLC
             </Text>
