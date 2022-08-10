@@ -38,7 +38,7 @@ const RotateReveal = ({ children }: any) => {
     visible: {
       opacity: 1,
       transform: 'rotate(-1.2deg)',
-      letterSpacing: '.05rem',
+      letterSpacing: '.03rem',
     },
   }
 
@@ -70,7 +70,7 @@ const Hero = () => {
         <Box
           sx={{
             mb: 2,
-            pb: '5px',
+            pb: '3px',
             mt: ['0px'],
             //transform: 'rotate(-.8deg)',
             // ':hover': {
