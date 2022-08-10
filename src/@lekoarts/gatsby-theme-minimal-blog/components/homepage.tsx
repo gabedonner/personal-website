@@ -12,6 +12,7 @@ import DevProject from './dev-project'
 import { motion } from 'framer-motion'
 import HomeBottomSection from './home-bottom-section'
 import HomepageHero from './homepage-hero'
+import DesignPortfolio from './design-port-section'
 
 type PostsProps = {
   posts: {
@@ -75,6 +76,10 @@ const Homepage = ({ posts }: PostsProps) => {
         visitHref={`https://nyt-critics-picks.vercel.app`}
         githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
       />
+      <SectionReveal>
+        <DivideTitle title={'Design Portfolio'} />
+      </SectionReveal>
+      <DesignPortfolio />
       <HomeBottomSection />
     </Layout>
   )
