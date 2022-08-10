@@ -66,7 +66,7 @@ const HomepageHero = () => {
           color: 'dots',
         }}
       >
-        <HeroSVG />
+        {/* <HeroSVG /> */}
       </Box>
       <Box
         sx={{
