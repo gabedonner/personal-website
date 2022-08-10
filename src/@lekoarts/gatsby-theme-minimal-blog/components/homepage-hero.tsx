@@ -71,12 +71,12 @@ const HomepageHero = () => {
       <Box
         sx={{
           position: 'relative',
-          height: '26em',
+          height: '25em',
+          pl: '3.33vw',
           pb: ['4em', '6em'],
           pt: [0],
-          mt: '-17.65em',
+          mt: '-18.65em',
           mb: 0,
-          p: { fontSize: [2, 3, 3], mt: 3 },
           variant: `section_hero`,
           overflow: 'hidden',
           //boxShadow: 'rgb(0 0 0 / 4%) 0px 32px 32px 0px, rgb(0 0 0 / 4%) 0px 16px 16px 0px, rgb(0 0 0 / 4%) 0px 8px 8px 0px, rgb(0 0 0 / 4%) 0px 4px 4px 0px',
