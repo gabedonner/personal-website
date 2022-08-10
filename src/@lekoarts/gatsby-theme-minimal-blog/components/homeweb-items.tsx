@@ -102,7 +102,7 @@ const HomewebItems = () => {
               &nbsp;→
             </Text>
             <br />
-            <Text variant="webDesc">2022 / Custom Wordpress</Text>
+            <Text variant="webDesc">2022 / Webflow + Wordpress</Text>
           </EnterAnimationWrapper>
         </Box>
         <Box
