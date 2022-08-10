@@ -72,14 +72,15 @@ const TypewriterComponent = () => {
 const Hero = () => {
   return (
     <Box>
-      <Box sx={{ mb: 2, mt: ['36px'] }}>
+      <Box sx={{ mb: 2, mt: ['-4px'] }}>
         <Text
           sx={{
-            ml: [0, '.5em'],
+            ml: [0, '.7em'],
             pl: [0],
-            fontSize: [5, 6, 6],
+            fontSize: [4, 5, 5],
             fontWeight: `semibold`,
-            color: `primary`,
+            //color: `primary`,
+            color: 'primary',
           }}
         >
           Gabe Donner&nbsp;
@@ -112,15 +113,16 @@ const Hero = () => {
       >
         <Text
           sx={{
-            ml: [0, '.5em'],
+            //ml: [0, '.5em'],
             pl: [0],
-            fontSize: [3, 4, 4],
-            fontWeight: `regular`,
-            color: `secondary`,
+            fontSize: [5, 6, 6],
+            //fontWeight: `500`,
+            color: `text`,
+            fontFamily: `Cardo`,
+            fontStyle: 'italic',
           }}
         >
-          I'm a front-end developer with an eye for design and a knack for
-          strategy
+          A front-end developer with an eye for design and a mind for strategy
         </Text>
       </Box>
     </Box>
