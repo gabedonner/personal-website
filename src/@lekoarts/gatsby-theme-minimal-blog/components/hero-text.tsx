@@ -103,7 +103,7 @@ const Hero = () => {
               textDecoration: 'none',
               pr: 1,
               ':hover': {
-                // color: `primary`,
+                color: `primary`,
                 textDecoration: 'none',
                 pr: '1rem',
               },
@@ -117,9 +117,38 @@ const Hero = () => {
               fontSize: [2, 3, 3],
               color: 'secondary',
               verticalAlign: '2px',
+              ml: '.5em',
             }}
           >
-            &nbsp;→
+            →
+          </Text>
+          <Link sx={{ ml: '1em' }} href="/about">
+            See the code
+          </Link>
+          <Text
+            sx={{
+              fontWeight: 'medium',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              verticalAlign: '2px',
+              ml: '.5em',
+            }}
+          >
+            →
+          </Text>
+          <Link sx={{ ml: '1em' }} href="/about">
+            Get in touch
+          </Link>
+          <Text
+            sx={{
+              fontWeight: 'medium',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              verticalAlign: '2px',
+              ml: '.5em',
+            }}
+          >
+            →
           </Text>
         </Box>
       </Box>
