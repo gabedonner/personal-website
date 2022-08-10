@@ -21,8 +21,8 @@ const HomepageTitle = ({ title }: HomepageTitleProps) => {
           color: 'secondary',
           bg: 'background',
           pr: 4,
-          fontFamily: 'Cormorant Garamond',
-          fontStyle: 'italic',
+          //fontFamily: 'Cormorant Garamond',
+          //fontStyle: 'italic',
         }}
       >
         {title}
