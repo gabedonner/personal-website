@@ -27,7 +27,7 @@ const LongVersion = () => {
             lineHeight: '62px',
           }}
         >
-          Combining the code, design, and language to make projects that hum
+          Combining code, design, and language to make projects that hum
         </Text>
       </Box>
       <Box
