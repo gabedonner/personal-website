@@ -9,50 +9,50 @@ import LinkedInIcon from '../svg/linkedin-icon.inline.svg'
 // @ts-ignore
 import GithubIcon from '../svg/github-icon.inline.svg'
 
-const SocialIcons = () => {
-  return (
-    <Flex
-      sx={{
-        position: 'absolute',
-        flexDirection: 'row',
-        right: 15,
-        bottom: [38, 38],
-        gap: 2,
-        opacity: 0.5,
-      }}
-    >
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/gabedonner/"
-        sx={{
-          color: 'dots',
-          mr: 2,
-          ':hover': {
-            // color: `primary`,
-            color: 'primary',
-          },
-        }}
-      >
-        <LinkedInIcon />
-      </Link>
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.github.com/gabedonner"
-        sx={{
-          color: 'dots',
-          ':hover': {
-            // color: `primary`,
-            color: 'primary',
-          },
-        }}
-      >
-        <GithubIcon />
-      </Link>
-    </Flex>
-  )
-}
+// const SocialIcons = () => {
+//   return (
+//     <Flex
+//       sx={{
+//         position: 'absolute',
+//         flexDirection: 'row',
+//         right: 15,
+//         bottom: [38, 38],
+//         gap: 2,
+//         opacity: 0.5,
+//       }}
+//     >
+//       <Link
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         href="https://www.linkedin.com/in/gabedonner/"
+//         sx={{
+//           color: 'dots',
+//           mr: 2,
+//           ':hover': {
+//             // color: `primary`,
+//             color: 'primary',
+//           },
+//         }}
+//       >
+//         <LinkedInIcon />
+//       </Link>
+//       <Link
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         href="https://www.github.com/gabedonner"
+//         sx={{
+//           color: 'dots',
+//           ':hover': {
+//             // color: `primary`,
+//             color: 'primary',
+//           },
+//         }}
+//       >
+//         <GithubIcon />
+//       </Link>
+//     </Flex>
+//   )
+// }
 
 const HomepageHero = () => {
   return (
