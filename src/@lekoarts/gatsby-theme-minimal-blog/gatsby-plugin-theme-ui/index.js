@@ -40,9 +40,9 @@ const theme = merge(tailwind, {
     body: `"Inter", Arial, "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,
   },
 
-  /*   fontSizes: [
-    12, 14, 16, 18, 24, 32, 48, 64, 72,
-  ], */
+  // fontSizes: [
+  //   12, 14, 16, 18, 24, 32, 48, 64, 72,
+  // ],
 
   styles: {
     root: {
