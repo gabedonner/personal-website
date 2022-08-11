@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import { jsx, Box, Link, Flex } from 'theme-ui'
+import { jsx, Box, Text, Link, Flex } from 'theme-ui'
 import HeroText from './hero-text'
 // @ts-ignore
 import HeroSVG from '../svg/dot-graph.inline.svg'
@@ -57,7 +57,7 @@ import GithubIcon from '../svg/github-icon.inline.svg'
 const HomepageHero = () => {
   return (
     <section>
-      <Box
+      {/* <Box
         sx={{
           mt: '-1.7em',
           position: 'static',
@@ -66,16 +66,16 @@ const HomepageHero = () => {
           color: 'dots',
         }}
       >
-        {/* <HeroSVG /> */}
-      </Box>
+        {/* <HeroSVG />
+      </Box> */}
       <Box
         sx={{
           position: 'relative',
-          height: '25em',
-          pl: '3.33vw',
+          height: 'auto',
+          //pl: ['1vw', '5vw'],
+          pt: ['4em', '2em'],
           pb: ['4em', '6em'],
-          pt: [0],
-          mt: '-18.65em',
+          //mt: '-18.65em',
           mb: 0,
           variant: `section_hero`,
           overflow: 'hidden',
@@ -84,6 +84,24 @@ const HomepageHero = () => {
       >
         <HeroText />
         {/* <SocialIcons /> */}
+      </Box>
+      <Box
+        sx={{
+          bg: 'white',
+          height: '50px',
+          width: '50px',
+          position: 'relative',
+          bottom: 100,
+          right: 0,
+          textAlign: 'center',
+          mt: '90px',
+          ml: 'auto',
+          mr: 'auto',
+        }}
+      >
+        <Text sx={{ fontFamily: 'Cormorant Garamond', fontStyle: 'italic' }}>
+          ↓
+        </Text>
       </Box>
     </section>
   )
