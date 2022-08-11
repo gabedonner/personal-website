@@ -7,7 +7,7 @@ import { visuallyHidden } from '../styles/utils'
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
 import DivideTitle from './title-divide'
-import HomewebItems from './homeweb-items'
+import HomewebItems from './homeweb-items2'
 import DevProject from './dev-project'
 import { motion } from 'framer-motion'
 import HomeBottomSection from './home-bottom-section'
