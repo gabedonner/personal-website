@@ -85,24 +85,6 @@ const HomepageHero = () => {
         <HeroText />
         {/* <SocialIcons /> */}
       </Box>
-      <Box
-        sx={{
-          bg: 'white',
-          height: '50px',
-          width: '50px',
-          position: 'relative',
-          bottom: 100,
-          right: 0,
-          textAlign: 'center',
-          mt: '90px',
-          ml: 'auto',
-          mr: 'auto',
-        }}
-      >
-        <Text sx={{ fontFamily: 'Cormorant Garamond', fontStyle: 'italic' }}>
-          ↓
-        </Text>
-      </Box>
     </section>
   )
 }
