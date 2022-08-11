@@ -34,6 +34,7 @@ const HomewebItems = () => {
             color: 'text',
             textDecoration: 'none',
             pr: 1,
+            letterSpacing: '.05rem',
             ':hover': {
               // color: `primary`,
               textDecoration: 'underline',
