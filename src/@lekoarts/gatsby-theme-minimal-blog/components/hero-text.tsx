@@ -45,7 +45,7 @@ const RotateReveal = ({ children }: any) => {
   const transition = {
     duration: 1,
     ease: [0.6, 0.01, -0.05, 0.9],
-    delay: 0.33,
+    delay: 0.366,
   }
 
   return (
@@ -163,13 +163,13 @@ const Hero = () => {
                 fontWeight: 'medium',
                 fontSize: [2, 3, 3],
                 color: 'secondary',
-                //verticalAlign: '2px',
+                verticalAlign: '2px',
                 ml: '.5em',
                 fontFamily: 'Cormorant Garamond',
                 fontStyle: 'italic',
               }}
             >
-              →
+              —
             </Text>
             <Link sx={{ ml: '1em' }} href="/about">
               See the code
@@ -179,18 +179,18 @@ const Hero = () => {
                 fontWeight: 'medium',
                 fontSize: [2, 3, 3],
                 color: 'secondary',
-                //verticalAlign: '2px',
+                verticalAlign: '2px',
                 ml: '.5em',
                 fontFamily: `Cormorant Garamond`,
                 fontStyle: 'italic',
               }}
             >
-              →
+              —
             </Text>
             <Link sx={{ ml: '1em' }} href="/about">
               Contact
             </Link>
-            <Text
+            {/* <Text
               sx={{
                 fontWeight: 'medium',
                 fontSize: [2, 3, 3],
@@ -202,10 +202,56 @@ const Hero = () => {
               }}
             >
               →
-            </Text>
+            </Text> */}
           </Box>
         </Box>
       </Box>
+
+      {/* <Box
+        sx={{
+          bg: 'divide',
+          height: '50px',
+          width: '50px',
+          position: 'relative',
+          bottom: 100,
+          right: 0,
+          textAlign: 'center',
+          mt: '160px',
+          ml: '60px',
+          mr: 'auto',
+        }}
+      >
+        <motion.div
+          transition={{
+            //ease: [0.6, 0.01, -0.05, 0.9],
+            mass: 30,
+            damping: 100,
+            repeat: Infinity,
+            duration: 1.5,
+            //delay: 0.5,
+          }}
+          animate={{
+            //scale: [1, 1.5, 1.5, 1, 1],
+            //y: [1, 10, 10, 1, 1],
+            y: [0, 0, 10, 10, 0],
+            //rotate: [0, 0, 270, 270, 0],
+            //borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+          }}
+        >
+          <Text
+            sx={{
+              fontFamily: 'Cormorant Garamond',
+              fontStyle: 'italic',
+              fontSize: '72px',
+              color: 'secondary',
+              position: 'relative',
+              top: '-15px',
+            }}
+          >
+            ↓
+          </Text>
+        </motion.div>
+      </Box> */}
     </SectionReveal>
   )
 }
