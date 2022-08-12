@@ -67,10 +67,9 @@ const HomeBottomSection = () => {
       >
         <MiniDivideTitle title="This Website" />
         <RevealAnimationWrapper>
-          <Box sx={{}}>
+          <Box sx={{ pr: '4em' }}>
             <Text>
-              This website was built using React, Gatsby, Typescript, Theme UI,
-              and Framer Motion.
+              This website was built with Typescript using React and Gatsby
             </Text>
             <br />
             <Box sx={{ pt: 30, fontSize: 18 }}>
