@@ -41,7 +41,7 @@ const HomewebItems2 = () => {
               <Box
                 sx={{
                   mb: 4,
-                  //width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+                  width: ['90vw', '70vw', '325px', 'auto', 'auto'],
                   transition: 'all 1s ease',
                   borderColor: 'pink',
                   overflow: 'none',
@@ -119,7 +119,7 @@ const HomewebItems2 = () => {
             sx={{
               px: [2, 0],
               pt: 3,
-              width: '360px',
+              width: ['90vw', '360px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
