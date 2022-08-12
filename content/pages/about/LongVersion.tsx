@@ -12,8 +12,8 @@ const LongVersion = () => {
             //height: ['6em'],
             pt: 56,
             //pl: ['3px', '1.7em', '1.7em'],
-            pr: '25vw',
-            pl: '5vw',
+            pr: ['6vw', '19vw'],
+            pl: ['5vw', '10vw'],
             mt: [1, 1, 1],
             mr: [0],
           }}
@@ -30,7 +30,8 @@ const LongVersion = () => {
               lineHeight: ['50px', '62px'],
             }}
           >
-            An intensely curious lover of art, ideas, and technology
+            Intensely curious; <br />
+            Lover of art, ideas, and technology.
           </Text>
           {/* <Text
             sx={{
@@ -51,8 +52,8 @@ const LongVersion = () => {
       <RevealAnimationWrapper delayDuration={0.5}>
         <Box
           sx={{
-            mr: ['10vw', '20vw'],
-            pl: '5vw',
+            mr: ['3vw', '10vw', '20vw'],
+            pl: ['13vw', '10vw'],
             mt: 5,
             mb: 40,
             fontSize: ['28px'],
@@ -129,6 +130,92 @@ const LongVersion = () => {
               {'. '}
             </Text>
           </Box>
+        </Box>
+
+        <Box
+          sx={{
+            mb: 2,
+            mt: '42px',
+            //bg: 'white',
+            //textAlign: 'center',
+            pl: ['13vw', '10vw'],
+            a: {
+              fontWeight: 'regular',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              textDecoration: 'none',
+              pr: 1,
+              ':hover': {
+                color: `primary`,
+                textDecoration: 'none',
+                pr: '1rem',
+                pl: '.2rem',
+              },
+            },
+          }}
+        >
+          <Link href="/about">Email</Link>
+          <Text
+            sx={{
+              fontWeight: 'medium',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              verticalAlign: '2px',
+              ml: '.5em',
+              fontFamily: 'Cormorant Garamond',
+              fontStyle: 'italic',
+            }}
+          >
+            /
+          </Text>
+          <Link sx={{ ml: '1em' }} href="/about">
+            Resume
+          </Link>
+          <Text
+            sx={{
+              fontWeight: 'medium',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              verticalAlign: '2px',
+              ml: '.5em',
+              fontFamily: `Cormorant Garamond`,
+              fontStyle: 'italic',
+            }}
+          >
+            /
+          </Text>
+          <Link sx={{ ml: '1em' }} href="/about">
+            Github
+          </Link>
+          <Text
+            sx={{
+              fontWeight: 'medium',
+              fontSize: [2, 3, 3],
+              color: 'secondary',
+              verticalAlign: '2px',
+              ml: '.5em',
+              fontFamily: `Cormorant Garamond`,
+              fontStyle: 'italic',
+            }}
+          >
+            /
+          </Text>
+          <Link sx={{ ml: '1em' }} href="/about">
+            LinkedIn
+          </Link>
+          {/* <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'secondary',
+                //verticalAlign: '2px',
+                ml: '.5em',
+                fontFamily: `Cormorant Garamond`,
+                fontStyle: 'italic',
+              }}
+            >
+              →
+            </Text> */}
         </Box>
       </RevealAnimationWrapper>
     </section>
