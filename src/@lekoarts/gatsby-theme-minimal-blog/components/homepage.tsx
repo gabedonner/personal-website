@@ -7,7 +7,7 @@ import { visuallyHidden } from '../styles/utils'
 import { StaticImage } from 'gatsby-plugin-image'
 // @ts-ignore
 import DivideTitle from './title-divide'
-import HomewebItems from './homeweb-items2'
+import ClientWork from './client-work-section'
 import DevProject from './dev-project'
 import { motion } from 'framer-motion'
 import HomeBottomSection from './home-bottom-section'
@@ -64,8 +64,8 @@ const Homepage = ({ posts }: PostsProps) => {
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
       <HomepageHero />
-      <HomewebItems />
-      <SectionReveal>
+      <ClientWork />
+      {/* <SectionReveal>
         <DivideTitle title={'Development Projects'} />
       </SectionReveal>
       <DevProject
@@ -79,7 +79,7 @@ const Homepage = ({ posts }: PostsProps) => {
       <SectionReveal>
         <DivideTitle title={'Design Portfolio'} />
       </SectionReveal>
-      <DesignPortfolio />
+      <DesignPortfolio /> */}
       <HomeBottomSection />
     </Layout>
   )
