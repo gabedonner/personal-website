@@ -34,7 +34,7 @@ const SectionReveal = ({ children }: any) => {
 
 const RotateReveal = ({ children }: any) => {
   const sectionRevealRotateAnimations = {
-    hidden: { opacity: 1, height: '100%' },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transform: 'rotate(-1.5deg)',
@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <SectionReveal>
       <Box sx={{}}>
-        <Box sx={{ ml: ['auto', 0, 0, '6vw'], mr: ['1em', '12vw'] }}>
+        <Box sx={{ ml: ['auto', 0, '3vw', '6vw'], mr: ['1em', '12vw'] }}>
           <Box
             sx={{
               pb: '5px',
@@ -106,14 +106,15 @@ const Hero = () => {
               sx={{
                 // ml: [0, '-.6em'],
                 pl: [],
-                fontSize: [5, 6, 6],
+                fontSize: [0, 6, 6],
                 fontWeight: `500`,
                 color: `text`,
                 fontFamily: `Cormorant Garamond`,
                 fontStyle: 'italic',
                 lineHeight: '62px',
                 verticalAlign: '8px',
-                ml: [0, '-1.15em'],
+                ml: ['-1.15em'],
+                visibility: ['hidden', 'visible'],
               }}
             >
               ⤷ &nbsp;
