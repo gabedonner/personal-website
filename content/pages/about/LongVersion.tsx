@@ -132,7 +132,7 @@ const LongVersion = () => {
           </Box>
         </Box>
 
-        <Box
+        {/* <Box
           sx={{
             mb: 2,
             mt: '42px',
@@ -202,8 +202,8 @@ const LongVersion = () => {
           </Text>
           <Link sx={{ ml: '1em' }} href="/about">
             LinkedIn
-          </Link>
-          {/* <Text
+          </Link> */}
+        {/* <Text
               sx={{
                 fontWeight: 'medium',
                 fontSize: [2, 3, 3],
@@ -216,7 +216,7 @@ const LongVersion = () => {
             >
               →
             </Text> */}
-        </Box>
+        {/* </Box> */}
       </RevealAnimationWrapper>
     </section>
   )
