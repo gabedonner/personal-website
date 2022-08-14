@@ -22,7 +22,7 @@ const LongVersion = () => {
             sx={{
               // ml: [0, '-.6em'],
               pl: [0],
-              fontSize: [6, 6, 6],
+              fontSize: ['2.5rem', 6, 6],
               fontWeight: `500`,
               color: `text`,
               fontFamily: `Cormorant Garamond`,
@@ -56,7 +56,7 @@ const LongVersion = () => {
             pl: ['13vw', '10vw'],
             mt: 5,
             mb: 40,
-            fontSize: ['28px'],
+            fontSize: ['18px', '28px'],
             lineHeight: '1.625em',
             //letterSpacing: '-0.003em',
             fontFamily: `Cormorant Garamond`,
@@ -65,7 +65,7 @@ const LongVersion = () => {
             color: 'text',
           }}
         >
-          <Text sx={{ ml: '-2.6rem' }}>
+          <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
             1. &nbsp;&nbsp;&nbsp;Since 2015, I’ve been making websites and
             filling numerous development and design-related roles as a
             freelancer. In early 2021, I started digging into all things
@@ -73,7 +73,7 @@ const LongVersion = () => {
             that are beautiful, functional, and engaging.
           </Text>
           <Box sx={{ mt: '60px' }}>
-            <Text sx={{ ml: '-2.6rem' }}>
+            <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
               2. &nbsp;&nbsp;&nbsp;In 2020, I graduated from{' '}
               <Link
                 target="_blank"
@@ -99,7 +99,7 @@ const LongVersion = () => {
             </Text>
           </Box>
           <Box sx={{ my: '60px' }}>
-            <Text sx={{ ml: '-2.6rem' }}>
+            <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
               3. &nbsp;&nbsp;&nbsp;Ultimately, the most rewarding part of my
               work has been solving problems for clients and materializing their
               vision. I’ve had the opportunity to work for many wonderful small
