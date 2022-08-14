@@ -161,7 +161,7 @@ const Hero = () => {
               },
             }}
           >
-            <Link href="/about">Who??</Link>
+            <Link href="/about">Who?</Link>
             <Text
               sx={{
                 fontWeight: 'medium',
