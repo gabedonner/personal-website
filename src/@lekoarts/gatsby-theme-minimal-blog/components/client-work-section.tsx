@@ -347,7 +347,7 @@ const HomewebItems2 = () => {
               },
             }}
           >
-            <Link href="/about">NYC Critic's Picks</Link>
+            <Link href="/about">NYT Critic's Picks</Link>
             <Text
               sx={{
                 fontWeight: 'medium',
