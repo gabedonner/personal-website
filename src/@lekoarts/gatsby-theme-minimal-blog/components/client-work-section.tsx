@@ -107,7 +107,8 @@ const HomewebItems2 = () => {
                 fontSize: '22px',
                 color: 'text',
                 verticalAlign: '-1.75px',
-                ml: '.5em',
+                //ml: '.5em',
+                //px: [2, 0],
                 fontFamily: 'Cormorant Garamond',
                 fontStyle: 'italic',
               }}
@@ -117,7 +118,7 @@ const HomewebItems2 = () => {
           </Box>
           <Box
             sx={{
-              px: [2, 0],
+              //px: [2, 0],
               pt: 3,
               width: ['90vw', '360px'],
               p: {
