@@ -106,9 +106,9 @@ const HomeBottomSection = () => {
           <Box sx={{ pt: 20, fontSize: 18 }}>
             <Link href="/about">About Page →</Link>
           </Box>
-          <Box sx={{ pt: 20, fontSize: 18 }}>
+          {/* <Box sx={{ pt: 20, fontSize: 18 }}>
             <Link href="/design">Design Portfolio →</Link>
-          </Box>
+          </Box> */}
         </RevealAnimationWrapper>
       </Box>
     </Grid>
