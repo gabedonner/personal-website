@@ -33,20 +33,6 @@ const LongVersion = () => {
             Intensely curious; <br />
             Lover of art, ideas, and technology.
           </Text>
-          {/* <Text
-            sx={{
-              // ml: [0, '-.6em'],
-              pl: [0],
-              fontSize: ['48px'],
-              fontWeight: `500`,
-              color: `primary`,
-              fontFamily: `Cormorant Garamond`,
-              //fontStyle: 'italic',
-              lineHeight: '69px',
-            }}
-          >
-            &nbsp;hum
-          </Text> */}
         </Box>
       </RevealAnimationWrapper>
       <RevealAnimationWrapper delayDuration={0.5}>
