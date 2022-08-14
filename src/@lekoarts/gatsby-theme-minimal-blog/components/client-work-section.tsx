@@ -35,55 +35,46 @@ const HomewebItems2 = () => {
         <DivideTitle title={'Featured Work'} />
       </RevealAnimationWrapper>
       <DesignProjectGrid>
-        <Box>
-          <RevealAnimationWrapper delayDuration={0}>
-            <motion.div
-              whileHover={{
-                scale: 1.01,
-                //   y: -10,
-                //   //x: 5,
-                //   opacity: 0.9,
-                //   //webkitFilter: `blur(4px)`,
-                //   //filter: `blur(35px)`,
-                //   transition: { type: 'spring', duration: 0.75 },
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Box
-                sx={{
-                  mb: 4,
-                  width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
-                  transition: 'all 1s ease',
-                  borderColor: 'pink',
-                  overflow: 'none',
+        <RevealAnimationWrapper delayDuration={0}>
+          <motion.div
+            whileHover={{
+              scale: 1.01,
+              //   y: -10,
+              //   //x: 5,
+              //   opacity: 0.9,
+              //   //webkitFilter: `blur(4px)`,
+              //   //filter: `blur(35px)`,
+              //   transition: { type: 'spring', duration: 0.75 },
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <Box
+              sx={{
+                mb: 4,
+                width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
+                transition: 'all 1s ease',
+                borderColor: 'pink',
+                overflow: 'none',
 
-                  boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-                  '&:hover': {
-                    boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-                  },
-                }}
+                boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+                '&:hover': {
+                  boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+                },
+              }}
+            >
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://iconiclinx.com"
               >
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://iconiclinx.com"
-                >
-                  <StaticImage
-                    src="../images/iconiclinx-website-snapshot.png"
-                    alt="iconiclinx"
-                  />
-                </Link>
-              </Box>
-            </motion.div>
-          </RevealAnimationWrapper>
-          {/* <RevealAnimationWrapper delayDuration={0}>
-            <StaticImage
-              sx={{ mb: 0 }}
-              src="../images/design-imgs/deodorant-spread.jpg"
-              alt="nfuse deodorant spread"
-            />
-          </RevealAnimationWrapper> */}
-        </Box>
+                <StaticImage
+                  src="../images/iconiclinx-website-snapshot.png"
+                  alt="iconiclinx"
+                />
+              </Link>
+            </Box>
+          </motion.div>
+        </RevealAnimationWrapper>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box
             sx={{
@@ -166,55 +157,46 @@ const HomewebItems2 = () => {
         </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
-        <Box>
-          <RevealAnimationWrapper delayDuration={0}>
-            <motion.div
-              whileHover={{
-                scale: 1.01,
-                //   y: -10,
-                //   //x: 5,
-                //   opacity: 0.9,
-                //   //webkitFilter: `blur(4px)`,
-                //   //filter: `blur(35px)`,
-                //   transition: { type: 'spring', duration: 0.75 },
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Box
-                sx={{
-                  mb: 4,
-                  width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
-                  transition: 'all 1s ease',
-                  borderColor: 'pink',
-                  overflow: 'none',
+        <RevealAnimationWrapper delayDuration={0}>
+          <motion.div
+            whileHover={{
+              scale: 1.01,
+              //   y: -10,
+              //   //x: 5,
+              //   opacity: 0.9,
+              //   //webkitFilter: `blur(4px)`,
+              //   //filter: `blur(35px)`,
+              //   transition: { type: 'spring', duration: 0.75 },
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <Box
+              sx={{
+                mb: 4,
+                width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
+                transition: 'all 1s ease',
+                borderColor: 'pink',
+                overflow: 'none',
 
-                  boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-                  '&:hover': {
-                    boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-                  },
-                }}
+                boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+                '&:hover': {
+                  boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+                },
+              }}
+            >
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.antique-exchange.com"
               >
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.antique-exchange.com"
-                >
-                  <StaticImage
-                    src="../images/antique-exchange-snapshot.png"
-                    alt="iconiclinx"
-                  />
-                </Link>
-              </Box>
-            </motion.div>
-          </RevealAnimationWrapper>
-          {/* <RevealAnimationWrapper delayDuration={0}>
-            <StaticImage
-              sx={{ mb: 0 }}
-              src="../images/design-imgs/deodorant-spread.jpg"
-              alt="nfuse deodorant spread"
-            />
-          </RevealAnimationWrapper> */}
-        </Box>
+                <StaticImage
+                  src="../images/antique-exchange-snapshot.png"
+                  alt="iconiclinx"
+                />
+              </Link>
+            </Box>
+          </motion.div>
+        </RevealAnimationWrapper>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box
             sx={{
@@ -298,55 +280,46 @@ const HomewebItems2 = () => {
         <DivideTitle title={'Development Projects'} />
       </RevealAnimationWrapper>
       <DesignProjectGrid>
-        <Box>
-          <RevealAnimationWrapper delayDuration={0}>
-            <motion.div
-              whileHover={{
-                scale: 1.01,
-                //   y: -10,
-                //   //x: 5,
-                //   opacity: 0.9,
-                //   //webkitFilter: `blur(4px)`,
-                //   //filter: `blur(35px)`,
-                //   transition: { type: 'spring', duration: 0.75 },
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Box
-                sx={{
-                  mb: 4,
-                  width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
-                  transition: 'all 1s ease',
-                  borderColor: 'pink',
-                  overflow: 'none',
+        <RevealAnimationWrapper delayDuration={0}>
+          <motion.div
+            whileHover={{
+              scale: 1.01,
+              //   y: -10,
+              //   //x: 5,
+              //   opacity: 0.9,
+              //   //webkitFilter: `blur(4px)`,
+              //   //filter: `blur(35px)`,
+              //   transition: { type: 'spring', duration: 0.75 },
+            }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <Box
+              sx={{
+                mb: 4,
+                width: ['90vw', '70vw', 'auto', 'auto', 'auto'],
+                transition: 'all 1s ease',
+                borderColor: 'pink',
+                overflow: 'none',
 
-                  boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
-                  '&:hover': {
-                    boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
-                  },
-                }}
+                boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
+                '&:hover': {
+                  boxShadow: 'rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;',
+                },
+              }}
+            >
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.antique-exchange.com"
               >
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.antique-exchange.com"
-                >
-                  <StaticImage
-                    src="../images/nyt-critics-picks-screenshot.png"
-                    alt="iconiclinx"
-                  />
-                </Link>
-              </Box>
-            </motion.div>
-          </RevealAnimationWrapper>
-          {/* <RevealAnimationWrapper delayDuration={0}>
-            <StaticImage
-              sx={{ mb: 0 }}
-              src="../images/design-imgs/deodorant-spread.jpg"
-              alt="nfuse deodorant spread"
-            />
-          </RevealAnimationWrapper> */}
-        </Box>
+                <StaticImage
+                  src="../images/nyt-critics-picks-screenshot.png"
+                  alt="iconiclinx"
+                />
+              </Link>
+            </Box>
+          </motion.div>
+        </RevealAnimationWrapper>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box
             sx={{
