@@ -75,11 +75,11 @@ const Homepage = ({ posts }: PostsProps) => {
         }
         visitHref={`https://nyt-critics-picks.vercel.app`}
         githubHref={`https://github.com/gabedonner/nyt-critics-picks`}
-      />
+      />*/}
       <SectionReveal>
         <DivideTitle title={'Design Portfolio'} />
       </SectionReveal>
-      <DesignPortfolio /> */}
+      <DesignPortfolio />
       <HomeBottomSection />
     </Layout>
   )
