@@ -26,6 +26,8 @@ const MiniDivideTitle = ({ title }: MiniDivideTitleProps) => {
         <Text
           sx={{
             fontSize: [1, 2, 2],
+            fontFamily: `Cormorant Garamond`,
+            fontStyle: 'italic',
             color: 'secondary',
             bg: 'background',
             pr: 4,
