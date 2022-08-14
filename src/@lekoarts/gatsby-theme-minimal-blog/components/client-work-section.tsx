@@ -100,7 +100,7 @@ const HomewebItems2 = () => {
               },
             }}
           >
-            <Link href="/about">Iconiclinx</Link>
+            <Link href="/about">Iconiclinx.com</Link>
             <Text
               sx={{
                 fontWeight: 'medium',
