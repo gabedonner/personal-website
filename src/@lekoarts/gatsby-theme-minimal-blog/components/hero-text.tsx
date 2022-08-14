@@ -77,7 +77,8 @@ const Hero = () => {
             <RotateReveal>
               <Text
                 sx={{
-                  ml: [0, '.6em'],
+                  //ml: [0, '.6em'],
+                  pl: ['3vw', '.6em'],
                   // pl: [0],
                   fontSize: ['2.5rem'],
                   fontWeight: `semibold`,
@@ -96,7 +97,8 @@ const Hero = () => {
               bg: 'none',
               //height: ['6em'],
               pt: 1,
-              pl: [0, '5em', '5em'],
+              //pl: [0, '5em', '5em'],
+              pl: ['3vw', '10vw'],
               //pr: ['1em', '12vw'],
               // mt: [1, 1, 1],
               mr: [0],
@@ -143,10 +145,10 @@ const Hero = () => {
               mt: '42px',
               //bg: 'white',
               //textAlign: 'center',
-              pl: [0, '1.7em', '5.2em', '5.2em'],
+              pl: ['3vw', '1.7em', '5.2em', '5.2em'],
               a: {
                 fontWeight: 'regular',
-                fontSize: ['1.05rem', 3, 3],
+                fontSize: ['1rem', 3, 3],
                 color: 'secondary',
                 textDecoration: 'none',
                 pr: 1,
