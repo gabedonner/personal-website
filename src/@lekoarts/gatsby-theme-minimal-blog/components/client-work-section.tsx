@@ -41,7 +41,7 @@ const HomewebItems2 = () => {
               <Box
                 sx={{
                   mb: 4,
-                  width: ['90vw', '70vw', '325px', 'auto', 'auto'],
+                  width: ['90vw', '70vw', 'auto', 'auto', 'auto'],
                   transition: 'all 1s ease',
                   borderColor: 'pink',
                   overflow: 'none',
