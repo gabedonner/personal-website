@@ -19,7 +19,7 @@ const DesignProjectGrid = ({ children }: any) => {
         // ml: [0, 60],
         //mr: [0, 30],
         justifyContent: 'center',
-        columnGap: [30, 60],
+        columnGap: [30, 45],
         gridTemplateColumns: ['none', 'none', 'none', '52% 33%'],
       }}
     >
