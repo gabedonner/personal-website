@@ -145,7 +145,7 @@ const Hero = () => {
               mt: '42px',
               //bg: 'white',
               //textAlign: 'center',
-              pl: ['3vw', '1.7em', '5.2em', '5.2em'],
+              pl: ['3vw', '1.7em', '5.2em', '6.9em'],
               a: {
                 fontWeight: 'regular',
                 fontSize: ['1rem', 3, 3],
