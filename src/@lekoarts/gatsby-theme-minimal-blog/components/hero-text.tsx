@@ -83,6 +83,7 @@ const Hero = () => {
                   fontWeight: `semibold`,
                   //color: `primary`,
                   color: 'primary',
+                  //transform: ['rotate(-10deg)', 'rotate(0deg)'],
                 }}
               >
                 Gabe Donner
@@ -145,7 +146,7 @@ const Hero = () => {
               pl: [0, '1.7em', '5.2em', '5.2em'],
               a: {
                 fontWeight: 'regular',
-                fontSize: [2, 3, 3],
+                fontSize: ['1.05rem', 3, 3],
                 color: 'secondary',
                 textDecoration: 'none',
                 pr: 1,
