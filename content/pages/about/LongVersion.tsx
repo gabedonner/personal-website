@@ -30,7 +30,8 @@ const LongVersion = () => {
               lineHeight: ['50px', '62px'],
             }}
           >
-            Intensely curious; <br />
+            Intensely curious;
+            <br />
             Lover of art, ideas, and technology.
           </Text>
         </Box>
