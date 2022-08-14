@@ -32,7 +32,7 @@ const HomewebItems2 = () => {
   return (
     <section>
       <RevealAnimationWrapper delayDuration={0}>
-        <DivideTitle title={'Featured Work'} />
+        <DivideTitle title={'Featured Websites'} />
       </RevealAnimationWrapper>
       <DesignProjectGrid>
         <RevealAnimationWrapper delayDuration={0}>
