@@ -19,6 +19,7 @@ const DesignProjectGrid = ({ children }: any) => {
         // ml: [0, 60],
         //mr: [0, 30],
         justifyContent: 'center',
+        //alignItems: 'center',
         columnGap: [30, 45],
         gridTemplateColumns: ['none', 'none', 'none', '52% 33%'],
       }}
@@ -39,12 +40,6 @@ const HomewebItems2 = () => {
           <motion.div
             whileHover={{
               scale: 1.01,
-              //   y: -10,
-              //   //x: 5,
-              //   opacity: 0.9,
-              //   //webkitFilter: `blur(4px)`,
-              //   //filter: `blur(35px)`,
-              //   transition: { type: 'spring', duration: 0.75 },
             }}
             whileTap={{ scale: 0.98 }}
           >
@@ -260,10 +255,8 @@ const HomewebItems2 = () => {
                 materials.
               </Text>
             </Box>
-            <Text>
-              The front-end of the site was built using <Link>Webflow</Link> and
-              connected to <Link>WordPress</Link> for content management.
-            </Text>
+            <Text sx={{ color: 'primary' }}>Shopify</Text>
+
             {/* <p>
               <Link
                 target="_blank"
@@ -383,6 +376,7 @@ const HomewebItems2 = () => {
                 Framer Motion.
               </Text>
             </Box>
+            <Text sx={{ color: 'primary' }}>React / REST API</Text>
           </Box>
         </EnterAnimationWrapper>
       </DesignProjectGrid>
