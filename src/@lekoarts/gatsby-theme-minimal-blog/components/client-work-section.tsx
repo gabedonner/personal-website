@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react'
-import { jsx, Box, Grid, Link, Flex, Text } from 'theme-ui'
+import { jsx, Box, Grid, Link, Flex, Text, Button } from 'theme-ui'
 import { StaticImage } from 'gatsby-plugin-image'
 import { motion } from 'framer-motion'
 import DivideTitle from './title-divide'
@@ -98,11 +98,18 @@ const HomewebItems2 = () => {
                   textDecoration: 'none',
                   borderBottomColor: 'primary',
                   letterSpacing: '.005rem',
+                  //fontStyle: 'italic',
                 },
               },
             }}
           >
-            <Link href="/about">iconiclinx.com</Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://iconiclinx.com"
+            >
+              iconiclinx.com
+            </Link>
             <Text
               sx={{
                 fontWeight: 'medium',
@@ -140,19 +147,12 @@ const HomewebItems2 = () => {
                 materials.
               </Text>
             </Box>
-            <Text>
+            {/* <Text>
               The front-end of the site was built using <Link>Webflow</Link> and
               connected to <Link>WordPress</Link> for content management.
-            </Text>
-            {/* <p>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.nfusemagnesium.com"
-              >
-                Click here to see their website &#8594;
-              </Link>
-            </p> */}
+            </Text> */}
+            {/* <Button sx={{ variant: `buttons.toolpill` }}>Webflow</Button> */}
+            <Text sx={{ color: 'primary' }}>Webflow / Wordpress</Text>
           </Box>
         </EnterAnimationWrapper>
       </DesignProjectGrid>
