@@ -260,6 +260,15 @@ const theme = merge(tailwind, {
       //fontWeight: 'medium',
     },
   },
+  buttons: {
+    toolpill: {
+      fontSize: ['12px'],
+      padding: '5px 10px',
+      color: 'background',
+      bg: 'primary',
+      borderRadius: '20px',
+    },
+  },
 })
 
 export default theme
