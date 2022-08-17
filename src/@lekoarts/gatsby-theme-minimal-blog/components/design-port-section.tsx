@@ -102,13 +102,12 @@ const DesignPortfolio = () => {
           <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
-              src="../images/design-imgs/gatsby-cover-mockup.jpg"
-              alt="gatsby cover mockup"
-            />
-            <StaticImage
-              sx={{ mx: 0 }}
               src="../images/design-imgs/gatsby-book-cover.jpg"
               alt="gatsby book cover layout"
+            />
+            <StaticImage
+              src="../images/design-imgs/gatsby-cover-mockup.jpg"
+              alt="gatsby cover mockup"
             />
           </RevealAnimationWrapper>
         </Box>
