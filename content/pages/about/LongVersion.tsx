@@ -16,6 +16,7 @@ const LongVersion = () => {
             pl: ['5vw', '10vw'],
             mt: [1, 1, 1],
             mr: [0],
+            mb: ['-24px', 0],
           }}
         >
           <Text
@@ -39,11 +40,11 @@ const LongVersion = () => {
       <RevealAnimationWrapper delayDuration={0.5}>
         <Box
           sx={{
-            mr: ['3vw', '10vw', '20vw'],
-            pl: ['13vw', '10vw'],
+            mr: ['5vw', '10vw', '20vw'],
+            pl: ['5vw', '13vw', '10vw'],
             mt: 5,
-            mb: 40,
-            fontSize: ['18px', '28px'],
+            //pb: [24,40],
+            fontSize: ['20px', '28px'],
             lineHeight: '1.625em',
             //letterSpacing: '-0.003em',
             fontFamily: `Cormorant Garamond`,
@@ -52,12 +53,20 @@ const LongVersion = () => {
             color: 'text',
           }}
         >
-          <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
-            1. &nbsp;&nbsp;&nbsp;Since 2015, I’ve been a jack-of-all-trades
-            freelancer helping clients add value to their organizations. When
-            I'm not building websites, I'm assisting with product design,
-            photography, presentations, pitch decks, and fundraising campaigns
-            for organizations like{' '}
+          <Text
+            sx={{
+              ml: ['-1.9rem', '-2.6rem'],
+              visibility: ['hidden', 'visible'],
+            }}
+          >
+            1. &nbsp;&nbsp;&nbsp;
+          </Text>
+          <Text>
+            Since 2015, I’ve been a jack-of-all-trades freelancer helping
+            clients add value to their organizations. When I'm not building
+            websites, I'm assisting with product design, photography,
+            presentations, pitch decks, and fundraising campaigns for
+            organizations like{' '}
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -82,13 +91,18 @@ const LongVersion = () => {
               The Access Project
             </Link>
             .
-            {/* In early 2021, I started digging into all things
-             front-end, learning as much as possible about making applications
-            that are beautiful, functional, and engaging. */}
           </Text>
-          <Box sx={{ mt: '60px' }}>
-            <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
-              2. &nbsp;&nbsp;&nbsp;In 2020, I graduated from{' '}
+          <Box sx={{ mt: ['45px', '60px'] }}>
+            <Text
+              sx={{
+                ml: ['-1.9rem', '-2.6rem'],
+                visibility: ['hidden', 'visible'],
+              }}
+            >
+              2. &nbsp;&nbsp;&nbsp;
+            </Text>
+            <Text>
+              In 2020, I graduated from{' '}
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
@@ -120,7 +134,7 @@ const LongVersion = () => {
             mt: '42px',
             //bg: 'white',
             //textAlign: 'center',
-            pl: ['13vw', '10vw'],
+            pl: ['5vw', '13vw', '10vw'],
             a: {
               fontWeight: 'regular',
               fontSize: ['1rem', 2, 2],
@@ -156,7 +170,7 @@ const LongVersion = () => {
             rel="noopener noreferrer"
             href={`/Resume-2022.pdf`}
           >
-            Resume
+            CV
           </Link>
           <Text
             sx={{
