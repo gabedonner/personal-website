@@ -69,6 +69,9 @@ const DesignPortfolio = () => {
             >
               nfuse LLC
             </Text>
+            <Box sx={{ pt: '12px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>Branding</Text>
+            </Box>
             <p>
               nfuse LLC is a bodycare company that specializes in
               magnesium-based products, implementing a patented transdermal
@@ -124,6 +127,9 @@ const DesignPortfolio = () => {
             >
               Gatsby Book Cover
             </Text>
+            <Box sx={{ pt: '12px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>Graphic Design</Text>
+            </Box>
             <p>A cover mockup for The Great Gatsby.</p>
             <p>
               <Link
@@ -172,6 +178,11 @@ const DesignPortfolio = () => {
             >
               Green Rooftop Terrace
             </Text>
+            <Box sx={{ pt: '12px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>
+                3D Modeling / Rendering & Graphic Design
+              </Text>
+            </Box>
             <p>
               Renderings for a rooftop terrace built using sustainable materials
               and indigenous plants. Made with Sketchup and V-Ray.
@@ -211,6 +222,11 @@ const DesignPortfolio = () => {
             >
               City Magazine Cover
             </Text>
+            <Box sx={{ pt: '12px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>
+                Illustration & Graphic Design
+              </Text>
+            </Box>
             <p>
               A cover mockup and collage illustration for a hypothetical
               magazine called "City" for an issue focusing on Baltimore.
@@ -248,6 +264,9 @@ const DesignPortfolio = () => {
             >
               Big Ben Album Covers
             </Text>
+            <Box sx={{ pt: '12px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>Graphic Design</Text>
+            </Box>
             <p>
               A cover series for two live albums by the Baltimore-based band Big
               Ben.
