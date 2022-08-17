@@ -15,7 +15,7 @@ const DesignProjectGrid = ({ children }: any) => {
       //columns={[1, 1, 2, 2]}
       sx={{
         my: [90, 120],
-        mx: ['auto', '5vw', '0', 'auto'],
+        mx: ['5vw', '5vw', '0', 'auto'],
         // ml: [0, 60],
         //mr: [0, 30],
         justifyContent: 'center',
@@ -45,7 +45,7 @@ const HomewebItems2 = () => {
           >
             <Box
               sx={{
-                mb: 4,
+                mb: ['20px', 4],
                 width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
                 transition: 'all 1s ease',
                 borderColor: 'pink',
@@ -148,7 +148,7 @@ const HomewebItems2 = () => {
           >
             <Box
               sx={{
-                mb: 4,
+                mb: ['20px', 4],
                 width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
                 transition: 'all 1s ease',
                 //borderColor: 'pink',
@@ -269,7 +269,7 @@ const HomewebItems2 = () => {
           >
             <Box
               sx={{
-                mb: 4,
+                mb: ['20px', 4],
                 width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
                 transition: 'all 1s ease',
                 borderColor: 'pink',
