@@ -231,9 +231,9 @@ const HomewebItems2 = () => {
             </Box>
             <Box sx={{ pb: '15px' }}>
               <Text>
-                Iconixlinx is an agency that represents artists in collaborative
-                projects and coordinates the licensing of archived film
-                materials.
+                Antique Exchange is a long-standing antique and consignment
+                store based out of Baltimore that was looking to expand their
+                business with an online shop and delivery services.
               </Text>
             </Box>
             <Text sx={{ color: 'primary' }}>Shopify</Text>
