@@ -89,11 +89,9 @@ const HomewebItems2 = () => {
                 ':hover': {
                   color: `primary`,
                   mr: '1rem',
-                  //ml: '.2rem',
                   textDecoration: 'none',
                   borderBottomColor: 'primary',
                   letterSpacing: '.005rem',
-                  //fontStyle: 'italic',
                 },
               },
             }}
@@ -111,8 +109,6 @@ const HomewebItems2 = () => {
                 fontSize: '22px',
                 color: 'text',
                 verticalAlign: '-1.75px',
-                //ml: '.5em',
-                //px: [2, 0],
                 fontFamily: 'Cormorant Garamond',
                 fontStyle: 'italic',
               }}
@@ -122,12 +118,8 @@ const HomewebItems2 = () => {
           </Box>
           <Box
             sx={{
-              //px: [2, 0],
               pt: 3,
               width: ['66%', '66%', '300px'],
-              p: {
-                //fontFamily: 'Cormorant Garamond',
-              },
             }}
           >
             <Box sx={{ pb: '15px' }}>
@@ -142,11 +134,6 @@ const HomewebItems2 = () => {
                 materials.
               </Text>
             </Box>
-            {/* <Text>
-              The front-end of the site was built using <Link>Webflow</Link> and
-              connected to <Link>WordPress</Link> for content management.
-            </Text> */}
-            {/* <Button sx={{ variant: `buttons.toolpill` }}>Webflow</Button> */}
             <Text sx={{ color: 'primary' }}>Webflow / Wordpress</Text>
           </Box>
         </EnterAnimationWrapper>
@@ -156,12 +143,6 @@ const HomewebItems2 = () => {
           <motion.div
             whileHover={{
               scale: 1.01,
-              //   y: -10,
-              //   //x: 5,
-              //   opacity: 0.9,
-              //   //webkitFilter: `blur(4px)`,
-              //   //filter: `blur(35px)`,
-              //   transition: { type: 'spring', duration: 0.75 },
             }}
             whileTap={{ scale: 0.98 }}
           >
@@ -170,7 +151,7 @@ const HomewebItems2 = () => {
                 mb: 4,
                 width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
                 transition: 'all 1s ease',
-                borderColor: 'pink',
+                //borderColor: 'pink',
                 overflow: 'none',
 
                 boxShadow: 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;',
@@ -186,7 +167,7 @@ const HomewebItems2 = () => {
               >
                 <StaticImage
                   src="../images/antique-exchange-snapshot.png"
-                  alt="iconiclinx"
+                  alt="Antique Exchange"
                 />
               </Link>
             </Box>
@@ -366,9 +347,9 @@ const HomewebItems2 = () => {
               },
             }}
           >
-            {/* <Box sx={{ pb: '15px' }}>
-              <Text sx={{ fontWeight: 'medium' }}>Web Design</Text>
-            </Box> */}
+            <Box sx={{ pb: '15px' }}>
+              <Text sx={{ fontWeight: 'medium' }}>Single Page Application</Text>
+            </Box>
             <Box sx={{ pb: '15px' }}>
               <Text>
                 A searchable collection of all the movies picked by New York
