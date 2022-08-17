@@ -50,6 +50,7 @@ const DesignPortfolio = () => {
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box
             sx={{
+              width: ['66%', '66%', '400px'],
               px: [2, 0],
               p: {
                 //fontFamily: 'Cormorant Garamond',
@@ -112,7 +113,7 @@ const DesignPortfolio = () => {
           </RevealAnimationWrapper>
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
+          <Box sx={{ px: [2, 0], width: ['66%', '66%', '400px'] }}>
             <Text
               sx={{
                 fontWeight: 'medium',
@@ -163,7 +164,7 @@ const DesignPortfolio = () => {
           </RevealAnimationWrapper>
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
+          <Box sx={{ px: [2, 0], width: ['66%', '66%', '400px'] }}>
             <Text
               sx={{
                 fontWeight: 'medium',
@@ -207,7 +208,7 @@ const DesignPortfolio = () => {
           />
         </RevealAnimationWrapper>
         <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
+          <Box sx={{ px: [2, 0], width: ['66%', '66%', '400px'] }}>
             <Text
               sx={{
                 fontWeight: 'medium',
@@ -249,7 +250,7 @@ const DesignPortfolio = () => {
           </RevealAnimationWrapper>
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
+          <Box sx={{ px: [2, 0], width: ['66%', '66%', '400px'] }}>
             <Text
               sx={{
                 fontWeight: 'medium',
