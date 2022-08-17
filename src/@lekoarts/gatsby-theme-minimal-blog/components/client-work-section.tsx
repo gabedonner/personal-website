@@ -137,7 +137,7 @@ const HomewebItems2 = () => {
             </Box>
             <Box sx={{ pb: '15px' }}>
               <Text>
-                Iconixlinx is an agency that represents artists in collaborative
+                Iconiclinx is an agency that represents artists in collaborative
                 projects and coordinates the licensing of archived film
                 materials.
               </Text>
@@ -372,8 +372,7 @@ const HomewebItems2 = () => {
             <Box sx={{ pb: '15px' }}>
               <Text>
                 A searchable collection of all the movies picked by New York
-                Times critics. Built with Next.js, the NYT REST API, MUI, and
-                Framer Motion.
+                Times critics. Built with Next.js and New York Times REST API.
               </Text>
             </Box>
             <Text sx={{ color: 'primary' }}>React / REST API</Text>
