@@ -59,9 +59,13 @@ const DesignPortfolio = () => {
           >
             <Text
               sx={{
-                //  fontFamily: 'Cormorant Garamond',
                 fontWeight: 'medium',
-                fontSize: [3, 4, 4],
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
               }}
             >
               nfuse LLC
@@ -110,7 +114,17 @@ const DesignPortfolio = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
+            <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
+              }}
+            >
               Big Ben Album Covers
             </Text>
             <p>
@@ -148,7 +162,17 @@ const DesignPortfolio = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
+            <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
+              }}
+            >
               Gatsby Book Cover
             </Text>
             <p>A cover mockup for The Great Gatsby.</p>
@@ -190,7 +214,17 @@ const DesignPortfolio = () => {
         </Box>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [3, 4, 4] }}>
+            <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
+              }}
+            >
               Green Rooftop Terrace
             </Text>
             <p>
@@ -219,7 +253,17 @@ const DesignPortfolio = () => {
         </RevealAnimationWrapper>
         <EnterAnimationWrapper delayDuration={0.25}>
           <Box sx={{ px: [2, 0] }}>
-            <Text sx={{ fontWeight: 'medium', fontSize: [2, 3, 3] }}>
+            <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
+              }}
+            >
               City Magazine Cover
             </Text>
             <p>
