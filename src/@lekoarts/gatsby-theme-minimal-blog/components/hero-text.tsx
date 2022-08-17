@@ -175,7 +175,12 @@ const Hero = () => {
             >
               —
             </Text>
-            <Link sx={{ ml: '1em' }} href="/about">
+            <Link
+              sx={{ ml: '1em' }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/gabedonner/"
+            >
               See the code
             </Link>
             <Text
@@ -191,7 +196,7 @@ const Hero = () => {
             >
               —
             </Text>
-            <Link sx={{ ml: '1em' }} href="/about">
+            <Link sx={{ ml: '1em' }} href="mailto:contact@gabedonner.com">
               Contact
             </Link>
             {/* <Text
