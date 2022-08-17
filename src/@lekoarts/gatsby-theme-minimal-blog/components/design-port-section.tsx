@@ -19,7 +19,10 @@ const Divider = () => {
 
 const DesignProjectGrid = ({ children }: any) => {
   return (
-    <Grid columns={[1, 1, 2, 2]} sx={{ my: [90, 120], gap: [30, 45] }}>
+    <Grid
+      columns={[1, 1, 2, 2]}
+      sx={{ my: [90, 120], mx: ['1vw', '5vw', '0', 'auto'], gap: [30, 45] }}
+    >
       {children}
     </Grid>
   )
@@ -51,7 +54,7 @@ const DesignPortfolio = () => {
           <Box
             sx={{
               width: ['auto', '66%', '400px'],
-              px: [2, 0],
+              //px: [2, 0],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
