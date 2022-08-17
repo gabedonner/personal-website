@@ -38,7 +38,7 @@ const DesignPortfolio = () => {
         <Box>
           <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
-              sx={{ mb: 40 }}
+              sx={{ mt: [0], mb: 40 }}
               src="../images/design-imgs/lav-deodorant.jpg"
               alt="nfuse lavender deodorant"
             />
