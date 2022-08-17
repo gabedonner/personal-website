@@ -142,7 +142,7 @@ const Hero = () => {
           <Box
             sx={{
               mb: 2,
-              mt: '42px',
+              mt: ['30px', '42px'],
               //bg: 'white',
               //textAlign: 'center',
               pl: ['3vw', '4.2em', '5.6em', '6.9em'],
