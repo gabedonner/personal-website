@@ -131,7 +131,7 @@ const LongVersion = () => {
         <Box
           sx={{
             pb: '60px',
-            mt: '42px',
+            mt: '60px',
             //bg: 'white',
             //textAlign: 'center',
             pl: ['5vw', '13vw', '10vw'],
