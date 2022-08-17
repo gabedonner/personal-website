@@ -15,13 +15,13 @@ const DesignProjectGrid = ({ children }: any) => {
       //columns={[1, 1, 2, 2]}
       sx={{
         my: [90, 120],
-        mx: ['auto', '5vw', 'auto'],
+        mx: ['auto', '5vw', '0', 'auto'],
         // ml: [0, 60],
         //mr: [0, 30],
         justifyContent: 'center',
         //alignItems: 'center',
         columnGap: [30, 45],
-        gridTemplateColumns: ['none', 'none', 'none', '52% 33%'],
+        gridTemplateColumns: ['none', 'none', '52% 33%', '52% 33%'],
       }}
     >
       {children}
@@ -124,7 +124,7 @@ const HomewebItems2 = () => {
             sx={{
               //px: [2, 0],
               pt: 3,
-              width: ['auto', '66%', '300px'],
+              width: ['66%', '66%', '300px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
@@ -239,7 +239,7 @@ const HomewebItems2 = () => {
             sx={{
               //px: [2, 0],
               pt: 3,
-              width: ['auto', '66%', '300px'],
+              width: ['66%', '66%', '300px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
@@ -289,7 +289,7 @@ const HomewebItems2 = () => {
             <Box
               sx={{
                 mb: 4,
-                width: ['90vw', '70vw', 'auto', 'auto', 'auto'],
+                width: ['90vw', 'auto', 'auto', 'auto', 'auto'],
                 transition: 'all 1s ease',
                 borderColor: 'pink',
                 overflow: 'none',
@@ -360,7 +360,7 @@ const HomewebItems2 = () => {
             sx={{
               //px: [2, 0],
               pt: 3,
-              width: ['auto', '66%', '300px'],
+              width: ['66%', '66%', '300px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
