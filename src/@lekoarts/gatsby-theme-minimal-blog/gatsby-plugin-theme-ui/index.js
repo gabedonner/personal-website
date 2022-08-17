@@ -206,7 +206,7 @@ const theme = merge(tailwind, {
     bottom: {
       borderBottomStyle: `solid`,
       borderBottomWidth: `1px`,
-      borderBottomColor: `divide`,
+      borderBottomColor: `muted`,
       pb: 3,
     },
     top: {
