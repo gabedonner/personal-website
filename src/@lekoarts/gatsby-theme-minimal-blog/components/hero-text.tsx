@@ -71,7 +71,7 @@ const Hero = () => {
           <Box
             sx={{
               pb: '5px',
-              mt: ['0px'],
+              mt: ['15px'],
             }}
           >
             <RotateReveal>
