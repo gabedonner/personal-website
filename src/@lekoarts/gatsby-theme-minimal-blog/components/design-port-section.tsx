@@ -99,52 +99,6 @@ const DesignPortfolio = () => {
           <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
-              src="../images/design-imgs/big-ben-cover1.jpg"
-              alt="big ben cover 1"
-            />
-            <StaticImage
-              sx={{ mx: 0 }}
-              src="../images/design-imgs/big-ben-cover2.jpg"
-              alt="big ben cover 2"
-            />
-          </RevealAnimationWrapper>
-        </Box>
-        <EnterAnimationWrapper delayDuration={0.25}>
-          <Box sx={{ px: [2, 0] }}>
-            <Text
-              sx={{
-                fontWeight: 'medium',
-                fontSize: [2, 3, 3],
-                color: 'text',
-                //borderBottom: '1.5px solid',
-                //borderBottomColor: 'secondary',
-                pb: '2px',
-                pr: 1,
-              }}
-            >
-              Big Ben Album Covers
-            </Text>
-            <p>
-              A cover series for two live albums by the Baltimore-based band Big
-              Ben.
-            </p>
-            <p>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://bigbenband.bandcamp.com/"
-              >
-                Check them out on Bandcamp &#x2192;
-              </Link>
-            </p>
-          </Box>
-        </EnterAnimationWrapper>
-      </DesignProjectGrid>
-      <DesignProjectGrid>
-        <Box>
-          <RevealAnimationWrapper delayDuration={0}>
-            <StaticImage
-              sx={{ mb: 40 }}
               src="../images/design-imgs/gatsby-cover-mockup.jpg"
               alt="gatsby cover mockup"
             />
@@ -260,6 +214,52 @@ const DesignPortfolio = () => {
             <p>
               A cover mockup and collage illustration for a hypothetical
               magazine called "City" for an issue focusing on Baltimore.
+            </p>
+          </Box>
+        </EnterAnimationWrapper>
+      </DesignProjectGrid>
+      <DesignProjectGrid>
+        <Box>
+          <RevealAnimationWrapper delayDuration={0}>
+            <StaticImage
+              sx={{ mb: 40 }}
+              src="../images/design-imgs/big-ben-cover1.jpg"
+              alt="big ben cover 1"
+            />
+            <StaticImage
+              sx={{ mx: 0 }}
+              src="../images/design-imgs/big-ben-cover2.jpg"
+              alt="big ben cover 2"
+            />
+          </RevealAnimationWrapper>
+        </Box>
+        <EnterAnimationWrapper delayDuration={0.25}>
+          <Box sx={{ px: [2, 0] }}>
+            <Text
+              sx={{
+                fontWeight: 'medium',
+                fontSize: [2, 3, 3],
+                color: 'text',
+                //borderBottom: '1.5px solid',
+                //borderBottomColor: 'secondary',
+                pb: '2px',
+                pr: 1,
+              }}
+            >
+              Big Ben Album Covers
+            </Text>
+            <p>
+              A cover series for two live albums by the Baltimore-based band Big
+              Ben.
+            </p>
+            <p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://bigbenband.bandcamp.com/"
+              >
+                Check them out on Bandcamp &#x2192;
+              </Link>
             </p>
           </Box>
         </EnterAnimationWrapper>
