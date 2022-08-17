@@ -33,14 +33,13 @@ const DesignPortfolio = () => {
     <Box>
       <DesignProjectGrid>
         <Box>
-          <RevealAnimationWrapper>
+          <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/lav-deodorant.jpg"
               alt="nfuse lavender deodorant"
             />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
+
             <StaticImage
               sx={{ mb: 0 }}
               src="../images/design-imgs/deodorant-spread.jpg"
@@ -97,14 +96,12 @@ const DesignPortfolio = () => {
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <RevealAnimationWrapper>
+          <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/big-ben-cover1.jpg"
               alt="big ben cover 1"
             />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/big-ben-cover2.jpg"
@@ -145,14 +142,12 @@ const DesignPortfolio = () => {
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <RevealAnimationWrapper>
+          <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/gatsby-cover-mockup.jpg"
               alt="gatsby cover mockup"
             />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/gatsby-book-cover.jpg"
@@ -190,21 +185,17 @@ const DesignPortfolio = () => {
       </DesignProjectGrid>
       <DesignProjectGrid>
         <Box>
-          <RevealAnimationWrapper>
+          <RevealAnimationWrapper delayDuration={0}>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/rooftop-detail.jpg"
               alt="rooftop terrace render detail"
             />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mb: 40 }}
               src="../images/design-imgs/roof-terrace-iso-right.jpg"
               alt="rooftop terrace render iso"
             />
-          </RevealAnimationWrapper>
-          <RevealAnimationWrapper>
             <StaticImage
               sx={{ mx: 0 }}
               src="../images/design-imgs/rooftop-iso.jpg"
@@ -244,7 +235,7 @@ const DesignPortfolio = () => {
         </EnterAnimationWrapper>
       </DesignProjectGrid>
       <DesignProjectGrid>
-        <RevealAnimationWrapper>
+        <RevealAnimationWrapper delayDuration={0}>
           <StaticImage
             sx={{ mx: 0 }}
             src="../images/design-imgs/city-magazine-cover.jpg"
