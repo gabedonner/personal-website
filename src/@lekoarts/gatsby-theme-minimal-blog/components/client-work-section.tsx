@@ -200,7 +200,13 @@ const HomewebItems2 = () => {
               },
             }}
           >
-            <Link href="/about">antique-exchange.com</Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://antique-exchange.com"
+            >
+              antique-exchange.com
+            </Link>
             <Text
               sx={{
                 fontWeight: 'medium',
@@ -284,7 +290,7 @@ const HomewebItems2 = () => {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.antique-exchange.com"
+                href="https://nyt-critics-picks.vercel.app"
               >
                 <StaticImage
                   src="../images/nyt-critics-picks-screenshot.png"
@@ -321,7 +327,13 @@ const HomewebItems2 = () => {
               },
             }}
           >
-            <Link href="/about">NYT Critic's Picks</Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://nyt-critics-picks.vercel.app"
+            >
+              NYT Critic's Picks
+            </Link>
             <Text
               sx={{
                 fontWeight: 'medium',
