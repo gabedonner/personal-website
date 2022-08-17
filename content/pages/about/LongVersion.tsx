@@ -53,11 +53,38 @@ const LongVersion = () => {
           }}
         >
           <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
-            1. &nbsp;&nbsp;&nbsp;Since 2015, I’ve been making websites and
-            filling numerous development and design-related roles as a
-            freelancer. In early 2021, I started digging into all things
-            front-end, learning as much as possible about making applications
-            that are beautiful, functional, and engaging.
+            1. &nbsp;&nbsp;&nbsp;Since 2015, I’ve been a jack-of-all-trades
+            freelancer helping clients add value to their organizations. When
+            I'm not building websites, I'm assisting with product design,
+            photography, presentations, pitch decks, and fundraising campaigns
+            for organizations like{' '}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://nfusemagnesium.com"
+            >
+              nfuse
+            </Link>
+            ,{' '}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.maysles.org"
+            >
+              Maysles Documentary Center
+            </Link>
+            , and{' '}
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://accessprojectca.org"
+            >
+              The Access Project
+            </Link>
+            .
+            {/* In early 2021, I started digging into all things
+             front-end, learning as much as possible about making applications
+            that are beautiful, functional, and engaging. */}
           </Text>
           <Box sx={{ mt: '60px' }}>
             <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
@@ -70,10 +97,10 @@ const LongVersion = () => {
                 NYU Gallatin
               </Link>{' '}
               with an individualized major that combined topics from Philosophy,
-              Media Studies, and American Studies — in other words, I learned to
-              write thoughtfully, think across disciplines, and ask good
-              questions. During the same period, I also earned a minor in
-              Graphic Design from{' '}
+              Media Studies, and American Studies, and wrote a final project
+              that investigated the philosophic history of image analysis.
+              During the same period, I also earned a minor in Graphic Design
+              from{' '}
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,50 +112,18 @@ const LongVersion = () => {
               Interactive Narrative.
             </Text>
           </Box>
-          <Box sx={{ my: '60px' }}>
-            <Text sx={{ ml: ['-1.7rem', '-2.6rem'] }}>
-              3. &nbsp;&nbsp;&nbsp;Ultimately, the most rewarding part of my
-              work has been solving problems for clients and materializing their
-              vision. I’ve had the opportunity to work for many wonderful small
-              businesses and non-profits across the United States, including{' '}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://nfusemagnesium.com"
-              >
-                nfuse
-              </Link>
-              ,{' '}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.maysles.org"
-              >
-                Maysles Documentary Center
-              </Link>{' '}
-              and{' '}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://accessprojectca.org"
-              >
-                The Access Project
-              </Link>
-              {'. '}
-            </Text>
-          </Box>
         </Box>
 
-        {/* <Box
+        <Box
           sx={{
-            mb: 2,
+            pb: '60px',
             mt: '42px',
             //bg: 'white',
             //textAlign: 'center',
             pl: ['13vw', '10vw'],
             a: {
               fontWeight: 'regular',
-              fontSize: [2, 3, 3],
+              fontSize: ['1rem', 2, 2],
               color: 'secondary',
               textDecoration: 'none',
               pr: 1,
@@ -141,7 +136,7 @@ const LongVersion = () => {
             },
           }}
         >
-          <Link href="/about">Email</Link>
+          <Link href="mailto:contact@gabedonner.com">Email</Link>
           <Text
             sx={{
               fontWeight: 'medium',
@@ -155,13 +150,18 @@ const LongVersion = () => {
           >
             /
           </Text>
-          <Link sx={{ ml: '1em' }} href="/about">
+          <Link
+            sx={{ ml: '1em' }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`/Resume-2022.pdf`}
+          >
             Resume
           </Link>
           <Text
             sx={{
               fontWeight: 'medium',
-              fontSize: [2, 3, 3],
+              fontSize: [2, 2, 3],
               color: 'secondary',
               verticalAlign: '2px',
               ml: '.5em',
@@ -171,7 +171,12 @@ const LongVersion = () => {
           >
             /
           </Text>
-          <Link sx={{ ml: '1em' }} href="/about">
+          <Link
+            sx={{ ml: '1em' }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/gabedonner/"
+          >
             Github
           </Link>
           <Text
@@ -187,23 +192,15 @@ const LongVersion = () => {
           >
             /
           </Text>
-          <Link sx={{ ml: '1em' }} href="/about">
+          <Link
+            sx={{ ml: '1em' }}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/gabedonner/"
+          >
             LinkedIn
-          </Link> */}
-        {/* <Text
-              sx={{
-                fontWeight: 'medium',
-                fontSize: [2, 3, 3],
-                color: 'secondary',
-                //verticalAlign: '2px',
-                ml: '.5em',
-                fontFamily: `Cormorant Garamond`,
-                fontStyle: 'italic',
-              }}
-            >
-              →
-            </Text> */}
-        {/* </Box> */}
+          </Link>
+        </Box>
       </RevealAnimationWrapper>
     </section>
   )
