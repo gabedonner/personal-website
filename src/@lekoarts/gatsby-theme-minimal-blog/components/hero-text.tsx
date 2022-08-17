@@ -155,8 +155,8 @@ const Hero = () => {
                 ':hover': {
                   color: `primary`,
                   textDecoration: 'none',
-                  pr: '1rem',
-                  pl: '.2rem',
+                  pr: [1, '1rem'],
+                  pl: [0, '.2rem'],
                 },
               },
             }}
