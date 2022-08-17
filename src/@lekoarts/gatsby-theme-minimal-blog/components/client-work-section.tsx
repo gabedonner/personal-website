@@ -119,7 +119,7 @@ const HomewebItems2 = () => {
           <Box
             sx={{
               pt: 3,
-              width: ['66%', '66%', '300px'],
+              width: ['auto', '66%', '300px'],
             }}
           >
             <Box sx={{ pb: '15px' }}>
@@ -220,7 +220,7 @@ const HomewebItems2 = () => {
             sx={{
               //px: [2, 0],
               pt: 3,
-              width: ['66%', '66%', '300px'],
+              width: ['auto', '66%', '300px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
@@ -341,7 +341,7 @@ const HomewebItems2 = () => {
             sx={{
               //px: [2, 0],
               pt: 3,
-              width: ['66%', '66%', '300px'],
+              width: ['auto', '66%', '300px'],
               p: {
                 //fontFamily: 'Cormorant Garamond',
               },
