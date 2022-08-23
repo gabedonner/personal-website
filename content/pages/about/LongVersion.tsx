@@ -12,7 +12,7 @@ const LongVersion = () => {
             //height: ['6em'],
             pt: 56,
             //pl: ['3px', '1.7em', '1.7em'],
-            pr: ['6vw', '19vw'],
+            pr: ['6vw'],
             pl: ['5vw', '10vw'],
             mt: [1, 1, 1],
             mr: [0],
@@ -41,7 +41,7 @@ const LongVersion = () => {
         <Box
           sx={{
             mr: ['5vw', '10vw', '20vw'],
-            pl: ['5vw', '13vw', '10vw'],
+            pl: ['5vw', '10vw'],
             mt: 5,
             //pb: [24,40],
             fontSize: ['20px', '28px'],
