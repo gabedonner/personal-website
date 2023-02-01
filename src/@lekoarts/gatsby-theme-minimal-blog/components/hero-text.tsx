@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <SectionReveal>
       <Box sx={{}}>
-        <Box sx={{ ml: ['auto', 0, '3vw', '6vw'], mr: ['1em', '12vw'] }}>
+        <Box sx={{ ml: ['auto', 0, '3vw', '6vw'], mr: ['1em', '5vw'] }}>
           <Box
             sx={{
               pb: '5px',
