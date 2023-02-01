@@ -70,7 +70,7 @@ const Hero = () => {
         <Box
           sx={{
             //ml: ['auto', 0, '3vw', '0vw'],
-            ml: ['auto', '3vw'],
+            ml: ['auto', '2.5vw'],
             mr: ['1em', '5vw'],
           }}
         >
